@@ -593,7 +593,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](../LIC
 ## 👨‍💻 Author
 
 **Jean Bodenberg**
-- 🌐 [GitHub](https://github.com/bodenberg)
+- 🌐 [GitHub](https://github.com/www-virtues-ag)
 - 📧 [Email](mailto:jean.bodenberg@gmail.com)
 - 💼 [LinkedIn](https://linkedin.com/in/jean-bodenberg)
 

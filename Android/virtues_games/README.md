@@ -3,7 +3,7 @@
     <p><strong>Responsive Game Development for Android with C++/NDK Support</strong></p>
     <p>Specialized Virtues module designed for Android game development with native performance, OpenGL ES integration, and advanced viewport management.</p>
     
-    [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/bodenberg/virtues/releases)
+    [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/www-virtues-ag/virtues/releases)
     [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](../../LICENSE)
     [![Platform](https://img.shields.io/badge/platform-Android%2023+-orange.svg)](https://developer.android.com/)
     [![NDK](https://img.shields.io/badge/NDK-r21+-green.svg)](https://developer.android.com/ndk)
@@ -699,12 +699,12 @@ void debugPerformance() {
 We welcome contributions! Please see our [Contributing Guidelines](../../CONTRIBUTING.md) for details.
 
 ### 🐛 Found a Bug?
-- [Create an issue](https://github.com/bodenberg/virtues/issues)
+- [Create an issue](https://github.com/www-virtues-ag/virtues/issues)
 - Include device information and reproduction steps
 - Attach screenshots if applicable
 
 ### 💡 Have an Idea?
-- [Start a discussion](https://github.com/bodenberg/virtues/discussions)
+- [Start a discussion](https://github.com/www-virtues-ag/virtues/discussions)
 - Propose new features or improvements
 - Share your use cases
 
@@ -719,7 +719,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](../../
 ## 👨‍💻 Author
 
 **Jean Bodenberg**
-- 🌐 [GitHub](https://github.com/bodenberg)
+- 🌐 [GitHub](https://github.com/www-virtues-ag)
 - 📧 [Email](mailto:jean.bodenberg@gmail.com)
 - 💼 [LinkedIn](https://linkedin.com/in/jean-bodenberg)
 

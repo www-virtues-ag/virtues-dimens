@@ -1,6 +1,6 @@
 /**
  * @author Bodenberg
- * GIT: https://github.com/bodenberg/appdimens.git
+ * GIT: https://github.com/www-virtues-ag/appdimens.git
  */
 package ag.virtues.dimens.example.views.java.pt;
 

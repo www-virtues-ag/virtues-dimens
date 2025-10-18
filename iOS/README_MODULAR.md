@@ -248,5 +248,5 @@ Este projeto está licenciado sob a Licença Apache 2.0 - veja o arquivo [LICENS
 ## 👨‍💻 Autor
 
 **Jean Bodenberg**
-- GitHub: [@bodenberg](https://github.com/bodenberg)
+- GitHub: [@bodenberg](https://github.com/www-virtues-ag)
 - Email: jean.bodenberg@gmail.com

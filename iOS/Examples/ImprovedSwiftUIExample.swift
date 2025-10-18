@@ -1,6 +1,6 @@
 /**
  * Author & Developer: Jean Bodenberg
- * GIT: https://github.com/bodenberg/appdimens.git
+ * GIT: https://github.com/www-virtues-ag/appdimens.git
  * Date: 2025-01-15
  *
  * Library: VirtuesDimens iOS - Improved SwiftUI Example

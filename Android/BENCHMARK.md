@@ -654,7 +654,7 @@ This combination offers **maximum flexibility, performance, and compatibility**.
 
 ## References
 
-- [Virtues GitHub](https://github.com/bodenberg/virtues)
+- [Virtues GitHub](https://github.com/www-virtues-ag/virtues)
 - [Intuit SDP GitHub](https://github.com/intuit/sdp)
 - [Material 3 Adaptive](https://developer.android.com/jetpack/androidx/releases/compose-material3-adaptive)
 - [WindowSizeClass](https://developer.android.com/develop/ui/compose/layouts/adaptive/use-window-size-classes)

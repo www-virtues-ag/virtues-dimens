@@ -86,7 +86,7 @@ For answers to common questions about this code of conduct, see the FAQ at https
 
 - **Project Maintainer**: Jean Bodenberg
 - **Email**: jean.bodenberg@gmail.com
-- **GitHub**: [@bodenberg](https://github.com/bodenberg)
+- **GitHub**: [@bodenberg](https://github.com/www-virtues-ag)
 
 ## Acknowledgment
 
