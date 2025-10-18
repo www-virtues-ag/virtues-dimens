@@ -1,6 +1,6 @@
-# 📦 AppDimens iOS - Installation Guide
+# 📦 VirtuesDimens iOS - Installation Guide
 
-This comprehensive guide will help you install and integrate AppDimens iOS into your project with step-by-step instructions.
+This comprehensive guide will help you install and integrate VirtuesDimens iOS into your project with step-by-step instructions.
 
 ## 📋 Requirements
 
@@ -12,7 +12,7 @@ This comprehensive guide will help you install and integrate AppDimens iOS into 
 
 ### CocoaPods (Recommended)
 
-CocoaPods is the recommended installation method for AppDimens iOS.
+CocoaPods is the recommended installation method for VirtuesDimens iOS.
 
 #### 1. Add to your Podfile
 
@@ -21,7 +21,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'AppDimens'
+  pod 'VirtuesDimens'
 end
 ```
 
@@ -40,7 +40,7 @@ open YourApp.xcworkspace
 #### 4. Import in your Swift files
 
 ```swift
-import AppDimens
+import VirtuesDimens
 ```
 
 #### Advanced CocoaPods Configuration
@@ -52,7 +52,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'AppDimens', '~> 1.0'
+  pod 'VirtuesDimens', '~> 1.0'
 end
 
 # Post-install hook for additional configuration
@@ -73,12 +73,12 @@ Swift Package Manager is Apple's official dependency management tool.
 
 1. **In Xcode:**
    - File → Add Package Dependencies
-   - Enter the repository URL: `https://github.com/bodenberg/appdimens.git`
+   - Enter the repository URL: `https://github.com/www-virtues-ag/virtues-dimens.git`
    - Select the version and add to your target
 
 2. **Import in your Swift files:**
 ```swift
-import AppDimens
+import VirtuesDimens
 ```
 
 #### Method 2: Package.swift
@@ -87,7 +87,7 @@ Add to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/bodenberg/appdimens.git", from: "1.0.5")
+    .package(url: "https://github.com/www-virtues-ag/virtues-dimens.git", from: "1.0.0")
 ]
 ```
 
@@ -96,7 +96,7 @@ dependencies: [
 1. Select your project in Xcode
 2. Go to Package Dependencies tab
 3. Click the "+" button
-4. Enter: `https://github.com/bodenberg/appdimens.git`
+4. Enter: `https://github.com/www-virtues-ag/virtues-dimens.git`
 5. Select version and add to target
 
 ### Manual Installation
@@ -106,18 +106,18 @@ If you prefer to include the source code directly in your project:
 #### 1. Download the source code
 
 ```bash
-git clone https://github.com/bodenberg/appdimens.git
+git clone https://github.com/www-virtues-ag/virtues-dimens.git
 ```
 
 #### 2. Copy the Sources folder
 
-- Copy `Sources/AppDimens/` to your project
+- Copy `Sources/VirtuesDimens/` to your project
 - Add all Swift files to your Xcode project
 
 #### 3. Import in your Swift files
 
 ```swift
-import AppDimens
+import VirtuesDimens
 ```
 
 ## 🔧 Configuration
@@ -158,17 +158,17 @@ The package will be automatically configured when added through Xcode. Ensure:
 
 ### Basic Usage
 
-After installation, you can start using AppDimens immediately:
+After installation, you can start using VirtuesDimens immediately:
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
 // Fixed scaling (recommended for UI elements)
-let buttonHeight = AppDimens.fixed(48).toPoints()
+let buttonHeight = VirtuesDimens.fixed(48).toPoints()
 let padding = 16.fxpt
 
 // Dynamic scaling (for proportional layouts)
-let cardWidth = AppDimens.dynamic(200).toPoints()
+let cardWidth = VirtuesDimens.dynamic(200).toPoints()
 let containerWidth = 300.dypt
 ```
 
@@ -176,7 +176,7 @@ let containerWidth = 300.dypt
 
 ```swift
 import SwiftUI
-import AppDimens
+import VirtuesDimens
 
 struct ContentView: View {
     var body: some View {
@@ -197,7 +197,7 @@ struct ContentView: View {
 
 ```swift
 import UIKit
-import AppDimens
+import VirtuesDimens
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -222,13 +222,13 @@ class ViewController: UIViewController {
 
 #### 1. Import Error
 ```
-No such module 'AppDimens'
+No such module 'VirtuesDimens'
 ```
 
 **Solutions:**
 - Ensure you've run `pod install` after adding the dependency
 - Clean and rebuild your project (Product → Clean Build Folder)
-- Check that the target includes the AppDimens framework
+- Check that the target includes the VirtuesDimens framework
 - Verify the framework is properly linked in your target settings
 
 #### 2. Build Errors
@@ -237,13 +237,13 @@ Use of unresolved identifier 'fxpt'
 ```
 
 **Solutions:**
-- Make sure you've imported AppDimens: `import AppDimens`
+- Make sure you've imported VirtuesDimens: `import VirtuesDimens`
 - Check that you're using the correct syntax: `16.fxpt`
 - Verify the framework is properly installed and linked
 
 #### 3. CocoaPods Issues
 ```
-[!] Unable to find a specification for 'AppDimens'
+[!] Unable to find a specification for 'VirtuesDimens'
 ```
 
 **Solutions:**
@@ -280,12 +280,12 @@ If you're still having issues, try these debug steps:
 
 1. **Check Installation:**
    ```swift
-   import AppDimens
-   print("AppDimens version: \(AppDimens.version)")
+   import VirtuesDimens
+   print("VirtuesDimens version: \(VirtuesDimens.version)")
    ```
 
 2. **Verify Framework:**
-   - Check that AppDimens appears in your project navigator
+   - Check that VirtuesDimens appears in your project navigator
    - Verify it's added to your target's "Frameworks, Libraries, and Embedded Content"
 
 3. **Clean and Rebuild:**
@@ -300,7 +300,7 @@ If you're still having issues, try these debug steps:
 
 ## 🔄 Migration from Android
 
-If you're migrating from the Android version of AppDimens, see the [Migration Guide](MIGRATION.md) for detailed instructions.
+If you're migrating from the Android version of VirtuesDimens, see the [Migration Guide](MIGRATION.md) for detailed instructions.
 
 ### Quick Migration Reference
 
@@ -308,7 +308,7 @@ If you're migrating from the Android version of AppDimens, see the [Migration Gu
 |---------|-----|
 | `16.fxdp` | `16.fxpt` |
 | `100.dydp` | `100.dypt` |
-| `AppDimens.fixed(16).toPx()` | `AppDimens.fixed(16).toPixels()` |
+| `VirtuesDimens.fixed(16).toPx()` | `VirtuesDimens.fixed(16).toPixels()` |
 | `ScreenType.LOWEST` | `ScreenType.lowest` |
 
 ## 📚 Next Steps
@@ -318,7 +318,7 @@ After successful installation:
 1. **Read the documentation**: [README.md](README.md)
 2. **Try the examples**: [Examples/](Examples/)
 3. **Explore the API**: [DOCUMENTATION.md](DOCUMENTATION.md)
-4. **Join the community**: [GitHub Discussions](https://github.com/bodenberg/appdimens/discussions)
+4. **Join the community**: [GitHub Discussions](https://github.com/www-virtues-ag/virtues-dimens/discussions)
 
 ## 🆘 Getting Help
 
@@ -326,7 +326,7 @@ If you encounter issues not covered here:
 
 1. **Check the documentation**: [README.md](README.md)
 2. **Review examples**: [Examples/](Examples/)
-3. **Create an issue**: [GitHub Issues](https://github.com/bodenberg/appdimens/issues)
+3. **Create an issue**: [GitHub Issues](https://github.com/www-virtues-ag/virtues-dimens/issues)
 4. **Contact support**: jean.bodenberg@gmail.com
 
 ## 📄 License
@@ -335,4 +335,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ---
 
-**AppDimens iOS** - Responsive design made simple! 🚀
+**VirtuesDimens iOS** - Responsive design made simple! 🚀

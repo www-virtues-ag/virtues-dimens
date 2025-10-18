@@ -1,4 +1,4 @@
-//[appdimens_ssps](../../../index.md)/[com.appdimens.ssps.compose](../index.md)/[CustomSpEntry](index.md)/[CustomSpEntry](-custom-sp-entry.md)
+//[virtues_ssps](../../../index.md)/[com.virtues.ssps.compose](../index.md)/[CustomSpEntry](index.md)/[CustomSpEntry](-custom-sp-entry.md)
 
 # CustomSpEntry
 

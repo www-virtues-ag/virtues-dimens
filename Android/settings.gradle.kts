@@ -24,11 +24,11 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AppDimens"
+rootProject.name = "VirtuesDimens"
 include(":app")
-include(":appdimens_all")
-include(":appdimens_ssps")
-include(":appdimens_sdps")
-include(":appdimens_dynamic")
-include(":appdimens_library")
-include(":appdimens_games")
+include(":virtues_all")
+include(":virtues_ssps")
+include(":virtues_sdps")
+include(":virtues_dynamic")
+include(":virtues_library")
+include(":virtues_games")

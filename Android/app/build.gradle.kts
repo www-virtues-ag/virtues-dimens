@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.app"
+    namespace = "ag.virtues.dimens.example"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.app"
+        applicationId = "ag.virtues.dimens.example"
         minSdk = 23
         targetSdk = 36
         versionCode = 1
@@ -50,8 +50,8 @@ android {
 dependencies {
     api(project(":appdimens_all"))
     api(project(":appdimens_games"))
-    //implementation("com.appdimens:appdimens-all:1.0.0")
-    //implementation("com.github.bodenberg.appdimens:appdimens-all:1.0.0")
+    //implementation("ag.virtues.dimens:virtues-all:1.0.0")
+    //implementation("com.github.bodenberg.appdimens:virtues-all:1.0.0")
     //implementation(libs.appdimens.all)
 
     implementation(libs.androidx.core.ktx)

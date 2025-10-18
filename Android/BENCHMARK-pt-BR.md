@@ -1,8 +1,8 @@
-# Comparação de Performance: AppDimens vs. Soluções Concorrentes
+# Comparação de Performance: Virtues vs. Soluções Concorrentes
 
 ## Introdução
 
-Existem várias soluções no mercado para lidar com o problema de dimensionamento responsivo em Android. Este documento apresenta uma análise comparativa detalhada de performance, funcionalidade e usabilidade entre a AppDimens e suas principais concorrentes.
+Existem várias soluções no mercado para lidar com o problema de dimensionamento responsivo em Android. Este documento apresenta uma análise comparativa detalhada de performance, funcionalidade e usabilidade entre a Virtues e suas principais concorrentes.
 
 ## 1. Soluções Concorrentes Identificadas
 
@@ -10,7 +10,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 | Solução | Tipo | Manutenção | Comunidade | Licença |
 | :--- | :--- | :--- | :--- | :--- |
-| **AppDimens** | Biblioteca externa | Ativa (2025) | Emergente | Apache 2.0 |
+| **Virtues** | Biblioteca externa | Ativa (2025) | Emergente | Apache 2.0 |
 | **Intuit SDP/SSP** | Biblioteca externa | Ativa | Grande (2.3k stars) | MIT |
 | **Material 3 Adaptive** | Nativa (Jetpack) | Ativa (Google) | Grande | Apache 2.0 |
 | **WindowSizeClass** | Nativa (Jetpack) | Ativa (Google) | Grande | Apache 2.0 |
@@ -23,11 +23,11 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ## 2. Análise Comparativa Detalhada
 
-### 2.1. AppDimens vs. Intuit SDP/SSP
+### 2.1. Virtues vs. Intuit SDP/SSP
 
 #### 2.1.1. Características
 
-| Aspecto | AppDimens | Intuit SDP/SSP |
+| Aspecto | Virtues | Intuit SDP/SSP |
 | :--- | :--- | :--- |
 | **Modelos de Escalonamento** | Fixed, Dynamic, SDP, SSP, Físicas | SDP, SSP apenas |
 | **Suporte a Views** | ✅ Sim | ✅ Sim |
@@ -44,7 +44,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Tempo de Execução
 
-| Operação | AppDimens | Intuit SDP |
+| Operação | Virtues | Intuit SDP |
 | :--- | :--- | :--- |
 | **Lookup simples** | 0.05-0.1 ms | 0.001 µs |
 | **Com 5 regras** | 0.3-0.5 ms | N/A |
@@ -52,22 +52,22 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 | **Cálculo Fixed** | 0.1-0.2 ms | N/A |
 | **Cálculo Dynamic** | 0.05-0.1 ms | N/A |
 
-**Conclusão**: Intuit SDP é **ligeiramente mais rápido** para lookups simples, mas AppDimens oferece mais flexibilidade.
+**Conclusão**: Intuit SDP é **ligeiramente mais rápido** para lookups simples, mas Virtues oferece mais flexibilidade.
 
 ##### Tamanho do APK
 
-| Componente | AppDimens | Intuit SDP |
+| Componente | Virtues | Intuit SDP |
 | :--- | :--- | :--- |
 | **Biblioteca Core** | 2-3 KB | 5-8 KB |
 | **Recursos SDP** | 35-50 KB | 40-60 KB |
 | **Recursos SSP** | 25-35 KB | 30-45 KB |
 | **Total (SDP+SSP)** | 70-90 KB | 80-120 KB |
 
-**Conclusão**: AppDimens é **~10-20% mais compacta** que Intuit SDP.
+**Conclusão**: Virtues é **~10-20% mais compacta** que Intuit SDP.
 
 ##### Tempo de Build
 
-| Operação | AppDimens | Intuit SDP |
+| Operação | Virtues | Intuit SDP |
 | :--- | :--- | :--- |
 | **Processamento de recursos** | 200-300 ms | 250-350 ms |
 | **Compilação de código** | 50 ms | 30 ms |
@@ -77,16 +77,16 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Memória em Tempo de Execução
 
-| Métrica | AppDimens | Intuit SDP |
+| Métrica | Virtues | Intuit SDP |
 | :--- | :--- | :--- |
 | **Overhead de memória** | 1-2 MB | 1.5-2.5 MB |
 | **Tabela de recursos** | 0.5-1 MB | 0.8-1.5 MB |
 
-**Conclusão**: AppDimens usa **ligeiramente menos memória**.
+**Conclusão**: Virtues usa **ligeiramente menos memória**.
 
 #### 2.1.3. Funcionalidade
 
-| Funcionalidade | AppDimens | Intuit SDP |
+| Funcionalidade | Virtues | Intuit SDP |
 | :--- | :--- | :--- |
 | **Escalonamento proporcional** | ✅ Dynamic | ❌ Não |
 | **Escalonamento logarítmico** | ✅ Fixed | ❌ Não |
@@ -96,11 +96,11 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 | **Aspect ratio adjustment** | ✅ Sim | ❌ Não |
 | **Multi-view adjustment** | ✅ Sim | ❌ Não |
 
-**Conclusão**: AppDimens é **muito mais flexível e poderosa**.
+**Conclusão**: Virtues é **muito mais flexível e poderosa**.
 
 #### 2.1.4. Recomendação
 
-**Use AppDimens se:**
+**Use Virtues se:**
 - ✅ Você precisa de regras condicionais complexas
 - ✅ Você quer suporte completo a Views + Compose
 - ✅ Você quer unidades físicas
@@ -114,11 +114,11 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ---
 
-### 2.2. AppDimens vs. Material 3 Adaptive
+### 2.2. Virtues vs. Material 3 Adaptive
 
 #### 2.2.1. Características
 
-| Aspecto | AppDimens | Material 3 Adaptive |
+| Aspecto | Virtues | Material 3 Adaptive |
 | :--- | :--- | :--- |
 | **Tipo** | Biblioteca de dimensionamento | Biblioteca de layout adaptativo |
 | **Propósito** | Escalar dimensões | Adaptar layouts a tamanhos de tela |
@@ -133,7 +133,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Tempo de Execução
 
-| Operação | AppDimens | Material 3 Adaptive |
+| Operação | Virtues | Material 3 Adaptive |
 | :--- | :--- | :--- |
 | **Cálculo de dimensão** | 0.05-0.2 ms | N/A (layout) |
 | **Recomposição** | N/A | 2-5 ms |
@@ -143,35 +143,35 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Tamanho do APK
 
-| Componente | AppDimens | Material 3 Adaptive |
+| Componente | Virtues | Material 3 Adaptive |
 | :--- | :--- | :--- |
 | **Biblioteca Core** | 2-3 KB | 100-150 KB |
 | **Dependências** | 0 KB | 200-300 KB |
 | **Total** | 70-90 KB | 300-450 KB |
 
-**Conclusão**: AppDimens é **3-5x menor**.
+**Conclusão**: Virtues é **3-5x menor**.
 
 ##### Tempo de Build
 
-| Operação | AppDimens | Material 3 Adaptive |
+| Operação | Virtues | Material 3 Adaptive |
 | :--- | :--- | :--- |
 | **Processamento** | 350-500 ms | 300-400 ms |
 | **Compilação Compose** | 0 ms | 200-300 ms |
 | **Total** | 350-500 ms | 500-700 ms |
 
-**Conclusão**: AppDimens é **ligeiramente mais rápido**.
+**Conclusão**: Virtues é **ligeiramente mais rápido**.
 
 ##### Memória em Tempo de Execução
 
-| Métrica | AppDimens | Material 3 Adaptive |
+| Métrica | Virtues | Material 3 Adaptive |
 | :--- | :--- | :--- |
 | **Overhead de memória** | 1-2 MB | 5-10 MB |
 
-**Conclusão**: AppDimens usa **muito menos memória**.
+**Conclusão**: Virtues usa **muito menos memória**.
 
 #### 2.2.3. Funcionalidade
 
-| Funcionalidade | AppDimens | Material 3 Adaptive |
+| Funcionalidade | Virtues | Material 3 Adaptive |
 | :--- | :--- | :--- |
 | **Escalonamento de dimensões** | ✅ Sim | ❌ Não |
 | **Adaptação de layout** | ⚠️ Manual | ✅ Automático |
@@ -183,7 +183,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 #### 2.2.4. Recomendação
 
-**Use AppDimens para:**
+**Use Virtues para:**
 - ✅ Escalar dimensões de forma responsiva
 - ✅ Suportar Views tradicionais
 - ✅ Regras condicionais complexas
@@ -194,15 +194,15 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 - ✅ Navegação adaptativa
 
 **Melhor Abordagem:**
-- ✅ Use **ambas juntas**: AppDimens para dimensões + Material 3 Adaptive para layouts
+- ✅ Use **ambas juntas**: Virtues para dimensões + Material 3 Adaptive para layouts
 
 ---
 
-### 2.3. AppDimens vs. WindowSizeClass Nativo
+### 2.3. Virtues vs. WindowSizeClass Nativo
 
 #### 2.3.1. Características
 
-| Aspecto | AppDimens | WindowSizeClass |
+| Aspecto | Virtues | WindowSizeClass |
 | :--- | :--- | :--- |
 | **Tipo** | Dimensionamento | Classificação de tamanho |
 | **Propósito** | Escalar valores | Categorizar tamanho de tela |
@@ -215,26 +215,26 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Tempo de Execução
 
-| Operação | AppDimens | WindowSizeClass |
+| Operação | Virtues | WindowSizeClass |
 | :--- | :--- | :--- |
 | **Cálculo** | 0.05-0.2 ms | 0.1-0.5 ms |
 | **Lookup** | 0.001 µs | 0.01-0.1 ms |
 
-**Conclusão**: AppDimens é **comparável ou ligeiramente mais rápido**.
+**Conclusão**: Virtues é **comparável ou ligeiramente mais rápido**.
 
 ##### Tamanho do APK
 
-| Componente | AppDimens | WindowSizeClass |
+| Componente | Virtues | WindowSizeClass |
 | :--- | :--- | :--- |
 | **Biblioteca** | 2-3 KB | 50-80 KB |
 | **Dependências** | 0 KB | 100-150 KB |
 | **Total** | 70-90 KB | 150-230 KB |
 
-**Conclusão**: AppDimens é **2-3x menor**.
+**Conclusão**: Virtues é **2-3x menor**.
 
 #### 2.3.3. Funcionalidade
 
-| Funcionalidade | AppDimens | WindowSizeClass |
+| Funcionalidade | Virtues | WindowSizeClass |
 | :--- | :--- | :--- |
 | **Escalonamento de dimensões** | ✅ Sim | ❌ Não |
 | **Classificação de tamanho** | ⚠️ Manual | ✅ Automático |
@@ -245,7 +245,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 #### 2.3.4. Recomendação
 
-**Use AppDimens para:**
+**Use Virtues para:**
 - ✅ Escalar dimensões
 - ✅ Suportar Views
 
@@ -254,15 +254,15 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 - ✅ Tomar decisões de layout
 
 **Melhor Abordagem:**
-- ✅ Use **ambas juntas**: AppDimens para dimensões + WindowSizeClass para decisões de layout
+- ✅ Use **ambas juntas**: Virtues para dimensões + WindowSizeClass para decisões de layout
 
 ---
 
-### 2.4. AppDimens vs. ConstraintLayout
+### 2.4. Virtues vs. ConstraintLayout
 
 #### 2.4.1. Características
 
-| Aspecto | AppDimens | ConstraintLayout |
+| Aspecto | Virtues | ConstraintLayout |
 | :--- | :--- | :--- |
 | **Tipo** | Dimensionamento | Layout |
 | **Propósito** | Escalar valores | Posicionar views |
@@ -275,17 +275,17 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Tempo de Execução
 
-| Operação | AppDimens | ConstraintLayout |
+| Operação | Virtues | ConstraintLayout |
 | :--- | :--- | :--- |
 | **Cálculo de dimensão** | 0.05-0.2 ms | N/A |
 | **Layout pass** | N/A | 1-2 ms |
 | **Total** | 0.05-0.2 ms | 1-2 ms |
 
-**Conclusão**: AppDimens é **muito mais rápido** (não faz layout).
+**Conclusão**: Virtues é **muito mais rápido** (não faz layout).
 
 ##### Tamanho do APK
 
-| Componente | AppDimens | ConstraintLayout |
+| Componente | Virtues | ConstraintLayout |
 | :--- | :--- | :--- |
 | **Biblioteca** | 2-3 KB | 80 KB |
 | **Total** | 70-90 KB | 80 KB |
@@ -294,7 +294,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 #### 2.4.3. Funcionalidade
 
-| Funcionalidade | AppDimens | ConstraintLayout |
+| Funcionalidade | Virtues | ConstraintLayout |
 | :--- | :--- | :--- |
 | **Escalonamento de dimensões** | ✅ Sim | ❌ Não |
 | **Posicionamento de views** | ❌ Não | ✅ Sim |
@@ -305,18 +305,18 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 #### 2.4.4. Recomendação
 
-**Use AppDimens com ConstraintLayout:**
-- ✅ AppDimens para escalar dimensões
+**Use Virtues com ConstraintLayout:**
+- ✅ Virtues para escalar dimensões
 - ✅ ConstraintLayout para posicionar views
 - ✅ Combinação ideal para responsividade
 
 ---
 
-### 2.5. AppDimens vs. Qualificadores de Recurso
+### 2.5. Virtues vs. Qualificadores de Recurso
 
 #### 2.5.1. Características
 
-| Aspecto | AppDimens | Qualificadores |
+| Aspecto | Virtues | Qualificadores |
 | :--- | :--- | :--- |
 | **Tipo** | Biblioteca | Nativa (Android) |
 | **Propósito** | Escalar valores | Selecionar recursos |
@@ -329,7 +329,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Tempo de Execução
 
-| Operação | AppDimens | Qualificadores |
+| Operação | Virtues | Qualificadores |
 | :--- | :--- | :--- |
 | **Lookup de recurso** | 0.05-0.2 ms | 0.001 µs |
 | **Cálculo** | 0.05-0.2 ms | 0 ms |
@@ -338,28 +338,28 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ##### Tamanho do APK
 
-| Componente | AppDimens | Qualificadores |
+| Componente | Virtues | Qualificadores |
 | :--- | :--- | :--- |
 | **Biblioteca** | 2-3 KB | 0 KB |
 | **Recursos** | 70-90 KB | 200-500 KB |
 | **Total** | 70-90 KB | 200-500 KB |
 
-**Conclusão**: AppDimens é **2-5x menor**.
+**Conclusão**: Virtues é **2-5x menor**.
 
 #### 2.5.3. Funcionalidade
 
-| Funcionalidade | AppDimens | Qualificadores |
+| Funcionalidade | Virtues | Qualificadores |
 | :--- | :--- | :--- |
 | **Escalonamento automático** | ✅ Sim | ❌ Não |
 | **Regras condicionais** | ✅ Sim | ⚠️ Limitado |
 | **Suporte a Compose** | ✅ Sim | ❌ Não |
 | **Flexibilidade** | ✅ Alta | ⚠️ Média |
 
-**Conclusão**: AppDimens é **mais flexível e moderno**.
+**Conclusão**: Virtues é **mais flexível e moderno**.
 
 #### 2.5.4. Recomendação
 
-**Use AppDimens se:**
+**Use Virtues se:**
 - ✅ Você quer escalonamento automático
 - ✅ Você quer suportar Compose
 - ✅ Você quer tamanho de APK menor
@@ -376,7 +376,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ### 3.1. Comparação de Todos os Aspectos
 
-| Aspecto | AppDimens | Intuit SDP | Material 3 | WindowSizeClass | ConstraintLayout | Qualificadores |
+| Aspecto | Virtues | Intuit SDP | Material 3 | WindowSizeClass | ConstraintLayout | Qualificadores |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Performance (Tempo)** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 | **Tamanho APK** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
@@ -404,16 +404,16 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 | Biblioteca | Tempo Total | Tempo Médio | Desvio Padrão |
 | :--- | :--- | :--- | :--- |
-| **AppDimens Fixed** | 1.234 ms | 0.123 µs | 0.015 µs |
-| **AppDimens Dynamic** | 0.567 ms | 0.057 µs | 0.008 µs |
-| **AppDimens SDP** | 0.012 ms | 0.001 µs | 0.0001 µs |
+| **Virtues Fixed** | 1.234 ms | 0.123 µs | 0.015 µs |
+| **Virtues Dynamic** | 0.567 ms | 0.057 µs | 0.008 µs |
+| **Virtues SDP** | 0.012 ms | 0.001 µs | 0.0001 µs |
 | **Intuit SDP** | 0.010 ms | 0.001 µs | 0.0001 µs |
 | **Qualificadores** | 0.008 ms | 0.0008 µs | 0.00008 µs |
 | **ConstraintLayout (layout pass)** | 12.567 ms | 1.257 µs | 0.156 µs |
 
 **Conclusão:**
 - Qualificadores e SDP são **mais rápidos** (compilados)
-- AppDimens Dynamic é **comparável** a Intuit SDP
+- Virtues Dynamic é **comparável** a Intuit SDP
 - ConstraintLayout é **muito mais lento** (faz layout)
 
 ### 4.2. Teste de Tamanho do APK
@@ -422,7 +422,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 | Adição | Novo Tamanho | Aumento | Percentual |
 | :--- | :--- | :--- | :--- |
-| **+ AppDimens (all)** | 2.342 MB | +90 KB | +4% |
+| **+ Virtues (all)** | 2.342 MB | +90 KB | +4% |
 | **+ Intuit SDP** | 2.352 MB | +100 KB | +4.4% |
 | **+ Material 3 Adaptive** | 2.602 MB | +350 KB | +15.5% |
 | **+ WindowSizeClass** | 2.402 MB | +150 KB | +6.7% |
@@ -430,7 +430,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 | **+ Jetpack Compose** | 2.966 MB | +714 KB | +31.7% |
 
 **Conclusão:**
-- AppDimens é **uma das mais compactas**
+- Virtues é **uma das mais compactas**
 - Qualificadores adicionam muito tamanho
 - Jetpack Compose é a mais pesada
 
@@ -440,7 +440,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 | Adição | Novo Tempo | Aumento |
 | :--- | :--- | :--- |
-| **+ AppDimens (all)** | 999 ms | +700 ms |
+| **+ Virtues (all)** | 999 ms | +700 ms |
 | **+ Intuit SDP** | 1.049 ms | +750 ms |
 | **+ Material 3 Adaptive** | 1.199 ms | +900 ms |
 | **+ WindowSizeClass** | 1.099 ms | +800 ms |
@@ -449,7 +449,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 **Conclusão:**
 - Qualificadores são **mais rápidos** de compilar
-- AppDimens e Intuit SDP são **comparáveis**
+- Virtues e Intuit SDP são **comparáveis**
 - Material 3 Adaptive é **mais lento**
 
 ### 4.4. Teste de Memória em Tempo de Execução
@@ -458,7 +458,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 | Adição | Nova Memória | Aumento |
 | :--- | :--- | :--- |
-| **+ AppDimens (all)** | 152 MB | +2 MB |
+| **+ Virtues (all)** | 152 MB | +2 MB |
 | **+ Intuit SDP** | 152.5 MB | +2.5 MB |
 | **+ Material 3 Adaptive** | 160 MB | +10 MB |
 | **+ WindowSizeClass** | 155 MB | +5 MB |
@@ -467,7 +467,7 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 **Conclusão:**
 - Qualificadores **não adicionam memória**
-- AppDimens é **muito eficiente**
+- Virtues é **muito eficiente**
 - Jetpack Compose é **muito pesado**
 
 ---
@@ -476,29 +476,29 @@ Existem várias soluções no mercado para lidar com o problema de dimensionamen
 
 ### 5.1. Novo Projeto Android
 
-**Recomendação**: AppDimens + Material 3 Adaptive
+**Recomendação**: Virtues + Material 3 Adaptive
 
 ```gradle
 dependencies {
-    implementation("io.github.bodenberg:appdimens-dynamic:1.0.5")
+    implementation("ag.virtues.dimens:virtues-dynamic:1.0.0")
     implementation("androidx.compose.material3:material3-adaptive:1.0.0")
 }
 ```
 
 **Razão:**
-- AppDimens para escalar dimensões
+- Virtues para escalar dimensões
 - Material 3 Adaptive para layouts adaptativos
 - Suporte completo a Views e Compose
 - Tamanho total: ~160 KB
 
 ### 5.2. Projeto Legado com Views
 
-**Recomendação**: AppDimens SDP/SSP ou Intuit SDP
+**Recomendação**: Virtues SDP/SSP ou Intuit SDP
 
 ```gradle
 dependencies {
-    implementation("io.github.bodenberg:appdimens-sdps:1.0.5")
-    implementation("io.github.bodenberg:appdimens-ssps:1.0.5")
+    implementation("ag.virtues.dimens:virtues-sdps:1.0.0")
+    implementation("ag.virtues.dimens:virtues-ssps:1.0.0")
 }
 ```
 
@@ -543,11 +543,11 @@ res/layout-w720dp/layout.xml
 
 ### 5.5. Máxima Flexibilidade
 
-**Recomendação**: AppDimens (all)
+**Recomendação**: Virtues (all)
 
 ```gradle
 dependencies {
-    implementation("io.github.bodenberg:appdimens-all:1.0.5")
+    implementation("ag.virtues.dimens:virtues-all:1.0.0")
 }
 ```
 
@@ -559,7 +559,7 @@ dependencies {
 
 ---
 
-## 6. Análise SWOT: AppDimens
+## 6. Análise SWOT: Virtues
 
 ### 6.1. Forças (Strengths)
 
@@ -597,9 +597,9 @@ dependencies {
 
 ## 7. Conclusão
 
-### 7.1. Quando Usar AppDimens
+### 7.1. Quando Usar Virtues
 
-**AppDimens é a melhor escolha quando:**
+**Virtues é a melhor escolha quando:**
 
 1. ✅ Você precisa de suporte completo a Views e Compose
 2. ✅ Você quer regras condicionais complexas
@@ -609,7 +609,7 @@ dependencies {
 6. ✅ Você quer unidades físicas (mm/cm/polegada)
 7. ✅ Você quer escalonamento logarítmico (Fixed) ou proporcional (Dynamic)
 
-### 7.2. Quando Não Usar AppDimens
+### 7.2. Quando Não Usar Virtues
 
 **Considere alternativas quando:**
 
@@ -621,7 +621,7 @@ dependencies {
 
 ### 7.3. Recomendação Final
 
-**AppDimens é uma excelente escolha para:**
+**Virtues é uma excelente escolha para:**
 
 - 🏆 Aplicativos híbridos (Views + Compose)
 - 🏆 Projetos que precisam de flexibilidade
@@ -633,17 +633,17 @@ dependencies {
 | Aspecto | Vencedor |
 | :--- | :--- |
 | **Performance** | Qualificadores / SDP |
-| **Tamanho** | AppDimens / Qualificadores |
-| **Flexibilidade** | AppDimens |
-| **Suporte Views+Compose** | AppDimens |
+| **Tamanho** | Virtues / Qualificadores |
+| **Flexibilidade** | Virtues |
+| **Suporte Views+Compose** | Virtues |
 | **Comunidade** | Intuit SDP / Material 3 |
 | **Documentação** | Material 3 / Google |
 | **Manutenção** | Google (nativas) |
 
 **Melhor Estratégia:**
 
-Use **AppDimens como complemento** a soluções nativas:
-- AppDimens para dimensionamento
+Use **Virtues como complemento** a soluções nativas:
+- Virtues para dimensionamento
 - Material 3 Adaptive para layouts
 - WindowSizeClass para decisões de tamanho
 - ConstraintLayout para posicionamento
@@ -654,7 +654,7 @@ Esta combinação oferece **máxima flexibilidade, performance e compatibilidade
 
 ## Referências
 
-- [AppDimens GitHub](https://github.com/bodenberg/appdimens)
+- [Virtues GitHub](https://github.com/bodenberg/virtues)
 - [Intuit SDP GitHub](https://github.com/intuit/sdp)
 - [Material 3 Adaptive](https://developer.android.com/jetpack/androidx/releases/compose-material3-adaptive)
 - [WindowSizeClass](https://developer.android.com/develop/ui/compose/layouts/adaptive/use-window-size-classes)

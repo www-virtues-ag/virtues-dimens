@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensAdjustmentFactors](index.md)/[REFERENCE_AR](-r-e-f-e-r-e-n-c-e_-a-r.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesAdjustmentFactors](index.md)/[REFERENCE_AR](-r-e-f-e-r-e-n-c-e_-a-r.md)
 
 # REFERENCE_AR
 

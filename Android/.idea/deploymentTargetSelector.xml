@@ -5,7 +5,7 @@
       <SelectionState runConfigName="appdimens_library">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="AppDimensPreview">
+      <SelectionState runConfigName="VirtuesPreview">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="app">

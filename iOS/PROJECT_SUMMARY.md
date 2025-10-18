@@ -1,19 +1,19 @@
-# 📱 AppDimens iOS - Resumo do Projeto
+# 📱 VirtuesDimens iOS - Resumo do Projeto
 
 ## 🎯 Visão Geral
 
-O **AppDimens iOS** é uma biblioteca de dimensionamento responsivo que converte automaticamente valores baseados nas dimensões da tela, garantindo consistência visual em qualquer tamanho ou proporção de tela. É a versão iOS equivalente da biblioteca Android AppDimens.
+O **VirtuesDimens iOS** é uma biblioteca de dimensionamento responsivo que converte automaticamente valores baseados nas dimensões da tela, garantindo consistência visual em qualquer tamanho ou proporção de tela. É a versão iOS equivalente da biblioteca Android VirtuesDimens.
 
 ## 🏗️ Arquitetura
 
 ### Componentes Principais
 
-1. **AppDimens** - Classe singleton principal
-2. **AppDimensFixed** - Dimensionamento fixo com ajuste logarítmico
-3. **AppDimensDynamic** - Dimensionamento dinâmico com ajuste proporcional
-4. **AppDimensAdjustmentFactors** - Utilitários para cálculos de fatores de tela
-5. **AppDimensTypes** - Definições de tipos e enums
-6. **AppDimensExtensions** - Extensões para SwiftUI e UIKit
+1. **VirtuesDimens** - Classe singleton principal
+2. **VirtuesDimensFixed** - Dimensionamento fixo com ajuste logarítmico
+3. **VirtuesDimensDynamic** - Dimensionamento dinâmico com ajuste proporcional
+4. **VirtuesDimensAdjustmentFactors** - Utilitários para cálculos de fatores de tela
+5. **VirtuesDimensTypes** - Definições de tipos e enums
+6. **VirtuesDimensExtensions** - Extensões para SwiftUI e UIKit
 
 ### Modelos Matemáticos
 
@@ -33,7 +33,7 @@ O **AppDimens iOS** é uma biblioteca de dimensionamento responsivo que converte
 
 ```
 PROJETO_IOS/
-├── AppDimens.podspec              # Configuração CocoaPods
+├── VirtuesDimens.podspec              # Configuração CocoaPods
 ├── LICENSE                        # Licença Apache 2.0
 ├── README.md                      # Documentação principal
 ├── CHANGELOG.md                   # Histórico de versões
@@ -41,17 +41,17 @@ PROJETO_IOS/
 ├── INSTALLATION.md                # Guia de instalação
 ├── USAGE_GUIDE.md                 # Guia de uso prático
 ├── PROJECT_SUMMARY.md             # Este arquivo
-├── AppDimens.xcodeproj/           # Projeto Xcode
+├── VirtuesDimens.xcodeproj/           # Projeto Xcode
 │   └── project.pbxproj
-├── AppDimens/
+├── VirtuesDimens/
 │   └── Info.plist                 # Configurações do framework
-├── Sources/AppDimens/             # Código fonte
-│   ├── AppDimens.swift            # Classe principal
-│   ├── AppDimensTypes.swift       # Tipos e enums
-│   ├── AppDimensAdjustmentFactors.swift # Cálculos de fatores
-│   ├── AppDimensFixed.swift       # Dimensionamento fixo
-│   ├── AppDimensDynamic.swift     # Dimensionamento dinâmico
-│   └── AppDimensExtensions.swift  # Extensões SwiftUI/UIKit
+├── Sources/VirtuesDimens/             # Código fonte
+│   ├── VirtuesDimens.swift            # Classe principal
+│   ├── VirtuesDimensTypes.swift       # Tipos e enums
+│   ├── VirtuesDimensAdjustmentFactors.swift # Cálculos de fatores
+│   ├── VirtuesDimensFixed.swift       # Dimensionamento fixo
+│   ├── VirtuesDimensDynamic.swift     # Dimensionamento dinâmico
+│   └── VirtuesDimensExtensions.swift  # Extensões SwiftUI/UIKit
 └── Examples/                      # Exemplos de uso
     ├── UIKitExample.swift         # Exemplo UIKit
     └── SwiftUIExample.swift       # Exemplo SwiftUI
@@ -107,7 +107,7 @@ PROJETO_IOS/
 
 4. **Configuração Avançada**
    ```swift
-   AppDimens.fixed(16)
+   VirtuesDimens.fixed(16)
        .screen(.phone, 14)        // Custom para iPhone
        .screen(.tablet, 18)       // Custom para iPad
        .aspectRatio(enable: true) // Ajuste de proporção
@@ -199,12 +199,12 @@ button.frame = CGRect(x: 0, y: 0, width: 200.dypt, height: 44.fxpt)
 
 ### CocoaPods
 ```ruby
-pod 'AppDimens', '~> 1.0'
+pod 'VirtuesDimens', '~> 1.0'
 ```
 
 ### Swift Package Manager
 ```swift
-.package(url: "https://github.com/bodenberg/appdimens.git", from: "1.0.5")
+.package(url: "https://github.com/www-virtues-ag/virtues-dimens.git", from: "1.0.0")
 ```
 
 ### Xcode Project
@@ -246,10 +246,10 @@ Contribuições são bem-vindas! Por favor, sinta-se à vontade para enviar um P
 
 Para dúvidas, problemas ou contribuições:
 
-- **GitHub Issues**: [Criar issue](https://github.com/bodenberg/appdimens/issues)
+- **GitHub Issues**: [Criar issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - **Email**: jean.bodenberg@gmail.com
-- **Documentação**: [GitHub Wiki](https://github.com/bodenberg/appdimens/wiki)
+- **Documentação**: [GitHub Wiki](https://github.com/www-virtues-ag/virtues-dimens/wiki)
 
 ---
 
-**AppDimens iOS** - Dimensionamento responsivo feito simples! 🚀
+**VirtuesDimens iOS** - Dimensionamento responsivo feito simples! 🚀

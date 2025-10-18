@@ -1,10 +1,10 @@
 <div align="center">
-    <img src="../IMAGES/image_sample_devices.png" alt="AppDimens iOS - Responsive Design" height="250"/>
-    <h1>📐 AppDimens iOS</h1>
+    <img src="../IMAGES/image_sample_devices.png" alt="VirtuesDimens iOS - Responsive Design" height="250"/>
+    <h1>📐 VirtuesDimens iOS</h1>
     <p><strong>Smart and Responsive Dimensioning for iOS</strong></p>
     <p>Mathematically responsive scaling that ensures your UI design adapts perfectly to any screen size or aspect ratio — from iPhones to iPads, Apple TV, and Apple Watch.</p>
 
-[![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)](https://github.com/bodenberg/appdimens/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/www-virtues-ag/virtues-dimens/releases)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](../LICENSE)
 [![Platform](https://img.shields.io/badge/platform-iOS%2013+-orange.svg)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/Swift-5.0+-blue.svg)](https://swift.org/)
@@ -12,9 +12,9 @@
 
 ---
 
-## 🎯 What is AppDimens iOS?
+## 🎯 What is VirtuesDimens iOS?
 
-**AppDimens iOS** is a comprehensive dimensioning system that replaces fixed point values with intelligently scaled dimensions based on actual screen characteristics. While iOS's default points are constant, AppDimens treats them as base values that scale predictably across different screen sizes, densities, and aspect ratios.
+**VirtuesDimens iOS** is a comprehensive dimensioning system that replaces fixed point values with intelligently scaled dimensions based on actual screen characteristics. While iOS's default points are constant, VirtuesDimens treats them as base values that scale predictably across different screen sizes, densities, and aspect ratios.
 
 ### 🎨 Key Benefits
 
@@ -37,7 +37,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'AppDimens'
+  pod 'VirtuesDimens'
 end
 ```
 
@@ -49,14 +49,14 @@ pod install
 
 1. **In Xcode:**
    - File → Add Package Dependencies
-   - Enter: `https://github.com/bodenberg/appdimens.git`
-   - Select version: `1.0.5` or higher
+   - Enter: `https://github.com/www-virtues-ag/virtues-dimens.git`
+   - Select version: `1.0.0` or higher
    - Add to your target
 
 2. **Or add to Package.swift:**
 ```swift
 dependencies: [
-    .package(url: "https://github.com/bodenberg/appdimens.git", from: "1.0.5")
+    .package(url: "https://github.com/www-virtues-ag/virtues-dimens.git", from: "1.0.0")
 ]
 ```
 
@@ -64,11 +64,11 @@ dependencies: [
 
 1. **Download the source code:**
 ```bash
-git clone https://github.com/bodenberg/appdimens.git
+git clone https://github.com/www-virtues-ag/virtues-dimens.git
 ```
 
 2. **Copy the Sources folder:**
-   - Copy `Sources/AppDimens/` to your project
+   - Copy `Sources/VirtuesDimens/` to your project
    - Add all Swift files to your Xcode project
 
 ---
@@ -91,7 +91,7 @@ git clone https://github.com/bodenberg/appdimens.git
 
 ```swift
 import SwiftUI
-import AppDimens
+import VirtuesDimens
 
 struct ContentView: View {
     var body: some View {
@@ -162,7 +162,7 @@ struct MyApp: App {
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 20.fxpt) {
-            Text("Enhanced AppDimens")
+            Text("Enhanced VirtuesDimens")
                 .font(.fxSystem(size: 24, weight: .bold))
             
             // Protocol-based API
@@ -192,7 +192,7 @@ struct ContentView: View {
 
 ```swift
 import UIKit
-import AppDimens
+import VirtuesDimens
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -259,14 +259,14 @@ class AdvancedViewController: UIViewController {
     
     private func setupAdvancedUI() {
         // Custom dimensions with device-specific values
-        let customDimension = AppDimens.fixed(16)
+        let customDimension = VirtuesDimens.fixed(16)
             .screen(.phone, 14)           // 14pt for phones
             .screen(.tablet, 18)          // 18pt for tablets
             .aspectRatio(enable: true)    // Enable aspect ratio adjustment
             .toPoints()
         
         // Dynamic with custom screen type
-        let dynamicDimension = AppDimens.dynamic(100)
+        let dynamicDimension = VirtuesDimens.dynamic(100)
             .type(.highest)               // Use highest screen dimension
             .toPoints()
         
@@ -292,7 +292,7 @@ class AdvancedViewController: UIViewController {
 
 ```swift
 // Custom screen qualifiers
-let customDimension = AppDimens.fixed(16)
+let customDimension = VirtuesDimens.fixed(16)
     .screen(.phone, 14)           // 14pt for phones
     .screen(.tablet, 18)          // 18pt for tablets
     .screen(.watch, 12)           // 12pt for Apple Watch
@@ -300,7 +300,7 @@ let customDimension = AppDimens.fixed(16)
     .toPoints()
 
 // Dynamic with custom screen type
-let dynamicDimension = AppDimens.dynamic(100)
+let dynamicDimension = VirtuesDimens.dynamic(100)
     .type(.highest)               // Use highest screen dimension
     .toPoints()
 ```
@@ -354,14 +354,14 @@ struct PercentageLayout: View {
             // 80% of screen width
             Rectangle()
                 .fill(Color.blue.opacity(0.3))
-                .dyFrame(width: AppDimens.percentage(0.8))
+                .dyFrame(width: VirtuesDimens.percentage(0.8))
                 .fxFrame(height: 100)
                 .fxCornerRadius(8)
             
             // 60% of screen width
             Rectangle()
                 .fill(Color.green.opacity(0.3))
-                .dyFrame(width: AppDimens.percentage(0.6))
+                .dyFrame(width: VirtuesDimens.percentage(0.6))
                 .fxFrame(height: 80)
                 .fxCornerRadius(8)
         }
@@ -468,14 +468,14 @@ Final Value = (Base Points / Reference Width) × Current Screen Dimension
 
 ```swift
 // Debug current screen configuration
-let (width, height) = AppDimensAdjustmentFactors.getCurrentScreenDimensions()
+let (width, height) = VirtuesDimensAdjustmentFactors.getCurrentScreenDimensions()
 print("Screen: \(width) × \(height)")
 
 // Debug device type
 print("Device: \(DeviceType.current())")
 
 // Debug adjustment factors
-let factors = AppDimensAdjustmentFactors.calculateAdjustmentFactors()
+let factors = VirtuesDimensAdjustmentFactors.calculateAdjustmentFactors()
 print("Factors: \(factors)")
 ```
 
@@ -496,10 +496,10 @@ print("Factors: \(factors)")
 
 | Class | Description | Key Methods |
 |-------|-------------|-------------|
-| **AppDimens** | Main entry point | `fixed()`, `dynamic()`, `percentage()` |
-| **AppDimensFixed** | Fixed scaling | `screen()`, `aspectRatio()`, `type()` |
-| **AppDimensDynamic** | Dynamic scaling | `screen()`, `type()` |
-| **AppDimensAdjustmentFactors** | Screen calculations | `getCurrentScreenDimensions()`, `calculateAdjustmentFactors()` |
+| **VirtuesDimens** | Main entry point | `fixed()`, `dynamic()`, `percentage()` |
+| **VirtuesDimensFixed** | Fixed scaling | `screen()`, `aspectRatio()`, `type()` |
+| **VirtuesDimensDynamic** | Dynamic scaling | `screen()`, `type()` |
+| **VirtuesDimensAdjustmentFactors** | Screen calculations | `getCurrentScreenDimensions()`, `calculateAdjustmentFactors()` |
 
 ### 🔧 Extension Functions
 
@@ -536,12 +536,12 @@ print("Factors: \(factors)")
 
 ## 🔄 Migration from Android
 
-If you're familiar with the Android version of AppDimens, here's the mapping:
+If you're familiar with the Android version of VirtuesDimens, here's the mapping:
 
 | Android | iOS |
 |---------|-----|
-| `AppDimens.fixed(16).toPx()` | `AppDimens.fixed(16).toPixels()` |
-| `AppDimens.dynamic(100).toDp()` | `AppDimens.dynamic(100).toPoints()` |
+| `VirtuesDimens.fixed(16).toPx()` | `VirtuesDimens.fixed(16).toPixels()` |
+| `VirtuesDimens.dynamic(100).toDp()` | `VirtuesDimens.dynamic(100).toPoints()` |
 | `16.fxdp` | `16.fxpt` |
 | `100.dydp` | `100.dypt` |
 | `ScreenType.LOWEST` | `ScreenType.lowest` |
@@ -553,7 +553,7 @@ If you're familiar with the Android version of AppDimens, here's the mapping:
 
 ### 📖 Complete Documentation
 
-- **[📘 Full Documentation](https://appdimens-project.web.app/)** - Comprehensive guides and API reference
+- **[📘 Full Documentation](https://virtues.ag/)** - Comprehensive guides and API reference
 - **[🎯 Technical Documentation](DOCUMENTATION.md)** - Detailed technical documentation
 - **[📱 Usage Guide](USAGE_GUIDE.md)** - Practical usage guide
 - **[🔧 Installation Guide](INSTALLATION.md)** - Installation instructions
@@ -564,7 +564,7 @@ If you're familiar with the Android version of AppDimens, here's the mapping:
 - **[🚀 Installation Guide](#installation)** - Get started in minutes
 - **[📱 Examples](#usage-examples)** - Real-world usage examples
 - **[🔧 API Reference](#api-reference)** - Complete API documentation
-- **[❓ FAQ](https://appdimens-project.web.app/faq)** - Common questions and answers
+- **[❓ FAQ](https://virtues.ag/faq)** - Common questions and answers
 
 ---
 
@@ -573,12 +573,12 @@ If you're familiar with the Android version of AppDimens, here's the mapping:
 We welcome contributions! Please see our [Contributing Guidelines](../CONTRIBUTING.md) for details.
 
 ### 🐛 Found a Bug?
-- [Create an issue](https://github.com/bodenberg/appdimens/issues)
+- [Create an issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - Include device information and reproduction steps
 - Attach screenshots if applicable
 
 ### 💡 Have an Idea?
-- [Start a discussion](https://github.com/bodenberg/appdimens/discussions)
+- [Start a discussion](https://github.com/www-virtues-ag/virtues-dimens/discussions)
 - Propose new features or improvements
 - Share your use cases
 
@@ -601,7 +601,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](../LIC
 
 ## 🌟 Show Your Support
 
-If AppDimens iOS has helped your project, please consider:
+If VirtuesDimens iOS has helped your project, please consider:
 
 - ⭐ **Starring** this repository
 - 🐦 **Sharing** on social media
@@ -612,5 +612,5 @@ If AppDimens iOS has helped your project, please consider:
 
 <div align="center">
     <p><strong>Made with ❤️ for the iOS development community</strong></p>
-    <p>AppDimens iOS - Where responsive design meets mathematical precision</p>
+    <p>VirtuesDimens iOS - Where responsive design meets mathematical precision</p>
 </div>

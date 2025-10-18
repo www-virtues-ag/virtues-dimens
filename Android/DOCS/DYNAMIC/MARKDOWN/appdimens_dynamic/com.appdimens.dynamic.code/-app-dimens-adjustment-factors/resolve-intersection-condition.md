@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensAdjustmentFactors](index.md)/[resolveIntersectionCondition](resolve-intersection-condition.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesAdjustmentFactors](index.md)/[resolveIntersectionCondition](resolve-intersection-condition.md)
 
 # resolveIntersectionCondition
 

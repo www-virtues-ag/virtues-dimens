@@ -1,9 +1,9 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensPhysicalUnits](index.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesPhysicalUnits](index.md)
 
-# AppDimensPhysicalUnits
+# VirtuesPhysicalUnits
 
 [androidJvm]\
-object [AppDimensPhysicalUnits](index.md)
+object [VirtuesPhysicalUnits](index.md)
 
 EN A singleton object that provides functions for physical unit conversions (MM, CM, Inch) and measurement utilities.
 

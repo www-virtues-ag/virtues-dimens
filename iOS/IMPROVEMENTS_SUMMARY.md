@@ -1,4 +1,4 @@
-# 🚀 AppDimens iOS - Resumo das Melhorias Implementadas
+# 🚀 VirtuesDimens iOS - Resumo das Melhorias Implementadas
 
 ## 📊 Análise da Implementação iOS Existente
 
@@ -7,7 +7,7 @@ Após analisar a implementação iOS existente na pasta `/iOS`, identifiquei vá
 ## ✅ Melhorias Implementadas
 
 ### 1. **Sistema de Environment do SwiftUI**
-- **Arquivo**: `AppDimensEnvironment.swift`
+- **Arquivo**: `VirtuesDimensEnvironment.swift`
 - **Funcionalidade**: Sistema robusto de Environment para injeção de dimensões e fatores de ajuste
 - **Benefício**: Cálculos automáticos baseados nas dimensões reais da tela
 
@@ -19,7 +19,7 @@ DimensProvider {
 ```
 
 ### 2. **Design com Protocolos**
-- **Arquivo**: `AppDimensProtocols.swift`
+- **Arquivo**: `VirtuesDimensProtocols.swift`
 - **Funcionalidade**: API baseada em protocolos mais elegante e flexível
 - **Benefício**: Sintaxe mais limpa e extensível
 
@@ -29,12 +29,12 @@ DimensProvider {
 ```
 
 ### 3. **Calculadoras Especializadas**
-- **Arquivos**: `AppDimensFixedCalculator.swift`, `AppDimensDynamicCalculator.swift`
+- **Arquivos**: `VirtuesDimensFixedCalculator.swift`, `VirtuesDimensDynamicCalculator.swift`
 - **Funcionalidade**: Implementação separada e otimizada para cada tipo de cálculo
 - **Benefício**: Melhor performance e manutenibilidade
 
 ### 4. **Unidades Físicas**
-- **Arquivo**: `AppDimensPhysicalUnits.swift`
+- **Arquivo**: `VirtuesDimensPhysicalUnits.swift`
 - **Funcionalidade**: Conversão completa de unidades físicas (mm, cm, inches)
 - **Benefício**: Suporte a medições reais
 
@@ -45,7 +45,7 @@ DimensProvider {
 ```
 
 ### 5. **Calculadora de Contagem de Itens**
-- **Arquivo**: `AppDimensItemCalculator.swift`
+- **Arquivo**: `VirtuesDimensItemCalculator.swift`
 - **Funcionalidade**: Sistema para calcular quantos itens cabem em um container
 - **Benefício**: Layouts de grid responsivos automáticos
 
@@ -87,7 +87,7 @@ dynamicDp(200) { dimension in
 ### Antes (Implementação Original)
 ```swift
 // API mais verbosa
-let buttonHeight = AppDimens.fixed(48).toPoints()
+let buttonHeight = VirtuesDimens.fixed(48).toPoints()
 let padding = 16.fxpt
 
 // Sem suporte a Environment
@@ -150,26 +150,26 @@ Rectangle().frame(width: 100.fixed().dimension)
 ## 📁 Estrutura de Arquivos Atualizada
 
 ```
-Sources/AppDimens/
-├── AppDimens.swift                    # Classe principal (atualizada)
-├── AppDimensTypes.swift               # Tipos e enums
-├── AppDimensAdjustmentFactors.swift   # Cálculos de fatores
-├── AppDimensFixed.swift               # API legacy (mantida)
-├── AppDimensDynamic.swift             # API legacy (mantida)
-├── AppDimensExtensions.swift          # Extensões (atualizada)
-├── AppDimensEnvironment.swift         # ✨ NOVO: Sistema Environment
-├── AppDimensProtocols.swift           # ✨ NOVO: Design com protocolos
-├── AppDimensFixedCalculator.swift     # ✨ NOVO: Calculadora fixa
-├── AppDimensDynamicCalculator.swift   # ✨ NOVO: Calculadora dinâmica
-├── AppDimensPhysicalUnits.swift       # ✨ NOVO: Unidades físicas
-└── AppDimensItemCalculator.swift      # ✨ NOVO: Calculadora de itens
+Sources/VirtuesDimens/
+├── VirtuesDimens.swift                    # Classe principal (atualizada)
+├── VirtuesDimensTypes.swift               # Tipos e enums
+├── VirtuesDimensAdjustmentFactors.swift   # Cálculos de fatores
+├── VirtuesDimensFixed.swift               # API legacy (mantida)
+├── VirtuesDimensDynamic.swift             # API legacy (mantida)
+├── VirtuesDimensExtensions.swift          # Extensões (atualizada)
+├── VirtuesDimensEnvironment.swift         # ✨ NOVO: Sistema Environment
+├── VirtuesDimensProtocols.swift           # ✨ NOVO: Design com protocolos
+├── VirtuesDimensFixedCalculator.swift     # ✨ NOVO: Calculadora fixa
+├── VirtuesDimensDynamicCalculator.swift   # ✨ NOVO: Calculadora dinâmica
+├── VirtuesDimensPhysicalUnits.swift       # ✨ NOVO: Unidades físicas
+└── VirtuesDimensItemCalculator.swift      # ✨ NOVO: Calculadora de itens
 ```
 
 ## 🚀 Exemplo Completo das Melhorias
 
 ```swift
 import SwiftUI
-import AppDimens
+import VirtuesDimens
 
 @main
 struct MyApp: App {
@@ -187,7 +187,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 20.fxpt) {  // ✨ Sintaxe direta
-            Text("Enhanced AppDimens")
+            Text("Enhanced VirtuesDimens")
                 .font(.fxSystem(size: 24, weight: .bold))
             
             // ✨ Unidades físicas
@@ -226,7 +226,7 @@ struct ContentView: View {
 
 ## 🎉 Conclusão
 
-As melhorias implementadas transformaram a biblioteca AppDimens iOS de uma implementação básica para uma solução robusta e moderna que:
+As melhorias implementadas transformaram a biblioteca VirtuesDimens iOS de uma implementação básica para uma solução robusta e moderna que:
 
 1. **Mantém compatibilidade** com a API original
 2. **Adiciona funcionalidades avançadas** como Environment system e unidades físicas

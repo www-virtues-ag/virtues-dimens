@@ -1,4 +1,4 @@
-//[appdimens_library](../../../index.md)/[com.appdimens.library](../index.md)/[DpQualifierEntry](index.md)/[value](value.md)
+//[virtues_library](../../../index.md)/[com.virtues.library](../index.md)/[DpQualifierEntry](index.md)/[value](value.md)
 
 # value
 

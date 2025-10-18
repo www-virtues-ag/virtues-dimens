@@ -1,6 +1,6 @@
-# 🚀 AppDimens iOS - Usage Guide
+# 🚀 VirtuesDimens iOS - Usage Guide
 
-This comprehensive guide shows you how to use AppDimens iOS in your projects with practical examples and best practices.
+This comprehensive guide shows you how to use VirtuesDimens iOS in your projects with practical examples and best practices.
 
 ## 📋 Table of Contents
 
@@ -23,7 +23,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'YourApp' do
-  pod 'AppDimens'
+  pod 'VirtuesDimens'
 end
 ```
 
@@ -34,8 +34,8 @@ pod install
 ### Swift Package Manager
 
 1. File → Add Package Dependencies
-2. URL: `https://github.com/bodenberg/appdimens.git`
-3. Version: 1.0.5+
+2. URL: `https://github.com/www-virtues-ag/virtues-dimens.git`
+3. Version: 1.0.0+
 
 ## 🎯 Basic Concepts
 
@@ -54,14 +54,14 @@ pod install
 ### Basic Syntax
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
 // Fixed - UI elements
-let buttonHeight = AppDimens.fixed(48).toPoints()
+let buttonHeight = VirtuesDimens.fixed(48).toPoints()
 let padding = 16.fxpt
 
 // Dynamic - layouts
-let cardWidth = AppDimens.dynamic(200).toPoints()
+let cardWidth = VirtuesDimens.dynamic(200).toPoints()
 let containerWidth = 300.dypt
 ```
 
@@ -71,7 +71,7 @@ let containerWidth = 300.dypt
 
 ```swift
 import SwiftUI
-import AppDimens
+import VirtuesDimens
 
 struct ContentView: View {
     var body: some View {
@@ -149,7 +149,7 @@ struct MyApp: App {
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 20.fxpt) {
-            Text("Enhanced AppDimens")
+            Text("Enhanced VirtuesDimens")
                 .font(.fxSystem(size: 24, weight: .bold))
             
             // Protocol-based API
@@ -179,7 +179,7 @@ struct ContentView: View {
 
 ```swift
 import UIKit
-import AppDimens
+import VirtuesDimens
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -261,7 +261,7 @@ textField.dyFontSize(18)          // Dynamic font size
 ### Custom Device Values
 
 ```swift
-let dimension = AppDimens.fixed(16)
+let dimension = VirtuesDimens.fixed(16)
     .screen(.phone, 14)           // 14pt for phones
     .screen(.tablet, 18)          // 18pt for tablets
     .screen(.watch, 12)           // 12pt for Apple Watch
@@ -271,7 +271,7 @@ let dimension = AppDimens.fixed(16)
 ### Screen Qualifiers
 
 ```swift
-let dimension = AppDimens.fixed(16)
+let dimension = VirtuesDimens.fixed(16)
     .screen(.phone, 320, 14)      // 14pt for phones with width >= 320pt
     .screen(.tablet, 768, 18)     // 18pt for tablets with width >= 768pt
     .toPoints()
@@ -280,7 +280,7 @@ let dimension = AppDimens.fixed(16)
 ### Aspect Ratio Adjustment
 
 ```swift
-let dimension = AppDimens.fixed(16)
+let dimension = VirtuesDimens.fixed(16)
     .aspectRatio(enable: true)    // Enable aspect ratio adjustment
     .aspectRatio(enable: true, sensitivity: 0.3)  // Custom sensitivity
     .toPoints()
@@ -289,7 +289,7 @@ let dimension = AppDimens.fixed(16)
 ### Screen Type
 
 ```swift
-let dimension = AppDimens.dynamic(100)
+let dimension = VirtuesDimens.dynamic(100)
     .type(.lowest)                // Use smallest dimension (default)
     .type(.highest)               // Use largest dimension
     .toPoints()
@@ -298,7 +298,7 @@ let dimension = AppDimens.dynamic(100)
 ### Multi-Window
 
 ```swift
-let dimension = AppDimens.fixed(16)
+let dimension = VirtuesDimens.fixed(16)
     .multiWindowAdjustment(ignore: true)  // Ignore multi-window adjustments
     .toPoints()
 ```
@@ -373,14 +373,14 @@ struct PercentageLayout: View {
             // 80% of screen width
             Rectangle()
                 .fill(Color.blue.opacity(0.3))
-                .dyFrame(width: AppDimens.percentage(0.8))
+                .dyFrame(width: VirtuesDimens.percentage(0.8))
                 .fxFrame(height: 100)
                 .fxCornerRadius(8)
             
             // 60% of screen width
             Rectangle()
                 .fill(Color.green.opacity(0.3))
-                .dyFrame(width: AppDimens.percentage(0.6))
+                .dyFrame(width: VirtuesDimens.percentage(0.6))
                 .fxFrame(height: 80)
                 .fxCornerRadius(8)
         }
@@ -442,7 +442,7 @@ struct ComplexLayout: View {
                         .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 1)
                     }
                 }
-                .dyFrame(width: AppDimens.percentage(0.9))
+                .dyFrame(width: VirtuesDimens.percentage(0.9))
             }
             .fxPadding(16)
         }
@@ -457,8 +457,8 @@ struct ComplexLayout: View {
 ```swift
 class ViewController: UIViewController {
     // Cache frequently used dimensions
-    private let buttonHeight = AppDimens.fixed(44).toPoints()
-    private let cardWidth = AppDimens.dynamic(300).toPoints()
+    private let buttonHeight = VirtuesDimens.fixed(44).toPoints()
+    private let cardWidth = VirtuesDimens.dynamic(300).toPoints()
     private let padding = 16.fxpt
     
     override func viewDidLoad() {
@@ -471,29 +471,29 @@ class ViewController: UIViewController {
 ### 2. Global Constants
 
 ```swift
-struct AppDimensConstants {
-    static let buttonHeight = AppDimens.fixed(44)
-    static let cardWidth = AppDimens.dynamic(300)
-    static let padding = AppDimens.fixed(16)
-    static let cornerRadius = AppDimens.fixed(8)
+struct VirtuesDimensConstants {
+    static let buttonHeight = VirtuesDimens.fixed(44)
+    static let cardWidth = VirtuesDimens.dynamic(300)
+    static let padding = VirtuesDimens.fixed(16)
+    static let cornerRadius = VirtuesDimens.fixed(8)
 }
 
 // Usage
-button.heightAnchor.constraint(equalToConstant: AppDimensConstants.buttonHeight.toPoints())
+button.heightAnchor.constraint(equalToConstant: VirtuesDimensConstants.buttonHeight.toPoints())
 ```
 
 ### 3. Custom Extensions
 
 ```swift
-extension AppDimensFixed {
-    static let standardButton = AppDimens.fixed(44)
-    static let standardPadding = AppDimens.fixed(16)
-    static let standardCornerRadius = AppDimens.fixed(8)
+extension VirtuesDimensFixed {
+    static let standardButton = VirtuesDimens.fixed(44)
+    static let standardPadding = VirtuesDimens.fixed(16)
+    static let standardCornerRadius = VirtuesDimens.fixed(8)
 }
 
-extension AppDimensDynamic {
-    static let cardWidth = AppDimens.dynamic(300)
-    static let containerWidth = AppDimens.dynamic(400)
+extension VirtuesDimensDynamic {
+    static let cardWidth = VirtuesDimens.dynamic(300)
+    static let containerWidth = VirtuesDimens.dynamic(400)
 }
 ```
 
@@ -503,11 +503,11 @@ extension AppDimensDynamic {
 // Add in development
 #if DEBUG
 func debugDimensions() {
-    let (width, height) = AppDimensAdjustmentFactors.getCurrentScreenDimensions()
+    let (width, height) = VirtuesDimensAdjustmentFactors.getCurrentScreenDimensions()
     print("📱 Screen: \(width) × \(height)")
     print("📱 Device: \(DeviceType.current())")
     
-    let factors = AppDimensAdjustmentFactors.calculateAdjustmentFactors()
+    let factors = VirtuesDimensAdjustmentFactors.calculateAdjustmentFactors()
     print("📊 Factors: \(factors)")
 }
 #endif
@@ -538,8 +538,8 @@ class OptimizedViewController: UIViewController {
     private let cachedDimensions = CachedDimensions()
     
     private struct CachedDimensions {
-        let buttonHeight = AppDimens.fixed(44).toPoints()
-        let cardWidth = AppDimens.dynamic(300).toPoints()
+        let buttonHeight = VirtuesDimens.fixed(44).toPoints()
+        let cardWidth = VirtuesDimens.dynamic(300).toPoints()
         let padding = 16.fxpt
         let cornerRadius = 8.fxpt
     }
@@ -557,13 +557,13 @@ class OptimizedViewController: UIViewController {
 
 #### 1. Import Not Working
 ```
-No such module 'AppDimens'
+No such module 'VirtuesDimens'
 ```
 
 **Solution:**
 - Ensure you've run `pod install`
 - Clean and rebuild your project
-- Check that the target includes the AppDimens framework
+- Check that the target includes the VirtuesDimens framework
 
 #### 2. Dimensions Not Applying
 ```
@@ -571,7 +571,7 @@ Use of unresolved identifier 'fxpt'
 ```
 
 **Solution:**
-- Make sure you've imported AppDimens: `import AppDimens`
+- Make sure you've imported VirtuesDimens: `import VirtuesDimens`
 - Check that you're using the correct syntax: `16.fxpt`
 
 #### 3. Performance Issues
@@ -583,14 +583,14 @@ Use of unresolved identifier 'fxpt'
 
 ```swift
 // Check current dimensions
-let (width, height) = AppDimensAdjustmentFactors.getCurrentScreenDimensions()
+let (width, height) = VirtuesDimensAdjustmentFactors.getCurrentScreenDimensions()
 print("Screen: \(width) × \(height)")
 
 // Check device type
 print("Device: \(DeviceType.current())")
 
 // Check adjustment factors
-let factors = AppDimensAdjustmentFactors.calculateAdjustmentFactors()
+let factors = VirtuesDimensAdjustmentFactors.calculateAdjustmentFactors()
 print("Factors: \(factors)")
 ```
 
@@ -603,6 +603,6 @@ print("Factors: \(factors)")
 
 ## 🤝 Support
 
-- **GitHub Issues**: [Create issue](https://github.com/bodenberg/appdimens/issues)
+- **GitHub Issues**: [Create issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - **Email**: jean.bodenberg@gmail.com
-- **Documentation**: [GitHub Wiki](https://github.com/bodenberg/appdimens/wiki)
+- **Documentation**: [GitHub Wiki](https://github.com/www-virtues-ag/virtues-dimens/wiki)

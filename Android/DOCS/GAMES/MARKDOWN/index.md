@@ -1,9 +1,9 @@
-//[appdimens_games](index.md)
+//[virtues_games](index.md)
 
-# appdimens_games
+# virtues_games
 
 ## Packages
 
 | Name |
 |---|
-| [com.appdimens.games](appdimens_games/com.appdimens.games/index.md) |
+| [com.virtues.games](virtues_games/com.virtues.games/index.md) |

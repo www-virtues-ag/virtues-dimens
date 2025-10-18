@@ -1,9 +1,9 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensAdjustmentFactors](index.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesAdjustmentFactors](index.md)
 
-# AppDimensAdjustmentFactors
+# VirtuesAdjustmentFactors
 
 [androidJvm]\
-object [AppDimensAdjustmentFactors](index.md)
+object [VirtuesAdjustmentFactors](index.md)
 
 EN A singleton object that provides functions for calculating and resolving adjustment factors and screen qualifiers. Compatible with the traditional Android View System (XML).
 

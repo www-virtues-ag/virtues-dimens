@@ -11,7 +11,7 @@ We release patches for security vulnerabilities in the following versions:
 
 ## Reporting a Vulnerability
 
-We take security vulnerabilities seriously. If you discover a security vulnerability in AppDimens, please report it to us as described below.
+We take security vulnerabilities seriously. If you discover a security vulnerability in Virtues, please report it to us as described below.
 
 ### How to Report
 
@@ -20,7 +20,7 @@ We take security vulnerabilities seriously. If you discover a security vulnerabi
 Instead, please report them via email to:
 
 - **Email**: jean.bodenberg@gmail.com
-- **Subject**: [SECURITY] AppDimens Vulnerability Report
+- **Subject**: [SECURITY] Virtues Vulnerability Report
 
 ### What to Include
 
@@ -52,9 +52,9 @@ Please include the following information in your report:
 
 ### For Developers
 
-When using AppDimens in your applications:
+When using Virtues in your applications:
 
-1. **Keep Updated**: Always use the latest version of AppDimens
+1. **Keep Updated**: Always use the latest version of Virtues
 2. **Review Dependencies**: Regularly review and update dependencies
 3. **Secure Storage**: Don't store sensitive data in dimension calculations
 4. **Input Validation**: Validate all inputs to dimension functions
@@ -62,7 +62,7 @@ When using AppDimens in your applications:
 
 ### For Contributors
 
-When contributing to AppDimens:
+When contributing to Virtues:
 
 1. **Security Review**: All code changes undergo security review
 2. **Dependency Management**: Keep dependencies up to date
@@ -74,14 +74,14 @@ When contributing to AppDimens:
 
 ### Android
 
-- **Permissions**: AppDimens doesn't require any special permissions
+- **Permissions**: Virtues doesn't require any special permissions
 - **Data Storage**: No sensitive data is stored by the library
 - **Network Access**: No network access is required
 - **File System**: No file system access is required
 
 ### iOS
 
-- **Permissions**: AppDimens doesn't require any special permissions
+- **Permissions**: Virtues doesn't require any special permissions
 - **Data Storage**: No sensitive data is stored by the library
 - **Network Access**: No network access is required
 - **File System**: No file system access is required
@@ -90,7 +90,7 @@ When contributing to AppDimens:
 
 ### None Currently Known
 
-There are currently no known security vulnerabilities in AppDimens. If you discover one, please report it using the process described above.
+There are currently no known security vulnerabilities in Virtues. If you discover one, please report it using the process described above.
 
 ## Security Updates
 
@@ -110,7 +110,7 @@ For security-related questions or concerns:
 
 ## Acknowledgments
 
-We appreciate the security researchers and community members who help keep AppDimens secure by responsibly reporting vulnerabilities.
+We appreciate the security researchers and community members who help keep Virtues secure by responsibly reporting vulnerabilities.
 
 ## Legal
 
@@ -123,8 +123,8 @@ By reporting a security vulnerability, you agree to:
 
 ## Disclaimer
 
-This security policy is provided for informational purposes only. While we strive to keep AppDimens secure, we cannot guarantee that it is free from vulnerabilities. Users should implement appropriate security measures in their applications.
+This security policy is provided for informational purposes only. While we strive to keep Virtues secure, we cannot guarantee that it is free from vulnerabilities. Users should implement appropriate security measures in their applications.
 
 ---
 
-**Thank you for helping keep AppDimens secure!** 🛡️
+**Thank you for helping keep Virtues secure!** 🛡️

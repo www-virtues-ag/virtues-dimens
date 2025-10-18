@@ -1,14 +1,14 @@
-# 📱 AppDimens iOS - Estrutura Modular
+# 📱 VirtuesDimens iOS - Estrutura Modular
 
-[![Version](https://img.shields.io/cocoapods/v/AppDimens.svg?style=flat)](https://cocoapods.org/pods/AppDimens)
-[![License](https://img.shields.io/cocoapods/l/AppDimens.svg?style=flat)](https://cocoapods.org/pods/AppDimens)
-[![Platform](https://img.shields.io/cocoapods/p/AppDimens.svg?style=flat)](https://cocoapods.org/pods/AppDimens)
+[![Version](https://img.shields.io/cocoapods/v/VirtuesDimens.svg?style=flat)](https://cocoapods.org/pods/VirtuesDimens)
+[![License](https://img.shields.io/cocoapods/l/VirtuesDimens.svg?style=flat)](https://cocoapods.org/pods/VirtuesDimens)
+[![Platform](https://img.shields.io/cocoapods/p/VirtuesDimens.svg?style=flat)](https://cocoapods.org/pods/VirtuesDimens)
 
-**AppDimens** é um sistema de gerenciamento de dimensões responsivas para iOS que ajusta automaticamente valores baseados nas dimensões da tela, garantindo consistência de layout em qualquer tamanho ou proporção de tela.
+**VirtuesDimens** é um sistema de gerenciamento de dimensões responsivas para iOS que ajusta automaticamente valores baseados nas dimensões da tela, garantindo consistência de layout em qualquer tamanho ou proporção de tela.
 
 ## 🏗️ Arquitetura Modular
 
-A biblioteca AppDimens foi reorganizada em uma estrutura modular para permitir escolha flexível dos componentes necessários:
+A biblioteca VirtuesDimens foi reorganizada em uma estrutura modular para permitir escolha flexível dos componentes necessários:
 
 ### 📦 Módulos Disponíveis
 
@@ -24,31 +24,31 @@ A biblioteca AppDimens foi reorganizada em uma estrutura modular para permitir e
 
 #### Instalação Completa (Recomendado)
 ```ruby
-pod 'AppDimens'
+pod 'VirtuesDimens'
 ```
 Isso inclui automaticamente os módulos Core e UI.
 
 #### Instalação Modular
 ```ruby
 # Apenas o módulo Core
-pod 'AppDimens/Core'
+pod 'VirtuesDimens/Core'
 
 # Core + UI (padrão)
-pod 'AppDimens/UI'
+pod 'VirtuesDimens/UI'
 
 # Core + Games (para desenvolvimento de jogos)
-pod 'AppDimens/Games'
+pod 'VirtuesDimens/Games'
 
 # Todos os módulos
-pod 'AppDimens/Core'
-pod 'AppDimens/UI'
-pod 'AppDimens/Games'
+pod 'VirtuesDimens/Core'
+pod 'VirtuesDimens/UI'
+pod 'VirtuesDimens/Games'
 ```
 
 ### Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/bodenberg/appdimens.git", from: "1.0.5")
+.package(url: "https://github.com/www-virtues-ag/virtues-dimens.git", from: "1.0.0")
 ```
 
 ## 📖 Uso por Módulo
@@ -58,11 +58,11 @@ pod 'AppDimens/Games'
 O módulo Core fornece a funcionalidade básica de gerenciamento de dimensões:
 
 ```swift
-import AppDimensCore
+import VirtuesDimensCore
 
 // Uso básico
-let buttonHeight = AppDimens.fixed(48).toPoints()
-let cardWidth = AppDimens.dynamic(100).toPoints()
+let buttonHeight = VirtuesDimens.fixed(48).toPoints()
+let cardWidth = VirtuesDimens.dynamic(100).toPoints()
 
 // Sintaxe simplificada
 let padding = 16.fxpt
@@ -78,7 +78,7 @@ let height = 1.inch
 O módulo UI adiciona integração com UIKit e SwiftUI:
 
 ```swift
-import AppDimensUI
+import VirtuesDimensUI
 
 // SwiftUI
 struct ContentView: View {
@@ -106,48 +106,48 @@ button.fxCornerRadius(8)
 O módulo Games fornece funcionalidade específica para desenvolvimento de jogos com Metal:
 
 ```swift
-import AppDimensGames
+import VirtuesDimensGames
 import Metal
 
 // Inicialização
 let device = MTLCreateSystemDefaultDevice()!
 let viewport = MTLViewport(originX: 0, originY: 0, width: 1920, height: 1080, znear: 0, zfar: 1)
-AppDimensGames.shared.initialize(device: device, viewport: viewport)
+VirtuesDimensGames.shared.initialize(device: device, viewport: viewport)
 
 // Uso em jogos
-let buttonSize = AppDimensGames.uniform(64.0)
-let fontSize = AppDimensGames.aspectRatio(24.0)
-let spacing = AppDimensGames.viewport(16.0)
+let buttonSize = VirtuesDimensGames.uniform(64.0)
+let fontSize = VirtuesDimensGames.aspectRatio(24.0)
+let spacing = VirtuesDimensGames.viewport(16.0)
 
 // Extensões para simd
 let position = simd_float2(100, 200)
-let scaledPosition = position.gameUniform(AppDimensGames.shared.getMetalManager()!)
+let scaledPosition = position.gameUniform(VirtuesDimensGames.shared.getMetalManager()!)
 
 // Conversão de coordenadas
-let ndcPoint = AppDimensGames.shared.screenToNDC(simd_float2(960, 540))
+let ndcPoint = VirtuesDimensGames.shared.screenToNDC(simd_float2(960, 540))
 ```
 
 ## 🎯 Escolha do Módulo
 
 ### Para Apps iOS Padrão
 ```ruby
-pod 'AppDimens'  # Inclui Core + UI automaticamente
+pod 'VirtuesDimens'  # Inclui Core + UI automaticamente
 ```
 
 ### Para Desenvolvimento de Jogos
 ```ruby
-pod 'AppDimens/Core'
-pod 'AppDimens/Games'
+pod 'VirtuesDimens/Core'
+pod 'VirtuesDimens/Games'
 ```
 
 ### Para Bibliotecas que Precisam Apenas de Cálculos
 ```ruby
-pod 'AppDimens/Core'
+pod 'VirtuesDimens/Core'
 ```
 
 ### Para Apps que Usam Apenas UIKit (sem SwiftUI)
 ```ruby
-pod 'AppDimens/Core'
+pod 'VirtuesDimens/Core'
 # Use apenas as extensões UIKit do módulo Core
 ```
 
@@ -156,7 +156,7 @@ pod 'AppDimens/Core'
 ### Módulo Core
 ```swift
 // Configuração customizada
-let customDimension = AppDimens.fixed(16)
+let customDimension = VirtuesDimens.fixed(16)
     .screen(.phone, 14)           // 14pt para iPhones
     .screen(.tablet, 18)          // 18pt para iPads
     .aspectRatio(enable: true)    // Ativar ajuste de proporção
@@ -169,9 +169,9 @@ let customDimension = AppDimens.fixed(16)
 let performanceSettings = GamePerformanceSettings.highPerformance
 
 // Diferentes modos de escalonamento
-let uniformSize = AppDimensGames.uniform(100.0)      // Escalonamento uniforme
-let horizontalSize = AppDimensGames.horizontal(100.0) // Escalonamento horizontal
-let viewportSize = AppDimensGames.viewport(100.0)     // Escalonamento por viewport
+let uniformSize = VirtuesDimensGames.uniform(100.0)      // Escalonamento uniforme
+let horizontalSize = VirtuesDimensGames.horizontal(100.0) // Escalonamento horizontal
+let viewportSize = VirtuesDimensGames.viewport(100.0)     // Escalonamento por viewport
 ```
 
 ## 📊 Comparação de Módulos
@@ -190,12 +190,12 @@ let viewportSize = AppDimensGames.viewport(100.0)     // Escalonamento por viewp
 
 ### App iOS Padrão
 ```swift
-import AppDimens
+import VirtuesDimens
 
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 20.fxpt) {
-            Text("AppDimens")
+            Text("VirtuesDimens")
                 .font(.fxSystem(size: 24, weight: .bold))
                 .fxPadding(16)
             
@@ -209,15 +209,15 @@ struct ContentView: View {
 
 ### Jogo com Metal
 ```swift
-import AppDimensGames
+import VirtuesDimensGames
 import Metal
 
 class GameRenderer {
-    private let metalManager: AppDimensMetal
+    private let metalManager: VirtuesDimensMetal
     
     init(device: MTLDevice, viewport: MTLViewport) {
-        self.metalManager = AppDimensMetal(device: device, viewport: viewport)
-        AppDimensGames.shared.initialize(device: device, viewport: viewport)
+        self.metalManager = VirtuesDimensMetal(device: device, viewport: viewport)
+        VirtuesDimensGames.shared.initialize(device: device, viewport: viewport)
     }
     
     func renderUI() {
@@ -232,9 +232,9 @@ class GameRenderer {
 
 ## 📚 Documentação Adicional
 
-- [Documentação Core](Sources/AppDimensCore/README.md)
-- [Documentação UI](Sources/AppDimensUI/README.md)
-- [Documentação Games](Sources/AppDimensGames/README.md)
+- [Documentação Core](Sources/VirtuesDimensCore/README.md)
+- [Documentação UI](Sources/VirtuesDimensUI/README.md)
+- [Documentação Games](Sources/VirtuesDimensGames/README.md)
 - [Guia de Migração](MIGRATION_GUIDE.md)
 
 ## 🤝 Contribuição

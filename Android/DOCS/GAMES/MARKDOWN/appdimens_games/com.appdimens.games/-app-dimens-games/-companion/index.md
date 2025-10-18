@@ -1,4 +1,4 @@
-//[appdimens_games](../../../../index.md)/[com.appdimens.games](../../index.md)/[AppDimensGames](../index.md)/[Companion](index.md)
+//[virtues_games](../../../../index.md)/[com.virtues.games](../../index.md)/[VirtuesGames](../index.md)/[Companion](index.md)
 
 # Companion
 
@@ -9,4 +9,4 @@ object [Companion](index.md)
 
 | Name | Summary |
 |---|---|
-| [getInstance](get-instance.md) | [androidJvm]<br>fun [getInstance](get-instance.md)(): [AppDimensGames](../index.md)<br>EN Gets the singleton instance of AppDimensGames. PT Obtém a instância singleton do AppDimensGames. |
+| [getInstance](get-instance.md) | [androidJvm]<br>fun [getInstance](get-instance.md)(): [VirtuesGames](../index.md)<br>EN Gets the singleton instance of VirtuesGames. PT Obtém a instância singleton do VirtuesGames. |

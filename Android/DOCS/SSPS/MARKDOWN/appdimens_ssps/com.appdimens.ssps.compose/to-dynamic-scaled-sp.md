@@ -1,4 +1,4 @@
-//[appdimens_ssps](../../index.md)/[com.appdimens.ssps.compose](index.md)/[toDynamicScaledSp](to-dynamic-scaled-sp.md)
+//[virtues_ssps](../../index.md)/[com.virtues.ssps.compose](index.md)/[toDynamicScaledSp](to-dynamic-scaled-sp.md)
 
 # toDynamicScaledSp
 

@@ -3,14 +3,14 @@
  * GIT: https://github.com/bodenberg/appdimens.git
  * Date: 2025-01-15
  *
- * Library: AppDimens iOS - SwiftUI Example
+ * Library: VirtuesDimens iOS - SwiftUI Example
  *
  * Description:
- * Example showing how to use AppDimens with SwiftUI.
+ * Example showing how to use VirtuesDimens with SwiftUI.
  */
 
 import SwiftUI
-import AppDimens
+import VirtuesDimens
 
 @available(iOS 13.0, *)
 struct SwiftUIExampleView: View {
@@ -23,7 +23,7 @@ struct SwiftUIExampleView: View {
                     
                     // Header section
                     VStack(spacing: 16.fxpt) { // Fixed spacing
-                        Text("AppDimens SwiftUI Example")
+                        Text("VirtuesDimens SwiftUI Example")
                             .font(.fxSystem(size: 24, weight: .bold)) // Fixed font size
                             .multilineTextAlignment(.center)
                         
@@ -46,7 +46,7 @@ struct SwiftUIExampleView: View {
                             Spacer()
                         }
                         
-                        Text("This card demonstrates how AppDimens automatically adjusts dimensions based on screen size while maintaining visual consistency.")
+                        Text("This card demonstrates how VirtuesDimens automatically adjusts dimensions based on screen size while maintaining visual consistency.")
                             .font(.fxSystem(size: 14)) // Fixed font size
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.leading)
@@ -110,7 +110,7 @@ struct SwiftUIExampleView: View {
                         
                         Rectangle()
                             .fill(Color.blue.opacity(0.3))
-                            .dyFrame(width: AppDimens.percentage(0.8)) // 80% of screen width
+                            .dyFrame(width: VirtuesDimens.percentage(0.8)) // 80% of screen width
                             .fxFrame(height: 100) // Fixed height
                             .fxCornerRadius(8) // Fixed corner radius
                         
@@ -124,7 +124,7 @@ struct SwiftUIExampleView: View {
                     Spacer.fxMinLength(20) // Fixed minimum spacer length
                 }
             }
-            .navigationTitle("AppDimens")
+            .navigationTitle("VirtuesDimens")
             .navigationBarTitleDisplayMode(.large)
         }
     }

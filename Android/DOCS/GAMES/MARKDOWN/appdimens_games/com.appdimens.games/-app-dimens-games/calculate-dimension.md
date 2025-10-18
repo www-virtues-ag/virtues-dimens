@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[AppDimensGames](index.md)/[calculateDimension](calculate-dimension.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[VirtuesGames](index.md)/[calculateDimension](calculate-dimension.md)
 
 # calculateDimension
 

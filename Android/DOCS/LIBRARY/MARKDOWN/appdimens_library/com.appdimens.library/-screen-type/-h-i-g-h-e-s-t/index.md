@@ -1,4 +1,4 @@
-//[appdimens_library](../../../../index.md)/[com.appdimens.library](../../index.md)/[ScreenType](../index.md)/[HIGHEST](index.md)
+//[virtues_library](../../../../index.md)/[com.virtues.library](../../index.md)/[ScreenType](../index.md)/[HIGHEST](index.md)
 
 # HIGHEST
 

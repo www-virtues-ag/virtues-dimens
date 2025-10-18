@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameScreenConfig](index.md)/[isLandscape](is-landscape.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameScreenConfig](index.md)/[isLandscape](is-landscape.md)
 
 # isLandscape
 

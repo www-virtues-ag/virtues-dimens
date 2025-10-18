@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimensDynamic](index.md)/[sp](sp.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesDynamic](index.md)/[sp](sp.md)
 
 # sp
 

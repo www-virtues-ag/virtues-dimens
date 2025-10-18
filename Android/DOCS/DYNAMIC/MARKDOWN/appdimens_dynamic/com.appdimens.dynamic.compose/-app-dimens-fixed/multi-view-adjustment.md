@@ -1,9 +1,9 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimensFixed](index.md)/[multiViewAdjustment](multi-view-adjustment.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesFixed](index.md)/[multiViewAdjustment](multi-view-adjustment.md)
 
 # multiViewAdjustment
 
 [androidJvm]\
-fun [multiViewAdjustment](multi-view-adjustment.md)(ignore: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = true): [AppDimensFixed](index.md)
+fun [multiViewAdjustment](multi-view-adjustment.md)(ignore: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = true): [VirtuesFixed](index.md)
 
 EN Ignores multi-view adjustment if set to true.
 

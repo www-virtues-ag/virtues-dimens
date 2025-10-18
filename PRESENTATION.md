@@ -1,6 +1,6 @@
-# 📖 AppDimens Library Overview: The Core of Responsiveness
+# 📖 Virtues Library Overview: The Core of Responsiveness
 
-**AppDimens** is a unified dimension management system designed to solve a central challenge of modern UI development: **ensuring that layouts and user experiences remain consistent and visually comfortable across any screen size, ratio, or device type.**
+**Virtues** is a unified dimension management system designed to solve a central challenge of modern UI development: **ensuring that layouts and user experiences remain consistent and visually comfortable across any screen size, ratio, or device type.**
 
 It goes beyond the limitations of standard density-independent pixels (**Dp/Pt**), treating these values as mere starting points, which are then refined by sophisticated mathematical scaling algorithms.
 
@@ -9,14 +9,14 @@ It goes beyond the limitations of standard density-independent pixels (**Dp/Pt**
 ```kotlin
 dependencies {
     // Core (Dynamic + Fixed)
-    implementation("com.github.bodenberg.appdimens:appdimens-dynamic:1.0.5")
+    implementation("com.github.bodenberg.virtues:virtues-dynamic:1.0.0")
 
     // SDP & SSP scaling (optional)
-    implementation("com.github.bodenberg.appdimens:appdimens-sdps:1.0.5")
-    implementation("com.github.bodenberg.appdimens:appdimens-ssps:1.0.5")
+    implementation("com.github.bodenberg.virtues:virtues-sdps:1.0.0")
+    implementation("com.github.bodenberg.virtues:virtues-ssps:1.0.0")
 
     // All in one
-    implementation("com.github.bodenberg.appdimens:appdimens-all:1.0.5")
+    implementation("com.github.bodenberg.virtues:virtues-all:1.0.0")
 }
 
 maven { url 'https://jitpack.io' } //or maven central
@@ -25,14 +25,14 @@ maven { url 'https://jitpack.io' } //or maven central
 ```kotlin
 dependencies {
     // Core (Dynamic + Fixed)
-    implementation("io.github.bodenberg:appdimens-dynamic:1.0.5")
+    implementation("ag.virtues.dimens:virtues-dynamic:1.0.0")
 
     // SDP & SSP scaling (optional)
-    implementation("io.github.bodenberg:appdimens-sdps:1.0.5")
-    implementation("io.github.bodenberg:appdimens-ssps:1.0.5")
+    implementation("ag.virtues.dimens:virtues-sdps:1.0.0")
+    implementation("ag.virtues.dimens:virtues-ssps:1.0.0")
 
     // All in one
-    implementation("io.github.bodenberg:appdimens-all:1.0.5")
+    implementation("ag.virtues.dimens:virtues-all:1.0.0")
 }
 
 mavenCentral()
@@ -40,7 +40,7 @@ mavenCentral()
 
 ### 🌐 Unified Principle and Cross-Platform Compatibility
 
-**AppDimens** is built on a platform-agnostic architecture. Its core scaling logic is identical across platforms, ensuring consistent dimension behavior wherever your code runs.
+**Virtues** is built on a platform-agnostic architecture. Its core scaling logic is identical across platforms, ensuring consistent dimension behavior wherever your code runs.
 
 | Platform              | Integration                                                                                | Supported Paradigms                                 |
 | :-------------------- | :----------------------------------------------------------------------------------------- | :-------------------------------------------------- |
@@ -51,7 +51,7 @@ mavenCentral()
 
 ### 🧠 The Core of the Library: Two Scaling Models
 
-The power of AppDimens lies in its two mathematical scaling models. Developers can choose the best fit for each component, achieving responsiveness that goes far beyond simple “screen size” rules.
+The power of Virtues lies in its two mathematical scaling models. Developers can choose the best fit for each component, achieving responsiveness that goes far beyond simple “screen size” rules.
 
 #### 1. Fixed (FX): Subtle and Logarithmic Scaling
 
@@ -69,7 +69,7 @@ The power of AppDimens lies in its two mathematical scaling models. Developers c
 
 ### ⚡ Performance and Architecture
 
-AppDimens is optimized for **maximum runtime efficiency**.
+Virtues is optimized for **maximum runtime efficiency**.
 
 * **Cached Factors:** Mathematical adjustment factors (**FX** and **DY**) are calculated only once per screen configuration change (e.g., rotation). Results are cached (or remembered in Compose) and reused instantly.
 * **Low Overhead:** The final dimension calculation is simply the base Dp multiplied by the precomputed adjustment factor. This results in **negligible** performance overhead during UI rendering.
@@ -82,16 +82,16 @@ AppDimens is optimized for **maximum runtime efficiency**.
 1. **Physical Units (MM, CM, INCH):** A built-in conversion system allows you to define dimensions based on real-world measurements (e.g., $1\text{cm}$ margin), essential for precision applications (wearables, print).
 2. **Advanced Qualifiers:** Supports scaling based on custom qualifiers like `WIDTH` (total width), `HEIGHT` (total height), or `SMALL_WIDTH` (smallest screen side), and can be conditioned by device type (**UI Mode Type**: TV, Car, Watch).
 3. **Smart Layout Utility:** The `calculateAvailableItemCount` function calculates how many items of a defined Dp/Pt size and spacing can fit into the available container space, optimizing grid layouts dynamically.
-4. **View Integration (Android):** The **`AppDimens`** object acts as a *Gateway* to the traditional View system, enabling direct conversion to Pixels (`fixedPx`, `dynamicPx`) and seamless integration through **Data Binding Adapters** in XML.
+4. **View Integration (Android):** The **`Virtues`** object acts as a *Gateway* to the traditional View system, enabling direct conversion to Pixels (`fixedPx`, `dynamicPx`) and seamless integration through **Data Binding Adapters** in XML.
 
 ---
 
 ### 🛑 Limitations and Considerations
 
-* **Code Dependency:** Unlike resource file–based solutions, AppDimens requires developers to use code extensions (`.fxdp`, `.dydp`) or Gateway methods.
+* **Code Dependency:** Unlike resource file–based solutions, Virtues requires developers to use code extensions (`.fxdp`, `.dydp`) or Gateway methods.
 * **Physical Conversion Accuracy:** The accuracy of physical unit conversions (MM/INCH) depends on the reliability of the device’s reported density metadata (`xdpi`, `ydpi`).
 
 ---
 
-In summary, **AppDimens** delivers a powerful and mathematically sound toolset for creating truly adaptive interfaces—regardless of device or platform.
+In summary, **Virtues** delivers a powerful and mathematically sound toolset for creating truly adaptive interfaces—regardless of device or platform.
 

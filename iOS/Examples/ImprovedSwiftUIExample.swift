@@ -3,14 +3,14 @@
  * GIT: https://github.com/bodenberg/appdimens.git
  * Date: 2025-01-15
  *
- * Library: AppDimens iOS - Improved SwiftUI Example
+ * Library: VirtuesDimens iOS - Improved SwiftUI Example
  *
  * Description:
- * Example showing the improved AppDimens with Environment system, protocols, and new features.
+ * Example showing the improved VirtuesDimens with Environment system, protocols, and new features.
  */
 
 import SwiftUI
-import AppDimens
+import VirtuesDimens
 
 @available(iOS 13.0, *)
 struct ImprovedSwiftUIExampleView: View {
@@ -24,7 +24,7 @@ struct ImprovedSwiftUIExampleView: View {
                     
                     // Header section
                     VStack(spacing: 16.fxpt) { // Fixed spacing
-                        Text("AppDimens iOS - Improved Version")
+                        Text("VirtuesDimens iOS - Improved Version")
                             .font(.fxSystem(size: 24, weight: .bold)) // Fixed font size
                             .multilineTextAlignment(.center)
                         
@@ -190,7 +190,7 @@ struct ImprovedSwiftUIExampleView: View {
                     Spacer.fxMinLength(20) // Fixed minimum spacer length
                 }
             }
-            .navigationTitle("AppDimens Enhanced")
+            .navigationTitle("VirtuesDimens Enhanced")
             .navigationBarTitleDisplayMode(.large)
         }
     }
@@ -207,7 +207,7 @@ struct ImprovedSwiftUIExampleView_Previews: PreviewProvider {
 
 @available(iOS 13.0, *)
 @main
-struct ImprovedAppDimensApp: App {
+struct ImprovedVirtuesDimensApp: App {
     var body: some Scene {
         WindowGroup {
             // DimensProvider is ESSENTIAL for the new Environment-based system

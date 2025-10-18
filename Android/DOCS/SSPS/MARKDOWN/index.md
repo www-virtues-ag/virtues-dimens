@@ -1,10 +1,10 @@
-//[appdimens_ssps](index.md)
+//[virtues_ssps](index.md)
 
-# appdimens_ssps
+# virtues_ssps
 
 ## Packages
 
 | Name |
 |---|
-| [com.appdimens.ssps.code](appdimens_ssps/com.appdimens.ssps.code/index.md) |
-| [com.appdimens.ssps.compose](appdimens_ssps/com.appdimens.ssps.compose/index.md) |
+| [com.virtues.ssps.code](virtues_ssps/com.virtues.ssps.code/index.md) |
+| [com.virtues.ssps.compose](virtues_ssps/com.virtues.ssps.compose/index.md) |

@@ -1,14 +1,14 @@
-# Resultados dos Testes da Biblioteca AppDimens iOS
+# Resultados dos Testes da Biblioteca VirtuesDimens iOS
 
 ## Resumo dos Testes Realizados
 
 ### ✅ Testes de Estrutura
 - **Arquivos de código**: Todos os arquivos Swift estão presentes e bem estruturados
 - **Módulos**: 4 módulos principais identificados:
-  - `AppDimens` (módulo principal)
-  - `AppDimensCore` (funcionalidades básicas)
-  - `AppDimensUI` (integração com SwiftUI)
-  - `AppDimensGames` (funcionalidades para jogos)
+  - `VirtuesDimens` (módulo principal)
+  - `VirtuesDimensCore` (funcionalidades básicas)
+  - `VirtuesDimensUI` (integração com SwiftUI)
+  - `VirtuesDimensGames` (funcionalidades para jogos)
 
 ### ✅ Testes de Sintaxe
 - **Imports**: Verificados e corrigidos problemas de importação circular
@@ -16,8 +16,8 @@
 - **Dependências**: Todas as dependências estão corretamente definidas
 
 ### ✅ Testes de Funcionalidade
-- **Classes principais**: `AppDimensFixed`, `AppDimensDynamic`, `AppDimensAdjustmentFactors`
-- **Funções estáticas**: `AppDimens.fixed()`, `AppDimens.dynamic()` funcionando
+- **Classes principais**: `VirtuesDimensFixed`, `VirtuesDimensDynamic`, `VirtuesDimensAdjustmentFactors`
+- **Funções estáticas**: `VirtuesDimens.fixed()`, `VirtuesDimens.dynamic()` funcionando
 - **Extensões**: Extensões para `CGFloat` e `Int` implementadas
 - **Tipos de dados**: `DeviceType`, `ScreenType`, `UnitType` definidos
 
@@ -34,29 +34,29 @@
 **Solução**: Removidas importações desnecessárias entre módulos do mesmo projeto
 
 ### 2. Referências Incorretas
-**Problema**: Arquivos tentando usar `AppDimens.fixed()` sem importação adequada
-**Solução**: Adicionadas importações `import AppDimensCore` onde necessário
+**Problema**: Arquivos tentando usar `VirtuesDimens.fixed()` sem importação adequada
+**Solução**: Adicionadas importações `import VirtuesDimensCore` onde necessário
 
 ### 3. Estrutura de Módulos
 **Problema**: Confusão na organização dos módulos
 **Solução**: Clarificada a estrutura:
-- `AppDimens`: Módulo principal com exportações
-- `AppDimensCore`: Funcionalidades básicas
-- `AppDimensUI`: Extensões para SwiftUI
-- `AppDimensGames`: Funcionalidades para jogos
+- `VirtuesDimens`: Módulo principal com exportações
+- `VirtuesDimensCore`: Funcionalidades básicas
+- `VirtuesDimensUI`: Extensões para SwiftUI
+- `VirtuesDimensGames`: Funcionalidades para jogos
 
 ## Funcionalidades Testadas
 
 ### ✅ Dimensões Fixas (Fixed Dimensions)
 ```swift
-let fixedDimension = AppDimens.fixed(100)
+let fixedDimension = VirtuesDimens.fixed(100)
 let points = fixedDimension.toPoints()
 let pixels = fixedDimension.toPixels()
 ```
 
 ### ✅ Dimensões Dinâmicas (Dynamic Dimensions)
 ```swift
-let dynamicDimension = AppDimens.dynamic(100)
+let dynamicDimension = VirtuesDimens.dynamic(100)
 let points = dynamicDimension.toPoints()
 let pixels = dynamicDimension.toPixels()
 ```
@@ -72,7 +72,7 @@ let dynamicPixels = value.dypx  // Dynamic pixels
 
 ### ✅ Configurações Avançadas
 ```swift
-let customDimension = AppDimens.fixed(100)
+let customDimension = VirtuesDimens.fixed(100)
     .screen(.phone, 120)  // Custom value for phones
     .screen(.tablet, 150)  // Custom value for tablets
     .aspectRatio(enable: true, sensitivity: 0.7)
@@ -101,7 +101,7 @@ label.frame = CGRect(x: 0, y: 0, width: 200.fxpt, height: 50.fxpt)
 
 ### ✅ Status: FUNCIONANDO CORRETAMENTE
 
-A biblioteca AppDimens iOS está funcionando corretamente após as correções realizadas. Todos os módulos estão bem estruturados, as dependências estão corretas e as funcionalidades principais estão implementadas.
+A biblioteca VirtuesDimens iOS está funcionando corretamente após as correções realizadas. Todos os módulos estão bem estruturados, as dependências estão corretas e as funcionalidades principais estão implementadas.
 
 ### Funcionalidades Confirmadas:
 - ✅ Cálculos de dimensão responsiva
@@ -125,5 +125,5 @@ A biblioteca AppDimens iOS está funcionando corretamente após as correções r
 
 ---
 *Teste realizado em: $(date)*
-*Versão da biblioteca: 1.0.5*
+*Versão da biblioteca: 1.0.0*
 *Status: ✅ APROVADO*

@@ -1,9 +1,9 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimensDynamic](index.md)/[type](type.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesDynamic](index.md)/[type](type.md)
 
 # type
 
 [androidJvm]\
-fun [type](type.md)(type: ScreenType): [AppDimensDynamic](index.md)
+fun [type](type.md)(type: ScreenType): [VirtuesDynamic](index.md)
 
 EN Sets the screen dimension type to be used as a reference (HIGHEST or LOWEST).
 

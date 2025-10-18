@@ -1,4 +1,4 @@
-//[appdimens_library](../../../index.md)/[com.appdimens.library](../index.md)/[ScreenAdjustmentFactors](index.md)/[adjustmentFactorLowest](adjustment-factor-lowest.md)
+//[virtues_library](../../../index.md)/[com.virtues.library](../index.md)/[ScreenAdjustmentFactors](index.md)/[adjustmentFactorLowest](adjustment-factor-lowest.md)
 
 # adjustmentFactorLowest
 

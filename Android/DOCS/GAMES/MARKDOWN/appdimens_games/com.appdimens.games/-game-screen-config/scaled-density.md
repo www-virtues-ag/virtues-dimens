@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameScreenConfig](index.md)/[scaledDensity](scaled-density.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameScreenConfig](index.md)/[scaledDensity](scaled-density.md)
 
 # scaledDensity
 

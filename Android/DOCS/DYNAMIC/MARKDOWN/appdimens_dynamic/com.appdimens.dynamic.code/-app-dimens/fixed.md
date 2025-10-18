@@ -1,11 +1,11 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimens](index.md)/[fixed](fixed.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[Virtues](index.md)/[fixed](fixed.md)
 
 # fixed
 
 [androidJvm]\
-fun [fixed](fixed.md)(initialValueDp: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [AppDimensFixed](../-app-dimens-fixed/index.md)
+fun [fixed](fixed.md)(initialValueDp: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [VirtuesFixed](../-app-dimens-fixed/index.md)
 
-EN Initializes the `AppDimensFixed` constructor from a Float value in Dp.
+EN Initializes the `VirtuesFixed` constructor from a Float value in Dp.
 
 #### Parameters
 
@@ -17,9 +17,9 @@ androidJvm
 | ignoreMultiViewAdjustment | Se verdadeiro, ignora os ajustes de multi-view. |
 
 [androidJvm]\
-fun [fixed](fixed.md)(initialValueInt: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [AppDimensFixed](../-app-dimens-fixed/index.md)
+fun [fixed](fixed.md)(initialValueInt: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [VirtuesFixed](../-app-dimens-fixed/index.md)
 
-EN Initializes the `AppDimensFixed` constructor from an Int value in Dp.
+EN Initializes the `VirtuesFixed` constructor from an Int value in Dp.
 
 #### Parameters
 

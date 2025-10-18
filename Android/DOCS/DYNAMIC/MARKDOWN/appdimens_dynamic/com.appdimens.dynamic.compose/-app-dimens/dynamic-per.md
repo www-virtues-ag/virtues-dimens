@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimens](index.md)/[dynamicPer](dynamic-per.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[Virtues](index.md)/[dynamicPer](dynamic-per.md)
 
 # dynamicPer
 

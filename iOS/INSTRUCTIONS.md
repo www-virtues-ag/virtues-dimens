@@ -1,14 +1,14 @@
-# 📋 Instruções de Uso do Projeto AppDimens iOS
+# 📋 Instruções de Uso do Projeto VirtuesDimens iOS
 
 ## 🎯 Objetivo
 
-Este projeto converte a biblioteca Android AppDimens para iOS, criando uma biblioteca Swift/SwiftUI que pode ser usada com CocoaPods.
+Este projeto converte a biblioteca Android VirtuesDimens para iOS, criando uma biblioteca Swift/SwiftUI que pode ser usada com CocoaPods.
 
 ## 📁 Estrutura Criada
 
 ```
 PROJETO_IOS/
-├── AppDimens.podspec              # Configuração para CocoaPods
+├── VirtuesDimens.podspec              # Configuração para CocoaPods
 ├── LICENSE                        # Licença Apache 2.0
 ├── README.md                      # Documentação principal
 ├── CHANGELOG.md                   # Histórico de versões
@@ -17,17 +17,17 @@ PROJETO_IOS/
 ├── USAGE_GUIDE.md                 # Guia prático de uso
 ├── PROJECT_SUMMARY.md             # Resumo completo do projeto
 ├── INSTRUCTIONS.md                # Este arquivo
-├── AppDimens.xcodeproj/           # Projeto Xcode configurado
+├── VirtuesDimens.xcodeproj/           # Projeto Xcode configurado
 │   └── project.pbxproj
-├── AppDimens/
+├── VirtuesDimens/
 │   └── Info.plist                 # Configurações do framework
-├── Sources/AppDimens/             # Código fonte Swift
-│   ├── AppDimens.swift            # Classe principal singleton
-│   ├── AppDimensTypes.swift       # Tipos, enums e estruturas
-│   ├── AppDimensAdjustmentFactors.swift # Cálculos de fatores de tela
-│   ├── AppDimensFixed.swift       # Dimensionamento fixo (FX)
-│   ├── AppDimensDynamic.swift     # Dimensionamento dinâmico (DY)
-│   └── AppDimensExtensions.swift  # Extensões para SwiftUI e UIKit
+├── Sources/VirtuesDimens/             # Código fonte Swift
+│   ├── VirtuesDimens.swift            # Classe principal singleton
+│   ├── VirtuesDimensTypes.swift       # Tipos, enums e estruturas
+│   ├── VirtuesDimensAdjustmentFactors.swift # Cálculos de fatores de tela
+│   ├── VirtuesDimensFixed.swift       # Dimensionamento fixo (FX)
+│   ├── VirtuesDimensDynamic.swift     # Dimensionamento dinâmico (DY)
+│   └── VirtuesDimensExtensions.swift  # Extensões para SwiftUI e UIKit
 └── Examples/                      # Exemplos práticos
     ├── UIKitExample.swift         # Exemplo completo com UIKit
     └── SwiftUIExample.swift       # Exemplo completo com SwiftUI
@@ -43,7 +43,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'SeuApp' do
-  pod 'AppDimens'
+  pod 'VirtuesDimens'
 end
 ```
 
@@ -54,14 +54,14 @@ pod install
 ### 2. Uso Básico
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
 // Fixed scaling - para elementos de UI
-let buttonHeight = AppDimens.fixed(48).toPoints()
+let buttonHeight = VirtuesDimens.fixed(48).toPoints()
 let padding = 16.fxpt
 
 // Dynamic scaling - para layouts
-let cardWidth = AppDimens.dynamic(200).toPoints()
+let cardWidth = VirtuesDimens.dynamic(200).toPoints()
 let containerWidth = 300.dypt
 ```
 
@@ -69,7 +69,7 @@ let containerWidth = 300.dypt
 
 ```swift
 import SwiftUI
-import AppDimens
+import VirtuesDimens
 
 struct ContentView: View {
     var body: some View {
@@ -90,7 +90,7 @@ struct ContentView: View {
 
 ```swift
 import UIKit
-import AppDimens
+import VirtuesDimens
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -109,11 +109,11 @@ class ViewController: UIViewController {
 
 ### ✅ Core Features
 
-- **AppDimens**: Classe singleton principal
-- **AppDimensFixed**: Dimensionamento fixo com ajuste logarítmico
-- **AppDimensDynamic**: Dimensionamento dinâmico com ajuste proporcional
-- **AppDimensAdjustmentFactors**: Cálculos de fatores de tela
-- **AppDimensTypes**: Tipos e enums (DeviceType, ScreenType, etc.)
+- **VirtuesDimens**: Classe singleton principal
+- **VirtuesDimensFixed**: Dimensionamento fixo com ajuste logarítmico
+- **VirtuesDimensDynamic**: Dimensionamento dinâmico com ajuste proporcional
+- **VirtuesDimensAdjustmentFactors**: Cálculos de fatores de tela
+- **VirtuesDimensTypes**: Tipos e enums (DeviceType, ScreenType, etc.)
 
 ### ✅ Extensões
 
@@ -133,8 +133,8 @@ class ViewController: UIViewController {
 
 | Android | iOS |
 |---------|-----|
-| `AppDimens.fixed(16).toPx()` | `AppDimens.fixed(16).toPixels()` |
-| `AppDimens.dynamic(100).toDp()` | `AppDimens.dynamic(100).toPoints()` |
+| `VirtuesDimens.fixed(16).toPx()` | `VirtuesDimens.fixed(16).toPixels()` |
+| `VirtuesDimens.dynamic(100).toDp()` | `VirtuesDimens.dynamic(100).toPoints()` |
 | `16.fxdp` | `16.fxpt` |
 | `100.dydp` | `100.dypt` |
 | `ScreenType.LOWEST` | `ScreenType.lowest` |
@@ -188,7 +188,7 @@ struct PercentageLayout: View {
     var body: some View {
         Rectangle()
             .fill(Color.blue.opacity(0.3))
-            .dyFrame(width: AppDimens.percentage(0.8))  // 80% da tela
+            .dyFrame(width: VirtuesDimens.percentage(0.8))  // 80% da tela
             .fxFrame(height: 100)
             .fxCornerRadius(8)
     }
@@ -246,21 +246,21 @@ struct PercentageLayout: View {
 
 2. **Dimensões não aplicam**
    ```swift
-   import AppDimens  // Verifique se importou
+   import VirtuesDimens  // Verifique se importou
    16.fxpt          // Confirme a sintaxe
    ```
 
 3. **Performance lenta**
    ```swift
    // Cache dimensões frequentemente usadas
-   private let buttonHeight = AppDimens.fixed(44).toPoints()
+   private let buttonHeight = VirtuesDimens.fixed(44).toPoints()
    ```
 
 ## 📞 Suporte
 
-- **GitHub Issues**: [Criar issue](https://github.com/bodenberg/appdimens/issues)
+- **GitHub Issues**: [Criar issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - **Email**: jean.bodenberg@gmail.com
-- **Documentação**: [GitHub Wiki](https://github.com/bodenberg/appdimens/wiki)
+- **Documentação**: [GitHub Wiki](https://github.com/www-virtues-ag/virtues-dimens/wiki)
 
 ## 📄 Licença
 
@@ -268,6 +268,6 @@ Este projeto está licenciado sob a Licença Apache 2.0 - veja o arquivo [LICENS
 
 ---
 
-**AppDimens iOS** - Dimensionamento responsivo feito simples! 🚀
+**VirtuesDimens iOS** - Dimensionamento responsivo feito simples! 🚀
 
 *Convertido com sucesso do projeto Android para iOS, mantendo toda a funcionalidade e adicionando suporte nativo para SwiftUI e UIKit.*

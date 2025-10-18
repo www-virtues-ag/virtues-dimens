@@ -1,10 +1,10 @@
-# 📚 AppDimens: Documentação Abrangente
+# 📚 Virtues: Documentação Abrangente
 
-## 1\. O que é a Biblioteca AppDimens?
+## 1\. O que é a Biblioteca Virtues?
 
-**AppDimens** é um sistema de dimensionamento que substitui o uso direto de valores fixos em **Dp** (Density-independent Pixel) por valores ajustados dinamicamente com base nas dimensões reais da tela.
+**Virtues** é um sistema de dimensionamento que substitui o uso direto de valores fixos em **Dp** (Density-independent Pixel) por valores ajustados dinamicamente com base nas dimensões reais da tela.
 
-Enquanto o Dp padrão do Android (1 Dp = 1/160 polegada) é constante, o AppDimens o trata como um **valor base** que é escalado de forma inteligente (e previsível) em telas de diferentes tamanhos e proporções.
+Enquanto o Dp padrão do Android (1 Dp = 1/160 polegada) é constante, o Virtues o trata como um **valor base** que é escalado de forma inteligente (e previsível) em telas de diferentes tamanhos e proporções.
 
 ### 🎯 Público-Alvo
 
@@ -42,16 +42,16 @@ A biblioteca foi projetada para ter um impacto mínimo no desempenho de renderiz
 ### Estratégia de Performance
 
 1.  **Cálculo Único de Fatores:** Os fatores de ajuste (`ScreenAdjustmentFactors`) são calculados apenas **uma vez** por mudança de configuração de tela (ex: rotação, redimensionamento de janela). Estes fatores são memorizados (`remember` no Compose, ou estaticamente no View System).
-2.  **Extensões/Gateway Otimizados:** O uso das extensões de `Int` ou `Float` (ex: `56.fxdp`) ou dos métodos de Gateway (ex: `AppDimens.fixedPx()`) garantem que o cálculo final seja rápido, aplicando o fator memorizado ao valor base.
+2.  **Extensões/Gateway Otimizados:** O uso das extensões de `Int` ou `Float` (ex: `56.fxdp`) ou dos métodos de Gateway (ex: `Virtues.fixedPx()`) garantem que o cálculo final seja rápido, aplicando o fator memorizado ao valor base.
 
 ### Comparação com Soluções de Qualificador (Ex: sdp/ssp)
 
 | Solução | Abordagem | Vantagens | Desvantagens |
 | :--- | :--- | :--- | :--- |
-| **AppDimens FX/DY** | **Cálculo em Tempo de Execução** (Runtime Calculation). | Flexibilidade total, **tamanhos customizados** (`17dp`, `49dp`), menor número de arquivos de recurso. | Pequeno *overhead* de cálculo por dimensão (o fator é fixo). |
+| **Virtues FX/DY** | **Cálculo em Tempo de Execução** (Runtime Calculation). | Flexibilidade total, **tamanhos customizados** (`17dp`, `49dp`), menor número de arquivos de recurso. | Pequeno *overhead* de cálculo por dimensão (o fator é fixo). |
 | **SDP/SSP Tradicional** | **Valores Estáticos Qualificados** (Valores em `dimens.xml` por `sw600dp`). | Zero *overhead* em tempo de execução. | Requer a geração de milhares de arquivos XML de dimensão (ex: $1\text{dp}$ a $600\text{dp}$), dificultando tamanhos customizados. |
 
-**Conclusão de Performance:** AppDimens troca a complexidade estática de arquivos XML (SDP) por um **cálculo otimizado e memorizado** em tempo de execução, oferecendo maior flexibilidade e suporte a dimensões customizadas.
+**Conclusão de Performance:** Virtues troca a complexidade estática de arquivos XML (SDP) por um **cálculo otimizado e memorizado** em tempo de execução, oferecendo maior flexibilidade e suporte a dimensões customizadas.
 
 -----
 
@@ -66,18 +66,18 @@ A biblioteca permite customizar o cálculo do ajuste com base nas dimensões da 
 | **`DpQualifier`** | Define qual dimensão de tela deve ser a base para o ajuste customizado. | `SMALL_WIDTH` (`smallestWidthDp`), `WIDTH` (largura), `HEIGHT` (altura) |
 | **`UiModeType`** | Permite aplicar diferentes fatores de ajuste para tipos de dispositivos específicos (maior prioridade). | `TELEVISION`, `CAR`, `WATCH`, `NORMAL`, `VR_HEADSET`, etc. |
 
-### B. Unidades Físicas (`AppDimensPhysicalUnits`)
+### B. Unidades Físicas (`VirtuesPhysicalUnits`)
 
 O subsistema de Unidades Físicas (MM, CM, INCH) permite definir dimensões com base em medidas reais. Isso é crucial para wearables (Wear OS) ou aplicações que exigem precisão absoluta, como em impressão ou sistemas de medição.
 
-  * **Uso:** `AppDimensPhysicalUnits.toMm(5.0f, resources)` converte $5\text{mm}$ para **Pixels (PX)**.
+  * **Uso:** `VirtuesPhysicalUnits.toMm(5.0f, resources)` converte $5\text{mm}$ para **Pixels (PX)**.
   * **Aplicações:** Calcular o raio de um dispositivo redondo (ex: Wear OS) com precisão (função `radius()`).
 
 ### C. Utilitário de Layout Inteligente (`calculateAvailableItemCount`)
 
 Esta função calcula quantos itens de um determinado tamanho cabem em um contêiner, resolvendo o problema de definir o `spanCount` dinamicamente em `GridLayoutManager` ou `LazyVerticalGrid`.
 
-  * **Views/XML:** `AppDimens.calculateAvailableItemCount(containerSizePx, itemSizeDp, itemMarginDp, resources)`.
+  * **Views/XML:** `Virtues.calculateAvailableItemCount(containerSizePx, itemSizeDp, itemMarginDp, resources)`.
 
 -----
 
@@ -87,5 +87,5 @@ Esta função calcula quantos itens de um determinado tamanho cabem em um contê
 | :--- | :--- | :--- |
 | **Performance** | O cálculo do fator de ajuste ocorre no *runtime*. | Embora otimizado, se o *overhead* de cálculo for uma preocupação extrema, a solução tradicional de $\text{XML}$-somente pode ser preferível. |
 | **Unidades Físicas** | A precisão depende dos metadados fornecidos pelo dispositivo Android (`xdpi`, `ydpi` do `DisplayMetrics`). | Em emuladores ou dispositivos com densidade incorreta, a conversão física pode ser imprecisa. |
-| **Uso em Views** | Requer o uso do objeto `AppDimens` ou de `BindingAdapters` customizados. | Não é um sistema `plug-and-play` como um gerador de XML. O código ou o XML deve ser adaptado para chamar as funções da biblioteca. |
+| **Uso em Views** | Requer o uso do objeto `Virtues` ou de `BindingAdapters` customizados. | Não é um sistema `plug-and-play` como um gerador de XML. O código ou o XML deve ser adaptado para chamar as funções da biblioteca. |
 | **Tamanho de Valores** | Algumas extensões (como em soluções Sdp-like) podem ter um limite prático de valores a serem usados (ex: $\pm 600$), para otimização de recursos e evitar *overhead* excessivo na inicialização. | O desenvolvedor deve garantir que os valores DP base estejam em uma faixa razoável. |\<ctrl63\>

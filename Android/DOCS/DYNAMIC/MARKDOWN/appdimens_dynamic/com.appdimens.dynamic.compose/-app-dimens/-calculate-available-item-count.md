@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimens](index.md)/[CalculateAvailableItemCount](-calculate-available-item-count.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[Virtues](index.md)/[CalculateAvailableItemCount](-calculate-available-item-count.md)
 
 # CalculateAvailableItemCount
 

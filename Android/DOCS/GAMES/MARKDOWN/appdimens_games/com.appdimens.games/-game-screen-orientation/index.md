@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameScreenOrientation](index.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameScreenOrientation](index.md)
 
 # GameScreenOrientation
 

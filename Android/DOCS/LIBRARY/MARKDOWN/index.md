@@ -1,9 +1,9 @@
-//[appdimens_library](index.md)
+//[virtues_library](index.md)
 
-# appdimens_library
+# virtues_library
 
 ## Packages
 
 | Name |
 |---|
-| [com.appdimens.library](appdimens_library/com.appdimens.library/index.md) |
+| [com.virtues.library](virtues_library/com.virtues.library/index.md) |

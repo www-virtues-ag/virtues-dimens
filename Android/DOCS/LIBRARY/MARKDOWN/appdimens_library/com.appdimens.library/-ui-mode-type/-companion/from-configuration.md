@@ -1,4 +1,4 @@
-//[appdimens_library](../../../../index.md)/[com.appdimens.library](../../index.md)/[UiModeType](../index.md)/[Companion](index.md)/[fromConfiguration](from-configuration.md)
+//[virtues_library](../../../../index.md)/[com.virtues.library](../../index.md)/[UiModeType](../index.md)/[Companion](index.md)/[fromConfiguration](from-configuration.md)
 
 # fromConfiguration
 

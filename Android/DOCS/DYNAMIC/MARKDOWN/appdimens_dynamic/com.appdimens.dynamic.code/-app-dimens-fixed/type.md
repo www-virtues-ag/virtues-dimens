@@ -1,19 +1,19 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensFixed](index.md)/[type](type.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesFixed](index.md)/[type](type.md)
 
 # type
 
 [androidJvm]\
-fun [type](type.md)(type: ScreenType): [AppDimensFixed](index.md)
+fun [type](type.md)(type: ScreenType): [VirtuesFixed](index.md)
 
 EN Sets the screen dimension type (LOWEST or HIGHEST) to be used as the base for adjustments.
 
 #### Return
 
-The `AppDimensFixed` instance for chaining.
+The `VirtuesFixed` instance for chaining.
 
 PT Define o tipo de dimensão da tela (LOWEST ou HIGHEST) a ser usado como base para os ajustes.
 
-A instância `AppDimensFixed` para encadeamento.
+A instância `VirtuesFixed` para encadeamento.
 
 #### Parameters
 

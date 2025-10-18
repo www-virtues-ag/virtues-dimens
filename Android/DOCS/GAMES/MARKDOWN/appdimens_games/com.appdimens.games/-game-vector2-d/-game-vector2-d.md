@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameVector2D](index.md)/[GameVector2D](-game-vector2-d.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameVector2D](index.md)/[GameVector2D](-game-vector2-d.md)
 
 # GameVector2D
 

@@ -1,4 +1,4 @@
-//[appdimens_sdps](../../index.md)/[com.appdimens.sdps.code](index.md)
+//[virtues_sdps](../../index.md)/[com.virtues.sdps.code](index.md)
 
 # Package-level declarations
 
@@ -6,4 +6,4 @@
 
 | Name | Summary |
 |---|---|
-| [AppDimensSdp](-app-dimens-sdp/index.md) | [androidJvm]<br>object [AppDimensSdp](-app-dimens-sdp/index.md)<br>EN Utility object for handling SDP (Scalable Dp) dimensions. |
+| [VirtuesSdp](-app-dimens-sdp/index.md) | [androidJvm]<br>object [VirtuesSdp](-app-dimens-sdp/index.md)<br>EN Utility object for handling SDP (Scalable Dp) dimensions. |

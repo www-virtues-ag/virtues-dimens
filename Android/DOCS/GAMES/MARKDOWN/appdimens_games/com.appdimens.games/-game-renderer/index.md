@@ -1,9 +1,9 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameRenderer](index.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameRenderer](index.md)
 
 # GameRenderer
 
 [androidJvm]\
-class [GameRenderer](index.md)(appDimensGames: [AppDimensGames](../-app-dimens-games/index.md)) : [GLSurfaceView.Renderer](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer.html)
+class [GameRenderer](index.md)(appDimensGames: [VirtuesGames](../-app-dimens-games/index.md)) : [GLSurfaceView.Renderer](https://developer.android.com/reference/kotlin/android/opengl/GLSurfaceView.Renderer.html)
 
 EN Simple OpenGL renderer for demonstration purposes. PT Renderizador OpenGL simples para fins de demonstração.
 
@@ -11,7 +11,7 @@ EN Simple OpenGL renderer for demonstration purposes. PT Renderizador OpenGL sim
 
 | | |
 |---|---|
-| [GameRenderer](-game-renderer.md) | [androidJvm]<br>constructor(appDimensGames: [AppDimensGames](../-app-dimens-games/index.md)) |
+| [GameRenderer](-game-renderer.md) | [androidJvm]<br>constructor(appDimensGames: [VirtuesGames](../-app-dimens-games/index.md)) |
 
 ## Types
 

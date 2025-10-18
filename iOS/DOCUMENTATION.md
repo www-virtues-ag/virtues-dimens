@@ -1,19 +1,19 @@
-# 📚 AppDimens iOS - Technical Documentation
+# 📚 VirtuesDimens iOS - Technical Documentation
 
 ## 🎯 Overview
 
-AppDimens iOS is a responsive dimension management system that automatically adjusts values based on screen dimensions, ensuring layout consistency across any screen size or ratio. It's the iOS equivalent of the Android AppDimens library, built specifically for iOS with Swift and native APIs.
+VirtuesDimens iOS is a responsive dimension management system that automatically adjusts values based on screen dimensions, ensuring layout consistency across any screen size or ratio. It's the iOS equivalent of the Android VirtuesDimens library, built specifically for iOS with Swift and native APIs.
 
 ## 🏗️ Architecture
 
 ### Core Components
 
-1. **AppDimens** - Main singleton class providing access to dimension builders
-2. **AppDimensFixed** - Fixed scaling with logarithmic adjustment
-3. **AppDimensDynamic** - Dynamic scaling with proportional adjustment
-4. **AppDimensAdjustmentFactors** - Utility class for calculating screen factors
-5. **AppDimensTypes** - Type definitions and enums
-6. **AppDimensExtensions** - Extensions for SwiftUI and UIKit
+1. **VirtuesDimens** - Main singleton class providing access to dimension builders
+2. **VirtuesDimensFixed** - Fixed scaling with logarithmic adjustment
+3. **VirtuesDimensDynamic** - Dynamic scaling with proportional adjustment
+4. **VirtuesDimensAdjustmentFactors** - Utility class for calculating screen factors
+5. **VirtuesDimensTypes** - Type definitions and enums
+6. **VirtuesDimensExtensions** - Extensions for SwiftUI and UIKit
 
 ### Mathematical Models
 
@@ -89,36 +89,36 @@ public enum ScreenType: String, CaseIterable {
 
 ## 🔧 API Reference
 
-### AppDimens
+### VirtuesDimens
 
 The main entry point for creating responsive dimensions.
 
 #### Static Methods
 
 ```swift
-public class AppDimens {
+public class VirtuesDimens {
     // Static convenience methods
-    public static func fixed(_ value: CGFloat) -> AppDimensFixed
-    public static func dynamic(_ value: CGFloat) -> AppDimensDynamic
+    public static func fixed(_ value: CGFloat) -> VirtuesDimensFixed
+    public static func dynamic(_ value: CGFloat) -> VirtuesDimensDynamic
     public static func percentage(_ percentage: CGFloat, type: ScreenType = .lowest) -> CGFloat
     
     // Instance methods
-    public static let shared = AppDimens()
-    public func fixed(_ value: CGFloat) -> AppDimensFixed
-    public func dynamic(_ value: CGFloat) -> AppDimensDynamic
+    public static let shared = VirtuesDimens()
+    public func fixed(_ value: CGFloat) -> VirtuesDimensFixed
+    public func dynamic(_ value: CGFloat) -> VirtuesDimensDynamic
 }
 ```
 
-### AppDimensFixed
+### VirtuesDimensFixed
 
 Fixed scaling with logarithmic adjustment.
 
 ```swift
-public class AppDimensFixed {
+public class VirtuesDimensFixed {
     // Configuration methods
-    public func screen(_ type: DeviceType, _ value: CGFloat) -> AppDimensFixed
-    public func aspectRatio(enable: Bool, sensitivity: CGFloat? = nil) -> AppDimensFixed
-    public func type(_ type: ScreenType) -> AppDimensFixed
+    public func screen(_ type: DeviceType, _ value: CGFloat) -> VirtuesDimensFixed
+    public func aspectRatio(enable: Bool, sensitivity: CGFloat? = nil) -> VirtuesDimensFixed
+    public func type(_ type: ScreenType) -> VirtuesDimensFixed
     
     // Conversion methods
     public func toPoints() -> CGFloat
@@ -126,15 +126,15 @@ public class AppDimensFixed {
 }
 ```
 
-### AppDimensDynamic
+### VirtuesDimensDynamic
 
 Dynamic scaling with proportional adjustment.
 
 ```swift
-public class AppDimensDynamic {
+public class VirtuesDimensDynamic {
     // Configuration methods
-    public func screen(_ type: DeviceType, _ value: CGFloat) -> AppDimensDynamic
-    public func type(_ type: ScreenType) -> AppDimensDynamic
+    public func screen(_ type: DeviceType, _ value: CGFloat) -> VirtuesDimensDynamic
+    public func type(_ type: ScreenType) -> VirtuesDimensDynamic
     
     // Conversion methods
     public func toPoints() -> CGFloat
@@ -142,12 +142,12 @@ public class AppDimensDynamic {
 }
 ```
 
-### AppDimensAdjustmentFactors
+### VirtuesDimensAdjustmentFactors
 
 Utility class for calculating screen adjustment factors.
 
 ```swift
-public class AppDimensAdjustmentFactors {
+public class VirtuesDimensAdjustmentFactors {
     // Screen information
     public static func getCurrentScreenDimensions() -> (width: CGFloat, height: CGFloat)
     public static func getCurrentScreenType() -> ScreenType
@@ -167,10 +167,10 @@ public class AppDimensAdjustmentFactors {
 ```swift
 // CGFloat/Int extensions
 extension CGFloat {
-    var fxpt: CGFloat { AppDimens.fixed(self).toPoints() }
-    var fxpx: CGFloat { AppDimens.fixed(self).toPixels() }
-    var dypt: CGFloat { AppDimens.dynamic(self).toPoints() }
-    var dypx: CGFloat { AppDimens.dynamic(self).toPixels() }
+    var fxpt: CGFloat { VirtuesDimens.fixed(self).toPoints() }
+    var fxpx: CGFloat { VirtuesDimens.fixed(self).toPixels() }
+    var dypt: CGFloat { VirtuesDimens.dynamic(self).toPoints() }
+    var dypx: CGFloat { VirtuesDimens.dynamic(self).toPixels() }
     
     // Physical units
     var cm: CGFloat { self * 37.7952755906 } // 1cm = 37.8 points
@@ -228,13 +228,13 @@ public struct DimensProvider<Content: View>: View {
 
 // Protocol-based API
 public protocol DimensProvider {
-    func fixed(_ value: CGFloat) -> AppDimensFixed
-    func dynamic(_ value: CGFloat) -> AppDimensDynamic
+    func fixed(_ value: CGFloat) -> VirtuesDimensFixed
+    func dynamic(_ value: CGFloat) -> VirtuesDimensDynamic
 }
 
 extension CGFloat {
-    func fixed() -> AppDimensFixed { AppDimens.fixed(self) }
-    func dynamic() -> AppDimensDynamic { AppDimens.dynamic(self) }
+    func fixed() -> VirtuesDimensFixed { VirtuesDimens.fixed(self) }
+    func dynamic() -> VirtuesDimensDynamic { VirtuesDimens.dynamic(self) }
 }
 ```
 
@@ -306,8 +306,8 @@ extension UITextField {
 
 | Android | iOS |
 |---------|-----|
-| `AppDimens.fixed(16).toPx()` | `AppDimens.fixed(16).toPixels()` |
-| `AppDimens.dynamic(100).toDp()` | `AppDimens.dynamic(100).toPoints()` |
+| `VirtuesDimens.fixed(16).toPx()` | `VirtuesDimens.fixed(16).toPixels()` |
+| `VirtuesDimens.dynamic(100).toDp()` | `VirtuesDimens.dynamic(100).toPoints()` |
 | `16.fxdp` | `16.fxpt` |
 | `100.dydp` | `100.dypt` |
 | `ScreenType.LOWEST` | `ScreenType.lowest` |
@@ -366,14 +366,14 @@ The library includes comprehensive unit tests covering:
 
 ```swift
 // Print current screen dimensions
-let (width, height) = AppDimensAdjustmentFactors.getCurrentScreenDimensions()
+let (width, height) = VirtuesDimensAdjustmentFactors.getCurrentScreenDimensions()
 print("Screen: \(width) × \(height)")
 
 // Print current device type
 print("Device: \(DeviceType.current())")
 
 // Print adjustment factors
-let factors = AppDimensAdjustmentFactors.calculateAdjustmentFactors()
+let factors = VirtuesDimensAdjustmentFactors.calculateAdjustmentFactors()
 print("Factors: \(factors)")
 ```
 
@@ -399,7 +399,7 @@ print("Factors: \(factors)")
 
 ## 🔄 Version History
 
-### Version 1.0.5
+### Version 1.0.0
 - Initial release
 - Core dimensioning system
 - SwiftUI and UIKit support
@@ -417,7 +417,7 @@ print("Factors: \(factors)")
 ### Development Setup
 
 1. Clone the repository
-2. Open `AppDimens.xcodeproj`
+2. Open `VirtuesDimens.xcodeproj`
 3. Run tests to ensure everything works
 4. Make your changes
 5. Add tests for new functionality
@@ -438,6 +438,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 For questions, issues, or contributions:
 
-- GitHub Issues: [Create an issue](https://github.com/bodenberg/appdimens/issues)
+- GitHub Issues: [Create an issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - Email: jean.bodenberg@gmail.com
-- Documentation: [GitHub Wiki](https://github.com/bodenberg/appdimens/wiki)
+- Documentation: [GitHub Wiki](https://github.com/www-virtues-ag/virtues-dimens/wiki)

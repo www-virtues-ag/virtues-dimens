@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[AppDimensGames](index.md)/[calculateUISize](calculate-u-i-size.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[VirtuesGames](index.md)/[calculateUISize](calculate-u-i-size.md)
 
 # calculateUISize
 

@@ -3,10 +3,10 @@
  * GIT: https://github.com/bodenberg/appdimens.git
  * Date: 2025-01-15
  *
- * Library: AppDimens iOS - Metal Game Example
+ * Library: VirtuesDimens iOS - Metal Game Example
  *
  * Description:
- * Example implementation of AppDimens Games module in a Metal-based game.
+ * Example implementation of VirtuesDimens Games module in a Metal-based game.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,11 +25,11 @@ import UIKit
 import Metal
 import MetalKit
 import simd
-import AppDimensGames
+import VirtuesDimensGames
 
 /**
- * [EN] Example Metal game view controller demonstrating AppDimens Games usage.
- * [PT] Exemplo de controlador de view de jogo Metal demonstrando o uso do AppDimens Games.
+ * [EN] Example Metal game view controller demonstrating VirtuesDimens Games usage.
+ * [PT] Exemplo de controlador de view de jogo Metal demonstrando o uso do VirtuesDimens Games.
  */
 class MetalGameViewController: UIViewController {
     
@@ -38,7 +38,7 @@ class MetalGameViewController: UIViewController {
     private var metalDevice: MTLDevice!
     private var metalLayer: CAMetalLayer!
     private var commandQueue: MTLCommandQueue!
-    private var metalManager: AppDimensMetal!
+    private var metalManager: VirtuesDimensMetal!
     
     // MARK: - Game Properties
     
@@ -83,7 +83,7 @@ class MetalGameViewController: UIViewController {
         // Configurar command queue
         commandQueue = metalDevice.makeCommandQueue()
         
-        // Inicializar AppDimens Games
+        // Inicializar VirtuesDimens Games
         let initialViewport = MTLViewport(
             originX: 0, originY: 0,
             width: Double(view.bounds.width),
@@ -91,8 +91,8 @@ class MetalGameViewController: UIViewController {
             znear: 0.0, zfar: 1.0
         )
         
-        AppDimensGames.shared.initialize(device: metalDevice, viewport: initialViewport)
-        metalManager = AppDimensGames.shared.getMetalManager()
+        VirtuesDimensGames.shared.initialize(device: metalDevice, viewport: initialViewport)
+        metalManager = VirtuesDimensGames.shared.getMetalManager()
     }
     
     private func updateViewport() {
@@ -103,7 +103,7 @@ class MetalGameViewController: UIViewController {
             znear: 0.0, zfar: 1.0
         )
         
-        AppDimensGames.shared.updateViewport(newViewport)
+        VirtuesDimensGames.shared.updateViewport(newViewport)
         metalLayer.frame = view.bounds
     }
     
@@ -163,7 +163,7 @@ class MetalGameViewController: UIViewController {
     }
     
     private func applyResponsiveDimensions() {
-        // Usar AppDimens para dimensionar elementos de UI
+        // Usar VirtuesDimens para dimensionar elementos de UI
         scoreLabel.fxFontSize(24)
         pauseButton.fxCornerRadius(8)
         
@@ -174,11 +174,11 @@ class MetalGameViewController: UIViewController {
     }
     
     private func updateUIConstraints() {
-        // Usar AppDimens Games para dimensionar elementos de UI do jogo
-        let topPadding = AppDimensGames.uniform(20.0)
-        let sidePadding = AppDimensGames.horizontal(20.0)
-        let buttonWidth = AppDimensGames.uniform(80.0)
-        let buttonHeight = AppDimensGames.uniform(40.0)
+        // Usar VirtuesDimens Games para dimensionar elementos de UI do jogo
+        let topPadding = VirtuesDimensGames.uniform(20.0)
+        let sidePadding = VirtuesDimensGames.horizontal(20.0)
+        let buttonWidth = VirtuesDimensGames.uniform(80.0)
+        let buttonHeight = VirtuesDimensGames.uniform(40.0)
         
         // Atualizar constraints
         scoreLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: CGFloat(topPadding)).isActive = true
@@ -200,7 +200,7 @@ class MetalGameViewController: UIViewController {
     
     private func createGameObjects() {
         // Criar player
-        let playerSize = AppDimensGames.uniform(50.0)
+        let playerSize = VirtuesDimensGames.uniform(50.0)
         let player = GameObject(
             position: simd_float2(0, 0),
             size: simd_float2(playerSize, playerSize),
@@ -210,7 +210,7 @@ class MetalGameViewController: UIViewController {
         
         // Criar inimigos
         for i in 0..<5 {
-            let enemySize = AppDimensGames.uniform(30.0)
+            let enemySize = VirtuesDimensGames.uniform(30.0)
             let enemy = GameObject(
                 position: simd_float2(Float(i * 100), 100),
                 size: simd_float2(enemySize, enemySize),
@@ -221,7 +221,7 @@ class MetalGameViewController: UIViewController {
         
         // Criar power-ups
         for i in 0..<3 {
-            let powerUpSize = AppDimensGames.uniform(20.0)
+            let powerUpSize = VirtuesDimensGames.uniform(20.0)
             let powerUp = GameObject(
                 position: simd_float2(Float(i * 150), 200),
                 size: simd_float2(powerUpSize, powerUpSize),
@@ -292,7 +292,7 @@ class MetalGameViewController: UIViewController {
     private func checkCollisions() {
         // Implementar lógica de colisão
         // Usar dimensões responsivas para cálculos de colisão
-        let collisionRadius = AppDimensGames.uniform(25.0)
+        let collisionRadius = VirtuesDimensGames.uniform(25.0)
         
         for i in 0..<gameObjects.count {
             for j in (i+1)..<gameObjects.count {
@@ -345,8 +345,8 @@ class GameObject {
         position += velocity * Float(deltaTime)
         
         // Implementar lógica de movimento
-        // Usar AppDimens Games para cálculos responsivos
-        let moveSpeed = AppDimensGames.uniform(100.0)
+        // Usar VirtuesDimens Games para cálculos responsivos
+        let moveSpeed = VirtuesDimensGames.uniform(100.0)
         velocity = simd_float2(moveSpeed, 0)
     }
 }

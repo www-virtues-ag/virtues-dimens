@@ -1,6 +1,6 @@
-# 🤝 Contributing to AppDimens
+# 🤝 Contributing to Virtues
 
-Thank you for your interest in contributing to AppDimens! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to Virtues! This document provides guidelines and information for contributors.
 
 ## 📋 Table of Contents
 
@@ -31,12 +31,12 @@ This project adheres to a code of conduct. By participating, you are expected to
 1. Fork the repository on GitHub
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/your-username/appdimens.git
-   cd appdimens
+   git clone https://github.com/your-username/virtues.git
+   cd virtues
    ```
 3. Add the upstream repository:
    ```bash
-   git remote add upstream https://github.com/bodenberg/appdimens.git
+   git remote add upstream https://github.com/bodenberg/virtues.git
    ```
 
 ## 🛠 Development Setup
@@ -64,7 +64,7 @@ This project adheres to a code of conduct. By participating, you are expected to
 1. **Open in Xcode**:
    ```bash
    cd iOS
-   open AppDimens.xcodeproj
+   open Virtues.xcodeproj
    ```
 
 2. **Install Dependencies**:
@@ -340,7 +340,7 @@ When making code changes:
 ```bash
 # In Xcode: Product → Test (⌘+U)
 # Or command line:
-xcodebuild test -scheme AppDimens -destination 'platform=iOS Simulator,name=iPhone 14'
+xcodebuild test -scheme Virtues -destination 'platform=iOS Simulator,name=iPhone 14'
 ```
 
 ### Test Coverage
@@ -417,11 +417,11 @@ Contributors will be recognized in:
 
 ## 📄 License
 
-By contributing to AppDimens, you agree that your contributions will be licensed under the Apache License 2.0.
+By contributing to Virtues, you agree that your contributions will be licensed under the Apache License 2.0.
 
 ## 🙏 Thank You
 
-Thank you for contributing to AppDimens! Your contributions help make responsive design accessible to developers worldwide.
+Thank you for contributing to Virtues! Your contributions help make responsive design accessible to developers worldwide.
 
 ---
 

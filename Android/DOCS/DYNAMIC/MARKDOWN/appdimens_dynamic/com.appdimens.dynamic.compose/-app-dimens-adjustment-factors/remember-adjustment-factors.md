@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimensAdjustmentFactors](index.md)/[rememberAdjustmentFactors](remember-adjustment-factors.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesAdjustmentFactors](index.md)/[rememberAdjustmentFactors](remember-adjustment-factors.md)
 
 # rememberAdjustmentFactors
 

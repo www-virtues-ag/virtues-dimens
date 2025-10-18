@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[ScreenAdjustmentFactors](index.md)/[adjustmentFactorHighest](adjustment-factor-highest.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[ScreenAdjustmentFactors](index.md)/[adjustmentFactorHighest](adjustment-factor-highest.md)
 
 # adjustmentFactorHighest
 

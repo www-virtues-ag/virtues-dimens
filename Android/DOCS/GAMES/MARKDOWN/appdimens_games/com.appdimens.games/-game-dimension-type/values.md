@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameDimensionType](index.md)/[values](values.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameDimensionType](index.md)/[values](values.md)
 
 # values
 

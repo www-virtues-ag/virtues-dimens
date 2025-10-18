@@ -1,4 +1,4 @@
-//[appdimens_ssps](../../../index.md)/[com.appdimens.ssps.compose](../index.md)/[Scaled](index.md)/[wsp](wsp.md)
+//[virtues_ssps](../../../index.md)/[com.virtues.ssps.compose](../index.md)/[Scaled](index.md)/[wsp](wsp.md)
 
 # wsp
 

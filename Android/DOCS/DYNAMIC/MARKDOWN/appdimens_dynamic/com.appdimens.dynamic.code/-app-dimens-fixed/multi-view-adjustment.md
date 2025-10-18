@@ -1,19 +1,19 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensFixed](index.md)/[multiViewAdjustment](multi-view-adjustment.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesFixed](index.md)/[multiViewAdjustment](multi-view-adjustment.md)
 
 # multiViewAdjustment
 
 [androidJvm]\
-fun [multiViewAdjustment](multi-view-adjustment.md)(ignore: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = true): [AppDimensFixed](index.md)
+fun [multiViewAdjustment](multi-view-adjustment.md)(ignore: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = true): [VirtuesFixed](index.md)
 
 EN Ignores adjustments when the app is in multi-window mode.
 
 #### Return
 
-The `AppDimensFixed` instance for chaining.
+The `VirtuesFixed` instance for chaining.
 
 PT Ignora os ajustes quando o aplicativo está em modo multi-janela.
 
-A instância `AppDimensFixed` para encadeamento.
+A instância `VirtuesFixed` para encadeamento.
 
 #### Parameters
 

@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensAdjustmentFactors](index.md)/[BASE_DP_FACTOR](-b-a-s-e_-d-p_-f-a-c-t-o-r.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesAdjustmentFactors](index.md)/[BASE_DP_FACTOR](-b-a-s-e_-d-p_-f-a-c-t-o-r.md)
 
 # BASE_DP_FACTOR
 

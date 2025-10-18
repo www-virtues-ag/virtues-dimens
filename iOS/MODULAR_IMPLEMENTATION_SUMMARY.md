@@ -1,8 +1,8 @@
-# 📱 AppDimens iOS - Resumo da Implementação Modular
+# 📱 VirtuesDimens iOS - Resumo da Implementação Modular
 
 ## 🎯 Objetivo Alcançado
 
-Foi criada com sucesso uma estrutura modular para a biblioteca AppDimens iOS, permitindo escolha flexível entre diferentes módulos no CocoaPods e facilitando o desenvolvimento de jogos com Metal.
+Foi criada com sucesso uma estrutura modular para a biblioteca VirtuesDimens iOS, permitindo escolha flexível entre diferentes módulos no CocoaPods e facilitando o desenvolvimento de jogos com Metal.
 
 ## 🏗️ Estrutura Implementada
 
@@ -10,41 +10,41 @@ Foi criada com sucesso uma estrutura modular para a biblioteca AppDimens iOS, pe
 
 | Módulo | Localização | Funcionalidade |
 |--------|-------------|----------------|
-| **Core** | `Sources/AppDimensCore/` | Funcionalidade básica de gerenciamento de dimensões |
-| **UI** | `Sources/AppDimensUI/` | Extensões para UIKit e SwiftUI |
-| **Games** | `Sources/AppDimensGames/` | Funcionalidade específica para Metal/games |
+| **Core** | `Sources/VirtuesDimensCore/` | Funcionalidade básica de gerenciamento de dimensões |
+| **UI** | `Sources/VirtuesDimensUI/` | Extensões para UIKit e SwiftUI |
+| **Games** | `Sources/VirtuesDimensGames/` | Funcionalidade específica para Metal/games |
 
 ### 📁 Organização de Arquivos
 
 ```
 PROJETO_IOS/
 ├── Sources/
-│   ├── AppDimens/                    # Arquivo principal de exportação
-│   │   └── AppDimens.swift
-│   ├── AppDimensCore/                # Módulo Core
-│   │   ├── AppDimens.swift
-│   │   ├── AppDimensTypes.swift
-│   │   ├── AppDimensFixed.swift
-│   │   ├── AppDimensDynamic.swift
-│   │   ├── AppDimensAdjustmentFactors.swift
-│   │   ├── AppDimensPhysicalUnits.swift
-│   │   ├── AppDimensItemCalculator.swift
-│   │   ├── AppDimensProtocols.swift
-│   │   ├── AppDimensConvenience.swift
-│   │   └── AppDimensCore.swift
-│   ├── AppDimensUI/                  # Módulo UI
-│   │   ├── AppDimensExtensions.swift
-│   │   ├── AppDimensEnvironment.swift
-│   │   └── AppDimensUI.swift
-│   └── AppDimensGames/               # Módulo Games
-│       ├── AppDimensMetal.swift
-│       ├── AppDimensGameTypes.swift
-│       ├── AppDimensGameExtensions.swift
-│       ├── AppDimensGames.swift
-│       └── AppDimensGamesMain.swift
+│   ├── VirtuesDimens/                    # Arquivo principal de exportação
+│   │   └── VirtuesDimens.swift
+│   ├── VirtuesDimensCore/                # Módulo Core
+│   │   ├── VirtuesDimens.swift
+│   │   ├── VirtuesDimensTypes.swift
+│   │   ├── VirtuesDimensFixed.swift
+│   │   ├── VirtuesDimensDynamic.swift
+│   │   ├── VirtuesDimensAdjustmentFactors.swift
+│   │   ├── VirtuesDimensPhysicalUnits.swift
+│   │   ├── VirtuesDimensItemCalculator.swift
+│   │   ├── VirtuesDimensProtocols.swift
+│   │   ├── VirtuesDimensConvenience.swift
+│   │   └── VirtuesDimensCore.swift
+│   ├── VirtuesDimensUI/                  # Módulo UI
+│   │   ├── VirtuesDimensExtensions.swift
+│   │   ├── VirtuesDimensEnvironment.swift
+│   │   └── VirtuesDimensUI.swift
+│   └── VirtuesDimensGames/               # Módulo Games
+│       ├── VirtuesDimensMetal.swift
+│       ├── VirtuesDimensGameTypes.swift
+│       ├── VirtuesDimensGameExtensions.swift
+│       ├── VirtuesDimensGames.swift
+│       └── VirtuesDimensGamesMain.swift
 ├── Examples/
 │   └── MetalGameExample.swift
-├── AppDimens.podspec                 # Configuração modular do CocoaPods
+├── VirtuesDimens.podspec                 # Configuração modular do CocoaPods
 ├── README_MODULAR.md                 # Documentação modular
 ├── INSTALLATION_GUIDE.md             # Guia de instalação
 └── MODULAR_IMPLEMENTATION_SUMMARY.md # Este arquivo
@@ -90,30 +90,30 @@ PROJETO_IOS/
 
 ```ruby
 Pod::Spec.new do |spec|
-  spec.name         = "AppDimens"
-  spec.version      = "1.0.5"
+  spec.name         = "VirtuesDimens"
+  spec.version      = "1.0.0"
   
   # Default subspec includes Core + UI
   spec.default_subspecs = ['Core', 'UI']
   
   # Core subspec - Basic dimension management
   spec.subspec 'Core' do |core|
-    core.source_files = "Sources/AppDimensCore/**/*.swift"
+    core.source_files = "Sources/VirtuesDimensCore/**/*.swift"
     core.frameworks = "Foundation", "UIKit"
   end
   
   # UI subspec - UIKit and SwiftUI extensions
   spec.subspec 'UI' do |ui|
-    ui.source_files = "Sources/AppDimensUI/**/*.swift"
+    ui.source_files = "Sources/VirtuesDimensUI/**/*.swift"
     ui.frameworks = "UIKit", "SwiftUI"
-    ui.dependency 'AppDimens/Core'
+    ui.dependency 'VirtuesDimens/Core'
   end
   
   # Games subspec - Metal-specific functionality
   spec.subspec 'Games' do |games|
-    games.source_files = "Sources/AppDimensGames/**/*.swift"
+    games.source_files = "Sources/VirtuesDimensGames/**/*.swift"
     games.frameworks = "Metal", "MetalKit", "simd"
-    games.dependency 'AppDimens/Core'
+    games.dependency 'VirtuesDimens/Core'
   end
 end
 ```
@@ -122,30 +122,30 @@ end
 
 ### Para Apps iOS Padrão
 ```ruby
-pod 'AppDimens'  # Inclui Core + UI automaticamente
+pod 'VirtuesDimens'  # Inclui Core + UI automaticamente
 ```
 
 ### Para Desenvolvimento de Jogos
 ```ruby
-pod 'AppDimens/Core'
-pod 'AppDimens/Games'
+pod 'VirtuesDimens/Core'
+pod 'VirtuesDimens/Games'
 ```
 
 ### Para Bibliotecas que Precisam Apenas de Cálculos
 ```ruby
-pod 'AppDimens/Core'
+pod 'VirtuesDimens/Core'
 ```
 
 ## 💻 Exemplos de Uso
 
 ### App iOS Padrão
 ```swift
-import AppDimens
+import VirtuesDimens
 
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 20.fxpt) {
-            Text("AppDimens")
+            Text("VirtuesDimens")
                 .font(.fxSystem(size: 24, weight: .bold))
                 .fxPadding(16)
             
@@ -159,22 +159,22 @@ struct ContentView: View {
 
 ### Jogo com Metal
 ```swift
-import AppDimensGames
+import VirtuesDimensGames
 import Metal
 
 // Inicialização
 let device = MTLCreateSystemDefaultDevice()!
 let viewport = MTLViewport(originX: 0, originY: 0, width: 1920, height: 1080, znear: 0, zfar: 1)
-AppDimensGames.shared.initialize(device: device, viewport: viewport)
+VirtuesDimensGames.shared.initialize(device: device, viewport: viewport)
 
 // Uso
-let buttonSize = AppDimensGames.uniform(64.0)
-let fontSize = AppDimensGames.aspectRatio(24.0)
-let spacing = AppDimensGames.viewport(16.0)
+let buttonSize = VirtuesDimensGames.uniform(64.0)
+let fontSize = VirtuesDimensGames.aspectRatio(24.0)
+let spacing = VirtuesDimensGames.viewport(16.0)
 
 // Extensões para simd
 let position = simd_float2(100, 200)
-let scaledPosition = position.gameUniform(AppDimensGames.shared.getMetalManager()!)
+let scaledPosition = position.gameUniform(VirtuesDimensGames.shared.getMetalManager()!)
 ```
 
 ## 🔧 Funcionalidades Específicas para Games
@@ -256,7 +256,7 @@ let scaledPosition = position.gameUniform(AppDimensGames.shared.getMetalManager(
 
 ## 📄 Conclusão
 
-A implementação modular da biblioteca AppDimens iOS foi concluída com sucesso, fornecendo:
+A implementação modular da biblioteca VirtuesDimens iOS foi concluída com sucesso, fornecendo:
 
 - ✅ Estrutura modular flexível
 - ✅ Suporte completo para Metal/games

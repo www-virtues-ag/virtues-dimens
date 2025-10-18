@@ -1,9 +1,9 @@
-//[appdimens_ssps](../../../index.md)/[com.appdimens.ssps.code](../index.md)/[AppDimensSsp](index.md)
+//[virtues_ssps](../../../index.md)/[com.virtues.ssps.code](../index.md)/[VirtuesSsp](index.md)
 
-# AppDimensSsp
+# VirtuesSsp
 
 [androidJvm]\
-object [AppDimensSsp](index.md)
+object [VirtuesSsp](index.md)
 
 EN Utility object for handling SSP (Scalable Sp) dimensions.
 

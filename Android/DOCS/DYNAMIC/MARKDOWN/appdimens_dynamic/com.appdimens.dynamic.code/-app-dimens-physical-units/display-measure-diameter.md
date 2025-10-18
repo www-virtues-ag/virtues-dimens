@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensPhysicalUnits](index.md)/[displayMeasureDiameter](display-measure-diameter.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesPhysicalUnits](index.md)/[displayMeasureDiameter](display-measure-diameter.md)
 
 # displayMeasureDiameter
 

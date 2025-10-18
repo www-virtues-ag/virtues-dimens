@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameRenderer](index.md)/[onDrawFrame](on-draw-frame.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameRenderer](index.md)/[onDrawFrame](on-draw-frame.md)
 
 # onDrawFrame
 

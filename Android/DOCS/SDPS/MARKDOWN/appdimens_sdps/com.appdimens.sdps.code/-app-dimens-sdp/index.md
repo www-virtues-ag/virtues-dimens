@@ -1,9 +1,9 @@
-//[appdimens_sdps](../../../index.md)/[com.appdimens.sdps.code](../index.md)/[AppDimensSdp](index.md)
+//[virtues_sdps](../../../index.md)/[com.virtues.sdps.code](../index.md)/[VirtuesSdp](index.md)
 
-# AppDimensSdp
+# VirtuesSdp
 
 [androidJvm]\
-object [AppDimensSdp](index.md)
+object [VirtuesSdp](index.md)
 
 EN Utility object for handling SDP (Scalable Dp) dimensions.
 

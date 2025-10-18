@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameRectangle](index.md)/[center](center.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameRectangle](index.md)/[center](center.md)
 
 # center
 

@@ -1,20 +1,20 @@
 # Changelog
 
-All notable changes to the AppDimens iOS library will be documented in this file.
+All notable changes to the VirtuesDimens iOS library will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.5] - 2025-01-15
+## [1.0.0] - 2025-01-15
 
 ### Changed
-- Updated version to 1.0.5 across all modules
+- Updated version to 1.0.0 across all modules
 - Updated documentation to reflect new version
 
 ## [1.0.0] - 2025-01-15
 
 ### Added
-- Initial release of AppDimens iOS library
+- Initial release of VirtuesDimens iOS library
 - Core dimension management system with Fixed (FX) and Dynamic (DY) models
 - Support for both UIKit and SwiftUI
 - Device type detection (Phone, Tablet, Watch, TV, CarPlay)
@@ -43,11 +43,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### API Highlights
 ```swift
 // Fixed scaling for UI elements
-let buttonHeight = AppDimens.fixed(48).toPoints()
+let buttonHeight = VirtuesDimens.fixed(48).toPoints()
 let padding = 16.fxpt
 
 // Dynamic scaling for layouts
-let cardWidth = AppDimens.dynamic(200).toPoints()
+let cardWidth = VirtuesDimens.dynamic(200).toPoints()
 let containerWidth = 300.dypt
 
 // SwiftUI integration

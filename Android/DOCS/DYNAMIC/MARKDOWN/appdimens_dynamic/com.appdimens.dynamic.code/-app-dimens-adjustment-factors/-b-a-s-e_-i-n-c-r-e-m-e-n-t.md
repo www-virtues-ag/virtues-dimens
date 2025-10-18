@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensAdjustmentFactors](index.md)/[BASE_INCREMENT](-b-a-s-e_-i-n-c-r-e-m-e-n-t.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesAdjustmentFactors](index.md)/[BASE_INCREMENT](-b-a-s-e_-i-n-c-r-e-m-e-n-t.md)
 
 # BASE_INCREMENT
 

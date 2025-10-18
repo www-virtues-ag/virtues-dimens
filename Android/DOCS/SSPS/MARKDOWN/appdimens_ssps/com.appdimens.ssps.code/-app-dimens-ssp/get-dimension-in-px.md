@@ -1,4 +1,4 @@
-//[appdimens_ssps](../../../index.md)/[com.appdimens.ssps.code](../index.md)/[AppDimensSsp](index.md)/[getDimensionInPx](get-dimension-in-px.md)
+//[virtues_ssps](../../../index.md)/[com.virtues.ssps.code](../index.md)/[VirtuesSsp](index.md)/[getDimensionInPx](get-dimension-in-px.md)
 
 # getDimensionInPx
 

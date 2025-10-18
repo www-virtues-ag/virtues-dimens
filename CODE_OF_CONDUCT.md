@@ -90,7 +90,7 @@ For answers to common questions about this code of conduct, see the FAQ at https
 
 ## Acknowledgment
 
-We appreciate the open-source community and the many contributors who help make AppDimens a better project for everyone. This Code of Conduct helps ensure that our community remains welcoming, inclusive, and productive for all participants.
+We appreciate the open-source community and the many contributors who help make Virtues a better project for everyone. This Code of Conduct helps ensure that our community remains welcoming, inclusive, and productive for all participants.
 
 ---
 

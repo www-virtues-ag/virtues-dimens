@@ -1,10 +1,10 @@
-//[appdimens_dynamic](index.md)
+//[virtues_dynamic](index.md)
 
-# appdimens_dynamic
+# virtues_dynamic
 
 ## Packages
 
 | Name |
 |---|
-| [com.appdimens.dynamic.code](appdimens_dynamic/com.appdimens.dynamic.code/index.md) |
-| [com.appdimens.dynamic.compose](appdimens_dynamic/com.appdimens.dynamic.compose/index.md) |
+| [com.virtues.dynamic.code](virtues_dynamic/com.virtues.dynamic.code/index.md) |
+| [com.virtues.dynamic.compose](virtues_dynamic/com.virtues.dynamic.compose/index.md) |

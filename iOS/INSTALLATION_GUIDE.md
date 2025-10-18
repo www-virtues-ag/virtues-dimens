@@ -1,24 +1,24 @@
-# 📱 AppDimens iOS - Guia de Instalação
+# 📱 VirtuesDimens iOS - Guia de Instalação
 
-Este guia detalha como instalar e configurar a biblioteca AppDimens iOS em diferentes cenários.
+Este guia detalha como instalar e configurar a biblioteca VirtuesDimens iOS em diferentes cenários.
 
 ## 🎯 Escolha da Instalação
 
 ### Para Apps iOS Padrão (Recomendado)
 ```ruby
-pod 'AppDimens'
+pod 'VirtuesDimens'
 ```
 Inclui automaticamente os módulos Core e UI.
 
 ### Para Desenvolvimento de Jogos
 ```ruby
-pod 'AppDimens/Core'
-pod 'AppDimens/Games'
+pod 'VirtuesDimens/Core'
+pod 'VirtuesDimens/Games'
 ```
 
 ### Para Bibliotecas que Precisam Apenas de Cálculos
 ```ruby
-pod 'AppDimens/Core'
+pod 'VirtuesDimens/Core'
 ```
 
 ## 📦 Instalação com CocoaPods
@@ -32,14 +32,14 @@ use_frameworks!
 
 target 'MyApp' do
   # Para apps iOS padrão
-  pod 'AppDimens'
+  pod 'VirtuesDimens'
   
   # OU para desenvolvimento de jogos
-  pod 'AppDimens/Core'
-  pod 'AppDimens/Games'
+  pod 'VirtuesDimens/Core'
+  pod 'VirtuesDimens/Games'
   
   # OU apenas o módulo Core
-  pod 'AppDimens/Core'
+  pod 'VirtuesDimens/Core'
 end
 ```
 
@@ -61,17 +61,17 @@ open MyApp.xcworkspace
 
 No Xcode:
 1. File → Add Package Dependencies
-2. URL: `https://github.com/bodenberg/appdimens.git`
-3. Version: `1.0.5` ou superior
+2. URL: `https://github.com/www-virtues-ag/virtues-dimens.git`
+3. Version: `1.0.0` ou superior
 4. Adicionar ao target
 
 ### 2. Importar nos Arquivos
 
 ```swift
-import AppDimens        // Para instalação completa
-import AppDimensCore    // Para apenas o módulo Core
-import AppDimensUI      // Para módulo UI
-import AppDimensGames   // Para módulo Games
+import VirtuesDimens        // Para instalação completa
+import VirtuesDimensCore    // Para apenas o módulo Core
+import VirtuesDimensUI      // Para módulo UI
+import VirtuesDimensGames   // Para módulo Games
 ```
 
 ## 🔧 Configuração Inicial
@@ -79,7 +79,7 @@ import AppDimensGames   // Para módulo Games
 ### Para Apps iOS Padrão
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
 @main
 struct MyApp: App {
@@ -96,12 +96,12 @@ struct MyApp: App {
 ### Para Jogos com Metal
 
 ```swift
-import AppDimensGames
+import VirtuesDimensGames
 import Metal
 
 class GameViewController: UIViewController {
     private var metalDevice: MTLDevice!
-    private var metalManager: AppDimensMetal!
+    private var metalManager: VirtuesDimensMetal!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,9 +117,9 @@ class GameViewController: UIViewController {
             znear: 0.0, zfar: 1.0
         )
         
-        // Inicializar AppDimens Games
-        AppDimensGames.shared.initialize(device: metalDevice, viewport: viewport)
-        metalManager = AppDimensGames.shared.getMetalManager()
+        // Inicializar VirtuesDimens Games
+        VirtuesDimensGames.shared.initialize(device: metalDevice, viewport: viewport)
+        metalManager = VirtuesDimensGames.shared.getMetalManager()
     }
 }
 ```
@@ -129,12 +129,12 @@ class GameViewController: UIViewController {
 ### SwiftUI
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
 struct ContentView: View {
     var body: some View {
         VStack(spacing: 20.fxpt) {
-            Text("AppDimens")
+            Text("VirtuesDimens")
                 .font(.fxSystem(size: 24, weight: .bold))
                 .fxPadding(16)
             
@@ -149,7 +149,7 @@ struct ContentView: View {
 ### UIKit
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -167,14 +167,14 @@ class ViewController: UIViewController {
 ### Metal/Games
 
 ```swift
-import AppDimensGames
+import VirtuesDimensGames
 import Metal
 
 class GameRenderer {
     func renderUI() {
-        let buttonSize = AppDimensGames.uniform(64.0)
-        let fontSize = AppDimensGames.aspectRatio(24.0)
-        let spacing = AppDimensGames.viewport(16.0)
+        let buttonSize = VirtuesDimensGames.uniform(64.0)
+        let fontSize = VirtuesDimensGames.aspectRatio(24.0)
+        let spacing = VirtuesDimensGames.viewport(16.0)
         
         // Renderizar elementos de UI
     }
@@ -186,26 +186,26 @@ class GameRenderer {
 ### Verificar Módulos Disponíveis
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
-let availableModules = AppDimensInfo.availableModules()
+let availableModules = VirtuesDimensInfo.availableModules()
 print("Módulos disponíveis: \(availableModules)")
 
-let libraryInfo = AppDimensInfo.info()
+let libraryInfo = VirtuesDimensInfo.info()
 print("Informações da biblioteca: \(libraryInfo)")
 ```
 
 ### Teste Básico
 
 ```swift
-import AppDimens
+import VirtuesDimens
 
 // Teste de dimensão fixa
-let fixedDimension = AppDimens.fixed(16).toPoints()
+let fixedDimension = VirtuesDimens.fixed(16).toPoints()
 print("Dimensão fixa: \(fixedDimension)")
 
 // Teste de dimensão dinâmica
-let dynamicDimension = AppDimens.dynamic(100).toPoints()
+let dynamicDimension = VirtuesDimens.dynamic(100).toPoints()
 print("Dimensão dinâmica: \(dynamicDimension)")
 
 // Teste de sintaxe simplificada
@@ -216,7 +216,7 @@ print("Sintaxe simplificada - Fixo: \(simpleFixed), Dinâmico: \(simpleDynamic)"
 
 ## 🚨 Solução de Problemas
 
-### Erro: "No such module 'AppDimens'"
+### Erro: "No such module 'VirtuesDimens'"
 
 1. Verifique se o pod foi instalado corretamente:
    ```bash
@@ -230,11 +230,11 @@ print("Sintaxe simplificada - Fixo: \(simpleFixed), Dinâmico: \(simpleDynamic)"
 
 3. Rebuild o projeto
 
-### Erro: "AppDimensGames not found"
+### Erro: "VirtuesDimensGames not found"
 
 1. Verifique se o módulo Games foi incluído:
    ```ruby
-   pod 'AppDimens/Games'
+   pod 'VirtuesDimens/Games'
    ```
 
 2. Verifique se Metal está disponível no dispositivo
@@ -263,14 +263,14 @@ print("Sintaxe simplificada - Fixo: \(simpleFixed), Dinâmico: \(simpleDynamic)"
 ### CocoaPods
 
 ```bash
-pod update AppDimens
+pod update VirtuesDimens
 ```
 
 ### Swift Package Manager
 
 No Xcode:
 1. File → Package Dependencies
-2. Selecionar AppDimens
+2. Selecionar VirtuesDimens
 3. Update to Latest Package Versions
 
 ## 📚 Próximos Passos
@@ -286,6 +286,6 @@ Após a instalação, consulte:
 
 Para dúvidas ou problemas:
 
-- [GitHub Issues](https://github.com/bodenberg/appdimens/issues)
+- [GitHub Issues](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - Email: jean.bodenberg@gmail.com
-- [Documentação](https://github.com/bodenberg/appdimens/wiki)
+- [Documentação](https://github.com/www-virtues-ag/virtues-dimens/wiki)

@@ -1,20 +1,20 @@
 <div align="center">
-    <img src="../IMAGES/image_sample_devices.png" alt="AppDimens Android - Responsive Design" height="250"/>
-    <h1>📐 AppDimens Android</h1>
+    <img src="../IMAGES/image_sample_devices.png" alt="Virtues Android - Responsive Design" height="250"/>
+    <h1>📐 Virtues Android</h1>
     <p><strong>Smart and Responsive Dimensioning for Android</strong></p>
     <p>Mathematically responsive scaling that ensures your UI design adapts perfectly to any screen size or aspect ratio — from phones to TVs, cars, and wearables.</p>
 
-[![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)](https://github.com/bodenberg/appdimens/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/bodenberg/virtues/releases)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](../LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Android%2021+-orange.svg)](https://developer.android.com/)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](https://appdimens-project.web.app/)
+[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](https://virtues-project.web.app/)
 </div>
 
 ---
 
-## 🎯 What is AppDimens Android?
+## 🎯 What is Virtues Android?
 
-**AppDimens Android** is a comprehensive dimensioning system that replaces fixed DP values with intelligently scaled dimensions based on actual screen characteristics. While Android's default DP (1 DP = 1/160 inch) is constant, AppDimens treats it as a base value that scales predictably across different screen sizes, densities, and aspect ratios.
+**Virtues Android** is a comprehensive dimensioning system that replaces fixed DP values with intelligently scaled dimensions based on actual screen characteristics. While Android's default DP (1 DP = 1/160 inch) is constant, Virtues treats it as a base value that scales predictably across different screen sizes, densities, and aspect ratios.
 
 ### 🎨 Key Benefits
 
@@ -33,17 +33,17 @@
 ```kotlin
 dependencies {
     // Core library (Dynamic + Fixed scaling)
-    implementation("io.github.bodenberg:appdimens-dynamic:1.0.5")
+    implementation("ag.virtues.dimens:virtues-dynamic:1.0.0")
     
     // Optional: SDP & SSP scaling
-    implementation("io.github.bodenberg:appdimens-sdps:1.0.5")
-    implementation("io.github.bodenberg:appdimens-ssps:1.0.5")
+    implementation("ag.virtues.dimens:virtues-sdps:1.0.0")
+    implementation("ag.virtues.dimens:virtues-ssps:1.0.0")
     
     // All-in-one package (does not include games module)
-    implementation("io.github.bodenberg:appdimens-all:1.0.5")
+    implementation("ag.virtues.dimens:virtues-all:1.0.0")
     
     // Game development with C++/NDK support (separate dependency)
-    implementation("io.github.bodenberg:appdimens-games:1.0.5")
+    implementation("ag.virtues.dimens:virtues-games:1.0.0")
 }
 ```
 
@@ -51,11 +51,11 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'io.github.bodenberg:appdimens-dynamic:1.0.5'
-    implementation 'io.github.bodenberg:appdimens-sdps:1.0.5'
-    implementation 'io.github.bodenberg:appdimens-ssps:1.0.5'
-    implementation 'io.github.bodenberg:appdimens-all:1.0.5'
-    implementation 'io.github.bodenberg:appdimens-games:1.0.5'
+    implementation 'ag.virtues.dimens:virtues-dynamic:1.0.0'
+    implementation 'ag.virtues.dimens:virtues-sdps:1.0.0'
+    implementation 'ag.virtues.dimens:virtues-ssps:1.0.0'
+    implementation 'ag.virtues.dimens:virtues-all:1.0.0'
+    implementation 'ag.virtues.dimens:virtues-games:1.0.0'
 }
 ```
 
@@ -172,14 +172,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         
         // Fixed scaling - subtle adjustment
-        val fixedWidthPx = AppDimens.fixedPx(
+        val fixedWidthPx = Virtues.fixedPx(
             value = 200f,
             screenType = ScreenType.LOWEST,
             resources = resources
         ).toInt()
         
         // Dynamic scaling - proportional adjustment
-        val dynamicTextSizeSp = AppDimens.dynamicSp(
+        val dynamicTextSizeSp = Virtues.dynamicSp(
             value = 18f,
             screenType = ScreenType.LOWEST,
             resources = resources
@@ -238,7 +238,7 @@ fun ResponsiveGrid() {
     var spanCount by remember { mutableStateOf(3) }
     
     // Calculate optimal number of columns
-    AppDimens.CalculateAvailableItemCount(
+    Virtues.CalculateAvailableItemCount(
         itemSize = 100.dp,
         itemPadding = 4.dp,
         direction = DpQualifier.WIDTH,
@@ -267,11 +267,11 @@ fun ResponsiveGrid() {
 
 | Module | Description | Use Case |
 |--------|-------------|----------|
-| **appdimens-dynamic** | Core library with Fixed & Dynamic scaling | Essential for all responsive apps |
-| **appdimens-sdps** | SDP scaling with conditional logic | XML-based responsive design |
-| **appdimens-ssps** | SSP scaling with conditional logic | Responsive text sizing |
-| **appdimens-all** | Complete package with all modules (except games) | One-stop solution for standard apps |
-| **appdimens-games** | Game development with C++/NDK | Android game development |
+| **virtues-dynamic** | Core library with Fixed & Dynamic scaling | Essential for all responsive apps |
+| **virtues-sdps** | SDP scaling with conditional logic | XML-based responsive design |
+| **virtues-ssps** | SSP scaling with conditional logic | Responsive text sizing |
+| **virtues-all** | Complete package with all modules (except games) | One-stop solution for standard apps |
+| **virtues-games** | Game development with C++/NDK | Android game development |
 
 ### 🎮 Games Module Features
 
@@ -283,19 +283,19 @@ fun ResponsiveGrid() {
 
 #### 🎮 Games Module Usage
 
-The Games module provides specialized functionality for Android game development with C++/NDK support. It's a separate dependency that's not included in the `appdimens-all` package.
+The Games module provides specialized functionality for Android game development with C++/NDK support. It's a separate dependency that's not included in the `virtues-all` package.
 
 **Basic Integration:**
 
 ```kotlin
 class GameActivity : Activity() {
-    private lateinit var appDimensGames: AppDimensGames
+    private lateinit var appDimensGames: VirtuesGames
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Initialize AppDimens Games
-        appDimensGames = AppDimensGames.getInstance()
+        // Initialize Virtues Games
+        appDimensGames = VirtuesGames.getInstance()
         appDimensGames.initialize(this)
         
         // Calculate responsive dimensions for game elements
@@ -310,15 +310,15 @@ class GameActivity : Activity() {
 **C++ Integration:**
 
 ```cpp
-#include "AppDimensGames.h"
+#include "VirtuesGames.h"
 
 class GameEngine {
 private:
-    AppDimensGames& appDimensGames;
+    VirtuesGames& appDimensGames;
     
 public:
     GameEngine(JNIEnv* env, jobject context) {
-        appDimensGames = AppDimensGames::getInstance();
+        appDimensGames = VirtuesGames::getInstance();
         appDimensGames.initialize(env, context);
     }
     
@@ -340,7 +340,7 @@ public:
 - **GAME_WORLD**: Maintains consistent world coordinates for game objects
 - **UI_OVERLAY**: For HUD and overlay elements
 
-For complete documentation, see [AppDimens Games Module](appdimens_games/README.md).
+For complete documentation, see [Virtues Games Module](virtues_games/README.md).
 
 ---
 
@@ -401,14 +401,14 @@ For complete documentation, see [AppDimens Games Module](appdimens_games/README.
 
 ```kotlin
 // Debug current screen configuration
-val (width, height) = AppDimensAdjustmentFactors.getCurrentScreenDimensions()
+val (width, height) = VirtuesAdjustmentFactors.getCurrentScreenDimensions()
 println("Screen: ${width} × ${height}")
 
 // Debug device type
 println("Device: ${DeviceType.current()}")
 
 // Debug adjustment factors
-val factors = AppDimensAdjustmentFactors.calculateAdjustmentFactors()
+val factors = VirtuesAdjustmentFactors.calculateAdjustmentFactors()
 println("Factors: ${factors}")
 ```
 
@@ -418,9 +418,9 @@ println("Factors: ${factors}")
 
 ### 📖 Complete Documentation
 
-- **[📘 Full Documentation](https://appdimens-project.web.app/)** - Comprehensive guides and API reference
+- **[📘 Full Documentation](https://virtues-project.web.app/)** - Comprehensive guides and API reference
 - **[🎯 Core Documentation](DOCS/)** - Detailed technical documentation
-- **[🎮 Games Module](appdimens_games/README.md)** - Game development guide
+- **[🎮 Games Module](virtues_games/README.md)** - Game development guide
 - **[📱 Examples](app/src/main/kotlin/)** - Real-world usage examples
 
 ### 🔗 Quick Links
@@ -428,7 +428,7 @@ println("Factors: ${factors}")
 - **[🚀 Installation Guide](#installation)** - Get started in minutes
 - **[📱 Examples](#usage-examples)** - Real-world usage examples
 - **[🔧 API Reference](DOCS/)** - Complete API documentation
-- **[❓ FAQ](https://appdimens-project.web.app/faq)** - Common questions and answers
+- **[❓ FAQ](https://virtues-project.web.app/faq)** - Common questions and answers
 
 ---
 
@@ -437,12 +437,12 @@ println("Factors: ${factors}")
 We welcome contributions! Please see our [Contributing Guidelines](../CONTRIBUTING.md) for details.
 
 ### 🐛 Found a Bug?
-- [Create an issue](https://github.com/bodenberg/appdimens/issues)
+- [Create an issue](https://github.com/bodenberg/virtues/issues)
 - Include device information and reproduction steps
 - Attach screenshots if applicable
 
 ### 💡 Have an Idea?
-- [Start a discussion](https://github.com/bodenberg/appdimens/discussions)
+- [Start a discussion](https://github.com/bodenberg/virtues/discussions)
 - Propose new features or improvements
 - Share your use cases
 
@@ -465,7 +465,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](../LIC
 
 ## 🌟 Show Your Support
 
-If AppDimens Android has helped your project, please consider:
+If Virtues Android has helped your project, please consider:
 
 - ⭐ **Starring** this repository
 - 🐦 **Sharing** on social media
@@ -476,5 +476,5 @@ If AppDimens Android has helped your project, please consider:
 
 <div align="center">
     <p><strong>Made with ❤️ for the Android development community</strong></p>
-    <p>AppDimens Android - Where responsive design meets mathematical precision</p>
+    <p>Virtues Android - Where responsive design meets mathematical precision</p>
 </div>

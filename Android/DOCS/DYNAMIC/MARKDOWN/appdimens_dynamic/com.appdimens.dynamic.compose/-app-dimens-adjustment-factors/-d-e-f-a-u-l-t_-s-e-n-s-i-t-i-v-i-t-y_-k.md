@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimensAdjustmentFactors](index.md)/[DEFAULT_SENSITIVITY_K](-d-e-f-a-u-l-t_-s-e-n-s-i-t-i-v-i-t-y_-k.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesAdjustmentFactors](index.md)/[DEFAULT_SENSITIVITY_K](-d-e-f-a-u-l-t_-s-e-n-s-i-t-i-v-i-t-y_-k.md)
 
 # DEFAULT_SENSITIVITY_K
 

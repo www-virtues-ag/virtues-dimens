@@ -1,4 +1,4 @@
-//[appdimens_sdps](../../../index.md)/[com.appdimens.sdps.compose](../index.md)/[Scaled](index.md)/[sdp](sdp.md)
+//[virtues_sdps](../../../index.md)/[com.virtues.sdps.compose](../index.md)/[Scaled](index.md)/[sdp](sdp.md)
 
 # sdp
 

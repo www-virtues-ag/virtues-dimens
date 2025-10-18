@@ -1,11 +1,11 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[AppDimensGames](index.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[VirtuesGames](index.md)
 
-# AppDimensGames
+# VirtuesGames
 
 [androidJvm]\
-class [AppDimensGames](index.md)
+class [VirtuesGames](index.md)
 
-EN Main AppDimens Games class for Android game development. PT Classe principal AppDimens Games para desenvolvimento de jogos Android.
+EN Main Virtues Games class for Android game development. PT Classe principal Virtues Games para desenvolvimento de jogos Android.
 
 ## Types
 
@@ -26,7 +26,7 @@ EN Main AppDimens Games class for Android game development. PT Classe principal 
 | [calculateUISize](calculate-u-i-size.md) | [androidJvm]<br>fun [calculateUISize](calculate-u-i-size.md)(baseSize: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html) = 24.0f): [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)<br>EN Calculates UI overlay size for games. |
 | [calculateVector2D](calculate-vector2-d.md) | [androidJvm]<br>fun [calculateVector2D](calculate-vector2-d.md)(vector: [GameVector2D](../-game-vector2-d/index.md), type: [GameDimensionType](../-game-dimension-type/index.md)): [GameVector2D](../-game-vector2-d/index.md)<br>EN Calculates a 2D vector using the specified type. |
 | [getScreenConfig](get-screen-config.md) | [androidJvm]<br>fun [getScreenConfig](get-screen-config.md)(): [GameScreenConfig](../-game-screen-config/index.md)?<br>EN Gets the current screen configuration. |
-| [initialize](initialize.md) | [androidJvm]<br>fun [initialize](initialize.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html)): [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html)<br>EN Initializes the AppDimens Games library. |
+| [initialize](initialize.md) | [androidJvm]<br>fun [initialize](initialize.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html)): [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html)<br>EN Initializes the Virtues Games library. |
 | [isInitialized](is-initialized.md) | [androidJvm]<br>fun [isInitialized](is-initialized.md)(): [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html)<br>EN Checks if the library is initialized. |
-| [shutdown](shutdown.md) | [androidJvm]<br>fun [shutdown](shutdown.md)()<br>EN Shuts down the AppDimens Games library. PT Desliga a biblioteca AppDimens Games. |
+| [shutdown](shutdown.md) | [androidJvm]<br>fun [shutdown](shutdown.md)()<br>EN Shuts down the Virtues Games library. PT Desliga a biblioteca Virtues Games. |
 | [updateScreenConfiguration](update-screen-configuration.md) | [androidJvm]<br>fun [updateScreenConfiguration](update-screen-configuration.md)()<br>EN Updates the screen configuration. PT Atualiza a configuração da tela. |

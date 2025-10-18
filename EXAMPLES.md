@@ -1,6 +1,6 @@
-# 🎨 AppDimens - Practical Examples
+# 🎨 Virtues - Practical Examples
 
-This document provides comprehensive, real-world examples of how to use AppDimens across different platforms and scenarios.
+This document provides comprehensive, real-world examples of how to use Virtues across different platforms and scenarios.
 
 ## 📋 Table of Contents
 
@@ -83,7 +83,7 @@ fun ResponsiveGrid(
     var spanCount by remember { mutableStateOf(2) }
     
     // Calculate optimal number of columns
-    AppDimens.CalculateAvailableItemCount(
+    Virtues.CalculateAvailableItemCount(
         itemSize = 120.dp,
         itemPadding = 8.dp,
         direction = DpQualifier.WIDTH,
@@ -270,14 +270,14 @@ fun AdaptiveButton(
 
 ```kotlin
 class GameActivity : Activity() {
-    private lateinit var appDimensGames: AppDimensGames
+    private lateinit var appDimensGames: VirtuesGames
     private lateinit var gameRenderer: GameRenderer
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Initialize AppDimens Games
-        appDimensGames = AppDimensGames.getInstance()
+        // Initialize Virtues Games
+        appDimensGames = VirtuesGames.getInstance()
         appDimensGames.initialize(this)
         
         // Set up game renderer
@@ -292,7 +292,7 @@ class GameActivity : Activity() {
 }
 
 class GameRenderer : GLSurfaceView.Renderer {
-    private lateinit var appDimensGames: AppDimensGames
+    private lateinit var appDimensGames: VirtuesGames
     
     override fun onDrawFrame(gl: GL10?) {
         // Calculate responsive dimensions for game elements
@@ -405,7 +405,7 @@ struct AdaptiveButton: View {
     let action: () -> Void
     
     var body: some View {
-        let buttonSize = AppDimens.fixed(80)
+        let buttonSize = Virtues.fixed(80)
             .screen(.watch, 40)           // 40pt for Apple Watch
             .screen(.tablet, 120)         // 120pt for iPad
             .aspectRatio(enable: true)    // Enable aspect ratio adjustment
@@ -509,14 +509,14 @@ class AdvancedViewController: UIViewController {
     
     private func setupAdvancedUI() {
         // Custom dimensions with device-specific values
-        let customDimension = AppDimens.fixed(16)
+        let customDimension = Virtues.fixed(16)
             .screen(.phone, 14)           // 14pt for phones
             .screen(.tablet, 18)          // 18pt for tablets
             .aspectRatio(enable: true)    // Enable aspect ratio adjustment
             .toPoints()
         
         // Dynamic with custom screen type
-        let dynamicDimension = AppDimens.dynamic(100)
+        let dynamicDimension = Virtues.dynamic(100)
             .type(.highest)               // Use highest screen dimension
             .toPoints()
         
@@ -900,8 +900,8 @@ struct NewsArticle: View {
 // Android
 class OptimizedActivity : AppCompatActivity() {
     // Cache frequently used dimensions
-    private val buttonHeight = AppDimens.fixed(44).toPx(resources).toInt()
-    private val cardWidth = AppDimens.dynamic(300).toPx(resources).toInt()
+    private val buttonHeight = Virtues.fixed(44).toPx(resources).toInt()
+    private val cardWidth = Virtues.dynamic(300).toPx(resources).toInt()
     private val padding = 16.fxdp
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -915,8 +915,8 @@ class OptimizedActivity : AppCompatActivity() {
 // iOS
 class OptimizedViewController: UIViewController {
     // Cache frequently used dimensions
-    private let buttonHeight = AppDimens.fixed(44).toPoints()
-    private let cardWidth = AppDimens.dynamic(300).toPoints()
+    private let buttonHeight = Virtues.fixed(44).toPoints()
+    private let cardWidth = Virtues.dynamic(300).toPoints()
     private let padding = 16.fxpt
     
     override func viewDidLoad() {
@@ -981,7 +981,7 @@ struct LazyListWithDimensions: View {
 
 ```kotlin
 // Android
-object AppDimensions {
+object Virtuesions {
     val buttonHeight = 44.fxdp
     val cardWidth = 300.dydp
     val padding = 16.fxdp
@@ -991,7 +991,7 @@ object AppDimensions {
 
 ```swift
 // iOS
-struct AppDimensions {
+struct Virtuesions {
     static let buttonHeight = 44.fxpt
     static let cardWidth = 300.dypt
     static let padding = 16.fxpt
@@ -1011,7 +1011,7 @@ val buttonSize = 80.scaledDp()
 
 ```swift
 // iOS
-let buttonSize = AppDimens.fixed(80)
+let buttonSize = Virtues.fixed(80)
     .screen(.watch, 40)
     .screen(.tablet, 120)
     .toPoints()
@@ -1028,9 +1028,9 @@ let buttonSize = AppDimens.fixed(80)
 
 ## 🎯 Conclusion
 
-These examples demonstrate the power and flexibility of AppDimens across different platforms and use cases. By following these patterns and best practices, you can create responsive, consistent, and performant user interfaces that work seamlessly across all device types.
+These examples demonstrate the power and flexibility of Virtues across different platforms and use cases. By following these patterns and best practices, you can create responsive, consistent, and performant user interfaces that work seamlessly across all device types.
 
 For more examples and detailed documentation, visit:
 - [Android Documentation](Android/README.md)
 - [iOS Documentation](iOS/README.md)
-- [Complete API Reference](https://appdimens-project.web.app/)
+- [Complete API Reference](https://virtues-project.web.app/)

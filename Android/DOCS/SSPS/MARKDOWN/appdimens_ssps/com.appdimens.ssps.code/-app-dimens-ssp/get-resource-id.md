@@ -1,4 +1,4 @@
-//[appdimens_ssps](../../../index.md)/[com.appdimens.ssps.code](../index.md)/[AppDimensSsp](index.md)/[getResourceId](get-resource-id.md)
+//[virtues_ssps](../../../index.md)/[com.virtues.ssps.code](../index.md)/[VirtuesSsp](index.md)/[getResourceId](get-resource-id.md)
 
 # getResourceId
 

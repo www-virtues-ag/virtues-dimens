@@ -1,4 +1,4 @@
-//[appdimens_library](../../../index.md)/[com.appdimens.library](../index.md)/[DpQualifierEntry](index.md)/[DpQualifierEntry](-dp-qualifier-entry.md)
+//[virtues_library](../../../index.md)/[com.virtues.library](../index.md)/[DpQualifierEntry](index.md)/[DpQualifierEntry](-dp-qualifier-entry.md)
 
 # DpQualifierEntry
 

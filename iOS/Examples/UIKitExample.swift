@@ -3,14 +3,14 @@
  * GIT: https://github.com/bodenberg/appdimens.git
  * Date: 2025-01-15
  *
- * Library: AppDimens iOS - UIKit Example
+ * Library: VirtuesDimens iOS - UIKit Example
  *
  * Description:
- * Example showing how to use AppDimens with UIKit.
+ * Example showing how to use VirtuesDimens with UIKit.
  */
 
 import UIKit
-import AppDimens
+import VirtuesDimens
 
 class UIKitExampleViewController: UIViewController {
     
@@ -30,7 +30,7 @@ class UIKitExampleViewController: UIViewController {
         
         // Create a title label with fixed font size
         let titleLabel = UILabel()
-        titleLabel.text = "AppDimens UIKit Example"
+        titleLabel.text = "VirtuesDimens UIKit Example"
         titleLabel.textAlignment = .center
         titleLabel.textColor = .white
         titleLabel.fxFontSize(20) // Fixed font size
@@ -47,7 +47,7 @@ class UIKitExampleViewController: UIViewController {
         
         // Create a description label with fixed font size
         let descriptionLabel = UILabel()
-        descriptionLabel.text = "This example demonstrates how to use AppDimens with UIKit for responsive layouts."
+        descriptionLabel.text = "This example demonstrates how to use VirtuesDimens with UIKit for responsive layouts."
         descriptionLabel.numberOfLines = 0
         descriptionLabel.textAlignment = .center
         descriptionLabel.textColor = .white
@@ -91,7 +91,7 @@ class UIKitExampleViewController: UIViewController {
     @objc private func buttonTapped() {
         let alert = UIAlertController(
             title: "Button Tapped!",
-            message: "This button uses AppDimens for responsive sizing.",
+            message: "This button uses VirtuesDimens for responsive sizing.",
             preferredStyle: .alert
         )
         

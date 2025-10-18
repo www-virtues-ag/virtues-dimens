@@ -1,6 +1,6 @@
 # 📝 Changelog
 
-All notable changes to AppDimens will be documented in this file.
+All notable changes to Virtues will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -23,12 +23,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Missing examples in some modules
 - Formatting issues in README files
 
-## [1.0.5] - 2025-01-15
+## [1.0.0] - 2025-01-15
 
 ### Changed
-- Updated version to 1.0.5 across all Android and iOS modules
+- Updated version to 1.0.0 across all Android and iOS modules
 - Updated documentation to include games module dependency information
-- Clarified that games module is not included in appdimens-all package
+- Clarified that games module is not included in virtues-all package
 
 ## [1.0.4] - 2024-01-15
 
@@ -108,7 +108,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2023-12-25
 
 ### Added
-- **Core Library**: AppDimens Dynamic module with Fixed and Dynamic scaling
+- **Core Library**: Virtues Dynamic module with Fixed and Dynamic scaling
 - **Android Support**: Complete Android implementation
 - **Jetpack Compose**: Full Compose integration
 - **XML Views**: XML and Data Binding support
@@ -207,12 +207,12 @@ For migration between major versions, see:
 
 ## Contributing
 
-To contribute to AppDimens, see our [Contributing Guide](CONTRIBUTING.md).
+To contribute to Virtues, see our [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-AppDimens is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
+Virtues is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
 
 ---
 
-**AppDimens** - Responsive design made simple! 🚀
+**Virtues** - Responsive design made simple! 🚀

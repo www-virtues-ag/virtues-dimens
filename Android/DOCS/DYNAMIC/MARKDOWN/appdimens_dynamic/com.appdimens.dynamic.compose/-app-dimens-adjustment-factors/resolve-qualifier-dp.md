@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.compose](../index.md)/[AppDimensAdjustmentFactors](index.md)/[resolveQualifierDp](resolve-qualifier-dp.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesAdjustmentFactors](index.md)/[resolveQualifierDp](resolve-qualifier-dp.md)
 
 # resolveQualifierDp
 

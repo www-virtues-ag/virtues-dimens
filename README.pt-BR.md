@@ -5,9 +5,9 @@
 ---
 
 
-# 📐 AppDimens — Dimensionamento Inteligente e Responsivo para Android
+# 📐 Virtues — Dimensionamento Inteligente e Responsivo para Android
 
-**AppDimens** é uma biblioteca que fornece **dimensionamento matematicamente responsivo**, garantindo que o design da sua UI se adapte perfeitamente a qualquer tamanho ou proporção de tela — de **celulares** a **TVs**, **carros** e **wearables**.
+**Virtues** é uma biblioteca que fornece **dimensionamento matematicamente responsivo**, garantindo que o design da sua UI se adapte perfeitamente a qualquer tamanho ou proporção de tela — de **celulares** a **TVs**, **carros** e **wearables**.
 Funciona com **Jetpack Compose**, **Views (XML)** e **Data Binding**.
 
 ---
@@ -17,30 +17,14 @@ Funciona com **Jetpack Compose**, **Views (XML)** e **Data Binding**.
 ```kotlin
 dependencies {
     // Core (Dynamic + Fixed)
-    implementation("com.github.bodenberg.appdimens:appdimens-dynamic:1.0.5")
+    implementation("ag.virtues.dimens:virtues-dynamic:1.0.0")
 
     // SDP & SSP scaling (optional)
-    implementation("com.github.bodenberg.appdimens:appdimens-sdps:1.0.5")
-    implementation("com.github.bodenberg.appdimens:appdimens-ssps:1.0.5")
+    implementation("ag.virtues.dimens:virtues-sdps:1.0.0")
+    implementation("ag.virtues.dimens:virtues-ssps:1.0.0")
 
     // All in one
-    implementation("com.github.bodenberg.appdimens:appdimens-all:1.0.5")
-}
-
-maven { url 'https://jitpack.io' } //or maven central
-```
-
-```kotlin
-dependencies {
-    // Core (Dynamic + Fixed)
-    implementation("io.github.bodenberg:appdimens-dynamic:1.0.5")
-
-    // SDP & SSP scaling (optional)
-    implementation("io.github.bodenberg:appdimens-sdps:1.0.5")
-    implementation("io.github.bodenberg:appdimens-ssps:1.0.5")
-
-    // All in one
-    implementation("io.github.bodenberg:appdimens-all:1.0.5")
+    implementation("ag.virtues.dimens:virtues-all:1.0.0")
 }
 
 mavenCentral()
@@ -129,7 +113,7 @@ Dynamic funciona tanto **em Compose** quanto em **código Java/Kotlin** — incl
 ```
 
 ```kotlin
-val widthPx = AppDimens.dynamicPx(100f, ScreenType.LOWEST, resources)
+val widthPx = Virtues.dynamicPx(100f, ScreenType.LOWEST, resources)
 myView.layoutParams.width = widthPx.toInt()
 ```
 
@@ -157,7 +141,7 @@ O `sdp` e `ssp` também funcionam diretamente em XML, pois se baseiam em recurso
 ## 📏 Unidades Físicas (mm, cm, inch)
 
 ```kotlin
-val marginPx = AppDimensPhysicalUnits.toMm(5f, resources)
+val marginPx = VirtuesPhysicalUnits.toMm(5f, resources)
 view.setPadding(marginPx.toInt(), 0, 0, 0)
 ```
 
@@ -171,7 +155,7 @@ view.setPadding(marginPx.toInt(), 0, 0, 0)
 ## 🧮 Utilitário de Layout Dinâmico
 
 ```kotlin
-val spanCount = AppDimens.calculateAvailableItemCount(
+val spanCount = Virtues.calculateAvailableItemCount(
     containerSizePx = recyclerView.width,
     itemSizeDp = 100f,
     itemMarginDp = 8f,
@@ -207,7 +191,7 @@ val titleSize = 24.scaledSp()
 
 | Recurso                 | Compose |    XML Views    | Data Binding | Notas                                |
 | ----------------------- | :-----: | :-------------: | :----------: | ------------------------------------ |
-| **Dynamic (FX/DY)**     |    ✅    | ✅ (via recurso) |       ✅      | `.fxdp` / `.dydp` / AppDimens Object |
+| **Dynamic (FX/DY)**     |    ✅    | ✅ (via recurso) |       ✅      | `.fxdp` / `.dydp` / Virtues Object |
 | **SDP/SSP**             |    ✅    |        ✅        |       ❌      | Baseado em `@dimen` (pré-gerado)     |
 | **Physical Units**      |    ✅    |        ✅        |       ✅      | Conversão real                       |
 | **Regras Condicionais** |    ✅    | ✅ (via recurso) |       ✅      | Avançado para responsividade         |
@@ -216,7 +200,7 @@ val titleSize = 24.scaledSp()
 
 ## 📎 Recursos e Links
 
-* 📘 [Documentação completa](https://appdimens-project.web.app/)
+* 📘 [Documentação completa](https://virtues.ag/)
 * 🧮 [Exemplos Compose](#)
 * 🧰 [Exemplos com Views](#)
 * 🧭 [SDP/SSP Avançado](#)

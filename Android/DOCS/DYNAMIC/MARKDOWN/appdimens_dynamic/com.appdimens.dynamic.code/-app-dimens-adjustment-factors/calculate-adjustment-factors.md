@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensAdjustmentFactors](index.md)/[calculateAdjustmentFactors](calculate-adjustment-factors.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesAdjustmentFactors](index.md)/[calculateAdjustmentFactors](calculate-adjustment-factors.md)
 
 # calculateAdjustmentFactors
 

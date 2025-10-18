@@ -1,20 +1,20 @@
 <div align="center">
-    <img src="IMAGES/image_sample_devices.png" alt="AppDimens - Responsive Design Across All Devices" height="300"/>
-    <h1>📐 AppDimens</h1>
+    <img src="IMAGES/image_sample_devices.png" alt="Virtues - Responsive Design Across All Devices" height="300"/>
+    <h1>📐 Virtues</h1>
     <p><strong>Smart and Responsive Dimensioning for Android & iOS</strong></p>
     <p>Mathematically responsive scaling that ensures your UI design adapts perfectly to any screen size or aspect ratio — from phones to TVs, cars, and wearables.</p>
 
-[![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)](https://github.com/bodenberg/appdimens/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/www-virtues-ag/virtues-dimens/releases)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-orange.svg)](https://github.com/bodenberg/appdimens)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](https://appdimens-project.web.app/)
+[![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS-orange.svg)](https://github.com/www-virtues-ag/virtues-dimens)
+[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](https://virtues.ag/)
 </div>
 
 ---
 
-## 🎯 What is AppDimens?
+## 🎯 What is Virtues?
 
-**AppDimens** is a comprehensive dimensioning system that replaces fixed pixel values with intelligently scaled dimensions based on actual screen characteristics. While traditional DP/Points are constant, AppDimens treats them as base values that scale predictably across different screen sizes, densities, and aspect ratios.
+**Virtues** is a comprehensive dimensioning system that replaces fixed pixel values with intelligently scaled dimensions based on actual screen characteristics. While traditional DP/Points are constant, Virtues treats them as base values that scale predictably across different screen sizes, densities, and aspect ratios.
 
 ### 🎨 Key Benefits
 
@@ -33,17 +33,17 @@
 ```kotlin
 dependencies {
     // Core library (Dynamic + Fixed scaling)
-    implementation("io.github.bodenberg:appdimens-dynamic:1.0.5")
+    implementation("ag.virtues.dimens:virtues-dynamic:1.0.0")
     
     // Optional: SDP & SSP scaling
-    implementation("io.github.bodenberg:appdimens-sdps:1.0.5")
-    implementation("io.github.bodenberg:appdimens-ssps:1.0.5")
+    implementation("ag.virtues.dimens:virtues-sdps:1.0.0")
+    implementation("ag.virtues.dimens:virtues-ssps:1.0.0")
     
     // All-in-one package (does not include games module)
-    implementation("io.github.bodenberg:appdimens-all:1.0.5")
+    implementation("ag.virtues.dimens:virtues-all:1.0.0")
     
     // Game development with C++/NDK support (separate dependency)
-    implementation("io.github.bodenberg:appdimens-games:1.0.5")
+    implementation("ag.virtues.dimens:virtues-games:1.0.0")
 }
 ```
 
@@ -51,12 +51,12 @@ dependencies {
 
 ```ruby
 # Podfile
-pod 'AppDimens'
+pod 'Virtues'
 ```
 
 ```swift
 // Swift Package Manager
-.package(url: "https://github.com/bodenberg/appdimens.git", from: "1.0.5")
+.package(url: "https://github.com/bodenberg/virtues.git", from: "1.0.0")
 ```
 
 ---
@@ -161,7 +161,7 @@ val buttonSize = 80.scaledDp()
 
 ```swift
 // iOS
-let buttonSize = AppDimens.fixed(80)
+let buttonSize = Virtues.fixed(80)
     .screen(.watch, 40)           // 40pt for Apple Watch
     .screen(.tablet, 120)         // 120pt for iPad
     .aspectRatio(enable: true)    // Enable aspect ratio adjustment
@@ -172,7 +172,7 @@ let buttonSize = AppDimens.fixed(80)
 
 ```kotlin
 // Android
-val marginPx = AppDimensPhysicalUnits.toMm(5f, resources)
+val marginPx = VirtuesPhysicalUnits.toMm(5f, resources)
 view.setPadding(marginPx.toInt(), 0, 0, 0)
 ```
 
@@ -186,7 +186,7 @@ Rectangle()
 
 ```kotlin
 // Android - Calculate optimal grid columns
-val spanCount = AppDimens.calculateAvailableItemCount(
+val spanCount = Virtues.calculateAvailableItemCount(
     containerSizePx = recyclerView.width,
     itemSizeDp = 100f,
     itemMarginDp = 8f,
@@ -219,17 +219,17 @@ val spanCount = AppDimens.calculateAvailableItemCount(
 
 ### 📖 Complete Documentation
 
-- **[📘 Full Documentation](https://appdimens-project.web.app/)** - Comprehensive guides and API reference
+- **[📘 Full Documentation](https://virtues-project.web.app/)** - Comprehensive guides and API reference
 - **[🤖 Android Guide](Android/README.md)** - Android-specific documentation
 - **[🍎 iOS Guide](iOS/README.md)** - iOS-specific documentation
-- **[🎮 Games Module](Android/appdimens_games/README.md)** - Game development with C++/NDK
+- **[🎮 Games Module](Android/virtues_games/README.md)** - Game development with C++/NDK
 
 ### 🎯 Quick Links
 
 - **[🚀 Installation Guide](Android/README.md#installation)** - Get started in minutes
 - **[📱 Examples](Android/app/src/main/kotlin/)** - Real-world usage examples
 - **[🔧 API Reference](Android/DOCS/)** - Complete API documentation
-- **[❓ FAQ](https://appdimens-project.web.app/faq)** - Common questions and answers
+- **[❓ FAQ](https://virtues-project.web.app/faq)** - Common questions and answers
 
 ---
 
@@ -257,12 +257,12 @@ Great for business applications that need to work on tablets, phones, and deskto
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ### 🐛 Found a Bug?
-- [Create an issue](https://github.com/bodenberg/appdimens/issues)
+- [Create an issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - Include device information and reproduction steps
 - Attach screenshots if applicable
 
 ### 💡 Have an Idea?
-- [Start a discussion](https://github.com/bodenberg/appdimens/discussions)
+- [Start a discussion](https://github.com/www-virtues-ag/virtues-dimens/discussions)
 - Propose new features or improvements
 - Share your use cases
 
@@ -276,8 +276,10 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 👨‍💻 Author
 
+**VIRTUES MEDIA & APPS**
+
 **Jean Bodenberg**
-- 🌐 [GitHub](https://github.com/bodenberg)
+- 🌐 [GitHub](https://github.com/www-virtues-ag)
 - 📧 [Email](mailto:jean.bodenberg@gmail.com)
 - 💼 [LinkedIn](https://linkedin.com/in/jean-bodenberg)
 
@@ -285,7 +287,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 🌟 Show Your Support
 
-If AppDimens has helped your project, please consider:
+If Virtues has helped your project, please consider:
 
 - ⭐ **Starring** this repository
 - 🐦 **Sharing** on social media
@@ -296,5 +298,5 @@ If AppDimens has helped your project, please consider:
 
 <div align="center">
     <p><strong>Made with ❤️ for the mobile development community</strong></p>
-    <p>AppDimens - Where responsive design meets mathematical precision</p>
+    <p>Virtues - Where responsive design meets mathematical precision</p>
 </div>

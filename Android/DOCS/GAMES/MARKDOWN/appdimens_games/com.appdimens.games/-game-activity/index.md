@@ -1,11 +1,11 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameActivity](index.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameActivity](index.md)
 
 # GameActivity
 
 [androidJvm]\
 class [GameActivity](index.md) : [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html)
 
-EN Example game activity demonstrating AppDimens Games usage. PT Atividade de jogo de exemplo demonstrando o uso do AppDimens Games.
+EN Example game activity demonstrating Virtues Games usage. PT Atividade de jogo de exemplo demonstrando o uso do Virtues Games.
 
 ## Constructors
 

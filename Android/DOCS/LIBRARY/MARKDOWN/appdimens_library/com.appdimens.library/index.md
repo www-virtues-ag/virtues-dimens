@@ -1,4 +1,4 @@
-//[appdimens_library](../../index.md)/[com.appdimens.library](index.md)
+//[virtues_library](../../index.md)/[com.virtues.library](index.md)
 
 # Package-level declarations
 

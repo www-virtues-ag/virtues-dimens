@@ -1,4 +1,4 @@
-//[appdimens_sdps](../../../index.md)/[com.appdimens.sdps.compose](../index.md)/[CustomDpEntry](index.md)/[uiModeType](ui-mode-type.md)
+//[virtues_sdps](../../../index.md)/[com.virtues.sdps.compose](../index.md)/[CustomDpEntry](index.md)/[uiModeType](ui-mode-type.md)
 
 # uiModeType
 

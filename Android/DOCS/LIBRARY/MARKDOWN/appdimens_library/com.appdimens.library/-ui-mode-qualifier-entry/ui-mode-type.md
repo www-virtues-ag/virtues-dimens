@@ -1,4 +1,4 @@
-//[appdimens_library](../../../index.md)/[com.appdimens.library](../index.md)/[UiModeQualifierEntry](index.md)/[uiModeType](ui-mode-type.md)
+//[virtues_library](../../../index.md)/[com.virtues.library](../index.md)/[UiModeQualifierEntry](index.md)/[uiModeType](ui-mode-type.md)
 
 # uiModeType
 

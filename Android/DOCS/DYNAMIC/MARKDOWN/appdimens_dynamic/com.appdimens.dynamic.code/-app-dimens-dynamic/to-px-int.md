@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimensDynamic](index.md)/[toPxInt](to-px-int.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDynamic](index.md)/[toPxInt](to-px-int.md)
 
 # toPxInt
 

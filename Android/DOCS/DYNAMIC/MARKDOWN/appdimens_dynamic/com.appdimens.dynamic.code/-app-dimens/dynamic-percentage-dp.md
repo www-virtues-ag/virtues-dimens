@@ -1,4 +1,4 @@
-//[appdimens_dynamic](../../../index.md)/[com.appdimens.dynamic.code](../index.md)/[AppDimens](index.md)/[dynamicPercentageDp](dynamic-percentage-dp.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[Virtues](index.md)/[dynamicPercentageDp](dynamic-percentage-dp.md)
 
 # dynamicPercentageDp
 

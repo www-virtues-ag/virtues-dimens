@@ -1,4 +1,4 @@
-//[appdimens_games](../../../index.md)/[com.appdimens.games](../index.md)/[GameViewportMode](index.md)/[valueOf](value-of.md)
+//[virtues_games](../../../index.md)/[com.virtues.games](../index.md)/[GameViewportMode](index.md)/[valueOf](value-of.md)
 
 # valueOf
 
