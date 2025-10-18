@@ -20,7 +20,7 @@ This document provides comprehensive, real-world examples of how to use Virtues 
 
 ```kotlin
 @Composable
-fun ResponsiveCard(
+fun ResponsiveCard( 
     title: String,
     content: String,
     onActionClick: () -> Unit
