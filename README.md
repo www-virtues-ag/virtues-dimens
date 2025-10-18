@@ -274,17 +274,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ---
 
-## 👨‍💻 Author
-
-**VIRTUES MEDIA & APPS**
-
-**Jean Bodenberg**
-- 🌐 [GitHub](https://github.com/www-virtues-ag)
-- 📧 [Email](mailto:jean.bodenberg@gmail.com)
-- 💼 [LinkedIn](https://linkedin.com/in/jean-bodenberg)
-
----
-
 ## 🌟 Show Your Support
 
 If Virtues has helped your project, please consider:
