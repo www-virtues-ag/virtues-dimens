@@ -11,7 +11,7 @@
 
     <name>Virtues Games</name>
     <description>A specialized Virtues module designed for Android game development with C++/NDK support. Provides responsive dimensioning, game-specific utilities, and native performance optimizations for game engines like Cocos2d-x, OpenGL ES, and Vulkan.</description>
-    <url>https://github.com/www-virtues-ag/virtues-dimens</url>
+    <url>https://github.com/www-virtues-ag/virtues-dimens-dimens</url>
 
     <licenses>
         <license>
@@ -30,9 +30,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/www-virtues-ag/virtues-dimens.git</connection>
-        <developerConnection>scm:git:ssh://github.com/www-virtues-ag/virtues-dimens.git</developerConnection>
-        <url>https://github.com/www-virtues-ag/virtues-dimens</url>
+        <connection>scm:git:git://github.com/www-virtues-ag/virtues-dimens-dimens.git</connection>
+        <developerConnection>scm:git:ssh://github.com/www-virtues-ag/virtues-dimens-dimens.git</developerConnection>
+        <url>https://github.com/www-virtues-ag/virtues-dimens-dimens</url>
     </scm>
 
     <properties>

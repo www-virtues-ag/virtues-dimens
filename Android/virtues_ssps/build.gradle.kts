@@ -38,7 +38,7 @@ mavenPublishing {
             "An extension of AppDimens that implements the SSP (Scaled Density Pixels) standard for text sizes (Sp). It provides pre-calculated @dimen resources, ensuring font size scales consistently across different densities and screen sizes. Essential for responsive and legible text in Compose and XML Views. " +
                     "(android, kotlin, java, jetpack-compose, xml, swift, swiftui, ios, dp, sp, sdp, ssp, dimensions, responsive, layout, design-system, adaptive, dynamic, fixed, view-system)"
         )
-        url.set("https://github.com/www-virtues-ag/virtues-dimens")
+        url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         inceptionYear.set("2025")
         licenses {
             license {
@@ -55,9 +55,9 @@ mavenPublishing {
             }
         }
         scm {
-            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens.git")
-            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens.git")
-            url.set("https://github.com/www-virtues-ag/virtues-dimens")
+            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         }
     }
 
@@ -80,7 +80,7 @@ publishing {
         }
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens")
+            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens-dimens")
             credentials {
                 username = project.findProperty("gpr.user") as String?
                 password = project.findProperty("gpr.key") as String?

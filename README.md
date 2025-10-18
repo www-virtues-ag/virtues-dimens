@@ -56,7 +56,7 @@ pod 'Virtues'
 
 ```swift
 // Swift Package Manager
-.package(url: "https://github.com/www-virtues-ag/virtues.git", from: "1.0.0")
+.package(url: "https://github.com/www-virtues-ag/virtues-dimens.git", from: "1.0.0")
 ```
 
 ---

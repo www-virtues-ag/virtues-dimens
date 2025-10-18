@@ -37,7 +37,7 @@ mavenPublishing {
             "The essential Virtues module for responsive scaling via code. It includes the Dynamic (DY) model for proportional dimensioning (ideal for containers and fluid layouts) and the refined Fixed (FX) model for logarithmic scaling (ideal for paddings, margins, and buttons). Supports Jetpack Compose, XML Views (via Data Binding), and direct calls in Kotlin/Java. " +
                     "(android, kotlin, java, jetpack-compose, xml, swift, swiftui, ios, dp, sp, sdp, ssp, dimensions, responsive, layout, design-system, adaptive, dynamic, fixed, view-system)"
         )
-        url.set("https://github.com/www-virtues-ag/virtues-dimens")
+        url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         inceptionYear.set("2025")
         licenses {
             license {
@@ -54,9 +54,9 @@ mavenPublishing {
             }
         }
         scm {
-            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens.git")
-            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens.git")
-            url.set("https://github.com/www-virtues-ag/virtues-dimens")
+            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         }
     }
     val isJitPack = System.getenv("JITPACK") != null || System.getenv("CI") == "true"
@@ -78,7 +78,7 @@ publishing {
         }
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens")
+            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens-dimens")
             credentials {
                 username = project.findProperty("gpr.user") as String?
                 password = project.findProperty("gpr.key") as String?

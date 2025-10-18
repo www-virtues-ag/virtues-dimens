@@ -34,7 +34,7 @@ mavenPublishing {
         name.set("Virtues All-in-One: Complete Responsiveness Package")
         description.set("The most convenient package. It combines all Virtues modules into a single dependency: Core Dynamic/Fixed (DY/FX), SDP, and SSP. Install this module for immediate access to all responsive dimensioning features for Jetpack Compose, XML Views, and Data Binding. " +
                 "(android, kotlin, java, jetpack-compose, xml, swift, swiftui, ios, dp, sp, sdp, ssp, dimensions, responsive, layout, design-system, adaptive, dynamic, fixed, view-system)")
-        url.set("https://github.com/www-virtues-ag/virtues-dimens")
+        url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         inceptionYear.set("2025")
         licenses {
             license {
@@ -51,9 +51,9 @@ mavenPublishing {
             }
         }
         scm {
-            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens.git")
-            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens.git")
-            url.set("https://github.com/www-virtues-ag/virtues-dimens")
+            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         }
     }
     val isJitPack = System.getenv("JITPACK") != null || System.getenv("CI") == "true"
@@ -75,7 +75,7 @@ publishing {
         }
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens")
+            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens-dimens")
             credentials {
                 username = project.findProperty("gpr.user") as String?
                 password = project.findProperty("gpr.key") as String?

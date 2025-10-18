@@ -3,7 +3,7 @@
     <p><strong>Responsive Game Development for Android with C++/NDK Support</strong></p>
     <p>Specialized Virtues module designed for Android game development with native performance, OpenGL ES integration, and advanced viewport management.</p>
     
-    [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/www-virtues-ag/virtues/releases)
+    [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/www-virtues-ag/virtues-dimens/releases)
     [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](../../LICENSE)
     [![Platform](https://img.shields.io/badge/platform-Android%2023+-orange.svg)](https://developer.android.com/)
     [![NDK](https://img.shields.io/badge/NDK-r21+-green.svg)](https://developer.android.com/ndk)
@@ -699,12 +699,12 @@ void debugPerformance() {
 We welcome contributions! Please see our [Contributing Guidelines](../../CONTRIBUTING.md) for details.
 
 ### 🐛 Found a Bug?
-- [Create an issue](https://github.com/www-virtues-ag/virtues/issues)
+- [Create an issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - Include device information and reproduction steps
 - Attach screenshots if applicable
 
 ### 💡 Have an Idea?
-- [Start a discussion](https://github.com/www-virtues-ag/virtues/discussions)
+- [Start a discussion](https://github.com/www-virtues-ag/virtues-dimens/discussions)
 - Propose new features or improvements
 - Share your use cases
 

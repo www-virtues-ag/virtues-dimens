@@ -4,7 +4,7 @@
     <p><strong>Smart and Responsive Dimensioning for Android</strong></p>
     <p>Mathematically responsive scaling that ensures your UI design adapts perfectly to any screen size or aspect ratio — from phones to TVs, cars, and wearables.</p>
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/www-virtues-ag/virtues/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/www-virtues-ag/virtues-dimens/releases)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](../LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Android%2021+-orange.svg)](https://developer.android.com/)
 [![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](https://virtues-project.web.app/)
@@ -437,12 +437,12 @@ println("Factors: ${factors}")
 We welcome contributions! Please see our [Contributing Guidelines](../CONTRIBUTING.md) for details.
 
 ### 🐛 Found a Bug?
-- [Create an issue](https://github.com/www-virtues-ag/virtues/issues)
+- [Create an issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - Include device information and reproduction steps
 - Attach screenshots if applicable
 
 ### 💡 Have an Idea?
-- [Start a discussion](https://github.com/www-virtues-ag/virtues/discussions)
+- [Start a discussion](https://github.com/www-virtues-ag/virtues-dimens/discussions)
 - Propose new features or improvements
 - Share your use cases
 

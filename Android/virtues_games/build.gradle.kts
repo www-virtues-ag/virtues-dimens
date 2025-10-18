@@ -41,7 +41,7 @@ mavenPublishing {
                     "(android, kotlin, java, c++, ndk, games, opengl, vulkan, cocos2d-x, responsive, dimensions, " +
                     "game-development, native-performance)"
         )
-        url.set("https://github.com/www-virtues-ag/virtues-dimens")
+        url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         inceptionYear.set("2025")
         licenses {
             license {
@@ -58,9 +58,9 @@ mavenPublishing {
             }
         }
         scm {
-            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens.git")
-            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens.git")
-            url.set("https://github.com/www-virtues-ag/virtues-dimens")
+            connection.set("scm:git:github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            developerConnection.set("scm:git:ssh://github.com/www-virtues-ag/virtues-dimens-dimens.git")
+            url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         }
     }
     val isJitPack = System.getenv("JITPACK") != null || System.getenv("CI") == "true"
@@ -82,7 +82,7 @@ publishing {
         }
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens")
+            url = uri("https://maven.pkg.github.com/www-virtues-ag/virtues-dimens-dimens")
             credentials {
                 username = project.findProperty("gpr.user") as String?
                 password = project.findProperty("gpr.key") as String?

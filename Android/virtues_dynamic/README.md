@@ -430,12 +430,12 @@ println("Factors: ${factors}")
 We welcome contributions! Please see our [Contributing Guidelines](../../CONTRIBUTING.md) for details.
 
 ### 🐛 Found a Bug?
-- [Create an issue](https://github.com/www-virtues-ag/virtues/issues)
+- [Create an issue](https://github.com/www-virtues-ag/virtues-dimens/issues)
 - Include device information and reproduction steps
 - Attach screenshots if applicable
 
 ### 💡 Have an Idea?
-- [Start a discussion](https://github.com/www-virtues-ag/virtues/discussions)
+- [Start a discussion](https://github.com/www-virtues-ag/virtues-dimens/discussions)
 - Propose new features or improvements
 - Share your use cases
 

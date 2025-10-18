@@ -10,10 +10,10 @@ Pod::Spec.new do |spec|
                       - UI: UIKit and SwiftUI extensions and integrations
                       - Games: Metal-specific functionality for game development
                       DESC
-  spec.homepage     = "https://github.com/www-virtues-ag/virtues-dimens"
+  spec.homepage     = "https://github.com/www-virtues-ag/virtues-dimens-dimens"
   spec.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
   spec.author       = { "Jean Bodenberg" => "jean.bodenberg@gmail.com" }
-  spec.source       = { :git => "https://github.com/www-virtues-ag/virtues-dimens.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/www-virtues-ag/virtues-dimens-dimens.git", :tag => "#{spec.version}" }
   
   spec.ios.deployment_target = "13.0"
   spec.swift_version = "5.0"
@@ -44,6 +44,6 @@ Pod::Spec.new do |spec|
     games.requires_arc = true
   end
   
-  spec.documentation_url = "https://github.com/www-virtues-ag/virtues-dimens/blob/main/README.md"
+  spec.documentation_url = "https://github.com/www-virtues-ag/virtues-dimens-dimens/blob/main/README.md"
   spec.social_media_url = "https://github.com/www-virtues-ag"
 end
