@@ -1,0 +1,2 @@
+ag.virtues.dimens.games
+string app_name

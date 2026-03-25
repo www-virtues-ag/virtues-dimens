@@ -1,4 +1,4 @@
-//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDynamic](index.md)/[toDp](to-dp.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDimensDynamic](index.md)/[toDp](to-dp.md)
 
 # toDp
 

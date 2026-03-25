@@ -1,19 +1,19 @@
-//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDynamic](index.md)/[screen](screen.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDimensDynamic](index.md)/[screen](screen.md)
 
 # screen
 
 [androidJvm]\
-fun [screen](screen.md)(type: UiModeType, customValue: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)): [VirtuesDynamic](index.md)
+fun [screen](screen.md)(type: UiModeType, customValue: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)): [VirtuesDimensDynamic](index.md)
 
 EN Sets a custom dimension value for a specific UI mode.
 
 #### Return
 
-The `VirtuesDynamic` instance for chaining.
+The `VirtuesDimensDynamic` instance for chaining.
 
 PT Define um valor de dimensão customizado para um modo de UI específico.
 
-A instância `VirtuesDynamic` para encadeamento.
+A instância `VirtuesDimensDynamic` para encadeamento.
 
 #### Parameters
 
@@ -25,24 +25,24 @@ androidJvm
 | customValue | O valor de dimensão customizado em Dp. |
 
 [androidJvm]\
-fun [screen](screen.md)(type: UiModeType, customValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html)): [VirtuesDynamic](index.md)
+fun [screen](screen.md)(type: UiModeType, customValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html)): [VirtuesDimensDynamic](index.md)
 
-fun [screen](screen.md)(uiModeType: UiModeType, qualifierType: DpQualifier, qualifierValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html)): [VirtuesDynamic](index.md)
+fun [screen](screen.md)(uiModeType: UiModeType, qualifierType: DpQualifier, qualifierValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html)): [VirtuesDimensDynamic](index.md)
 
-fun [screen](screen.md)(type: DpQualifier, value: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)): [VirtuesDynamic](index.md)
+fun [screen](screen.md)(type: DpQualifier, value: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)): [VirtuesDimensDynamic](index.md)
 
 [androidJvm]\
-fun [screen](screen.md)(uiModeType: UiModeType, qualifierType: DpQualifier, qualifierValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)): [VirtuesDynamic](index.md)
+fun [screen](screen.md)(uiModeType: UiModeType, qualifierType: DpQualifier, qualifierValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html)): [VirtuesDimensDynamic](index.md)
 
 EN Sets a custom dimension for the intersection of a UI mode and a screen qualifier.
 
 #### Return
 
-The `VirtuesDynamic` instance for chaining.
+The `VirtuesDimensDynamic` instance for chaining.
 
 PT Define uma dimensão customizada para a interseção de um modo de UI e um qualificador de tela.
 
-A instância `VirtuesDynamic` para encadeamento.
+A instância `VirtuesDimensDynamic` para encadeamento.
 
 #### Parameters
 
@@ -56,17 +56,17 @@ androidJvm
 | customValue | O valor de dimensão customizado em Dp. |
 
 [androidJvm]\
-fun [screen](screen.md)(type: DpQualifier, value: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html)): [VirtuesDynamic](index.md)
+fun [screen](screen.md)(type: DpQualifier, value: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), customValue: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html)): [VirtuesDimensDynamic](index.md)
 
 EN Sets a custom dimension value for a specific screen qualifier.
 
 #### Return
 
-The `VirtuesDynamic` instance for chaining.
+The `VirtuesDimensDynamic` instance for chaining.
 
 PT Define um valor de dimensão customizado para um qualificador de tela específico.
 
-A instância `VirtuesDynamic` para encadeamento.
+A instância `VirtuesDimensDynamic` para encadeamento.
 
 #### Parameters
 

@@ -1,4 +1,4 @@
-//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDynamic](index.md)/[calculateAdjustedValue](calculate-adjusted-value.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDimensDynamic](index.md)/[calculateAdjustedValue](calculate-adjusted-value.md)
 
 # calculateAdjustedValue
 

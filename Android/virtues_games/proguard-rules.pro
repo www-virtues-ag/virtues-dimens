@@ -2,7 +2,7 @@
 # These rules are applied when building the library
 
 # Keep all public classes and methods
--keep public class com.appdimens.games.** {
+-keep public class ag.virtues.dimens.games.** {
     public *;
 }
 
@@ -13,7 +13,7 @@
 
 # Keep JNI methods
 -keepclasseswithmembernames class * {
-    @com.appdimens.games.Keep <methods>;
+    @ag.virtues.dimens.games.Keep <methods>;
 }
 
 # Keep enum classes
@@ -23,34 +23,34 @@
 }
 
 # Keep data classes
--keep class com.appdimens.games.GameScreenConfig { *; }
--keep class com.appdimens.games.GameVector2D { *; }
--keep class com.appdimens.games.GameRectangle { *; }
+-keep class ag.virtues.dimens.games.GameScreenConfig { *; }
+-keep class ag.virtues.dimens.games.GameVector2D { *; }
+-keep class ag.virtues.dimens.games.GameRectangle { *; }
 
 # Keep native library references
--keep class com.appdimens.games.VirtuesDimensGames {
+-keep class ag.virtues.dimens.games.VirtuesDimensGames {
     static {
         System.loadLibrary("appdimens_games");
     }
 }
 
 # Keep companion objects
--keepclassmembers class com.appdimens.games.VirtuesDimensGames$Companion {
+-keepclassmembers class ag.virtues.dimens.games.VirtuesDimensGames$Companion {
     public static ** getInstance();
 }
 
 # Keep singleton pattern
--keep class com.appdimens.games.VirtuesDimensGames {
-    private static volatile com.appdimens.games.VirtuesDimensGames INSTANCE;
+-keep class ag.virtues.dimens.games.VirtuesDimensGames {
+    private static volatile ag.virtues.dimens.games.VirtuesDimensGames INSTANCE;
 }
 
 # Keep reflection-accessed members
--keepclassmembers class com.appdimens.games.** {
+-keepclassmembers class ag.virtues.dimens.games.** {
     @androidx.annotation.Keep *;
 }
 
 # Keep serialization
--keepclassmembers class com.appdimens.games.** implements java.io.Serializable {
+-keepclassmembers class ag.virtues.dimens.games.** implements java.io.Serializable {
     static final long serialVersionUID;
     private static final java.io.ObjectStreamField[] serialPersistentFields;
     private void writeObject(java.io.ObjectOutputStream);

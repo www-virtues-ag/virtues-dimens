@@ -1,4 +1,4 @@
-//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesDynamic](index.md)/[sp](sp.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.compose](../index.md)/[VirtuesDimensDynamic](index.md)/[sp](sp.md)
 
 # sp
 

@@ -3,9 +3,9 @@
 # dynamic
 
 [androidJvm]\
-fun [dynamic](dynamic.md)(initialValueDp: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [VirtuesDynamic](../-app-dimens-dynamic/index.md)
+fun [dynamic](dynamic.md)(initialValueDp: [Float](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [VirtuesDimensDynamic](../-app-dimens-dynamic/index.md)
 
-EN Initializes the `VirtuesDynamic` constructor from a Float value in Dp.
+EN Initializes the `VirtuesDimensDynamic` constructor from a Float value in Dp.
 
 #### Parameters
 
@@ -17,9 +17,9 @@ androidJvm
 | ignoreMultiViewAdjustment | Se verdadeiro, ignora os ajustes de multi-view. |
 
 [androidJvm]\
-fun [dynamic](dynamic.md)(initialValueInt: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [VirtuesDynamic](../-app-dimens-dynamic/index.md)
+fun [dynamic](dynamic.md)(initialValueInt: [Int](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html), ignoreMultiViewAdjustment: [Boolean](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html) = false): [VirtuesDimensDynamic](../-app-dimens-dynamic/index.md)
 
-EN Initializes the `VirtuesDynamic` constructor from an Int value in Dp.
+EN Initializes the `VirtuesDimensDynamic` constructor from an Int value in Dp.
 
 #### Parameters
 

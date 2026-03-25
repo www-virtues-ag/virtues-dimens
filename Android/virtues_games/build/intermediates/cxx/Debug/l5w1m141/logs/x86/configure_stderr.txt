@@ -1,0 +1,11 @@
+CMake Error at CMakeLists.txt:42 (add_library):
+  Cannot find source file:
+
+    include/VirtuesDimensGames.h
+
+
+CMake Error at CMakeLists.txt:42 (add_library):
+  No SOURCES given to target: appdimens_games
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

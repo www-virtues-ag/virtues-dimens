@@ -394,7 +394,7 @@ println("Factors: ${factors}")
 |-------|-------------|-------------|
 | **Virtues** | Main entry point | `fixed()`, `dynamic()`, `calculateAvailableItemCount()` |
 | **VirtuesFixed** | Fixed scaling | `withAspectRatio()`, `withCustomSensitivity()` |
-| **VirtuesDynamic** | Dynamic scaling | `ignoreMultiViewAdjustment()` |
+| **VirtuesDimensDynamic** | Dynamic scaling | `ignoreMultiViewAdjustment()` |
 | **VirtuesPhysicalUnits** | Physical units | `toDp()`, `toSp()`, `toPx()` |
 
 ### 🔧 Extension Functions

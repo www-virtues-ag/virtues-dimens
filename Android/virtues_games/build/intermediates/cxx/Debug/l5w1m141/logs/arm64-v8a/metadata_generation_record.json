@@ -1,0 +1,119 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 23 min SDK version: arm64-v8a",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "rebuilding JSON C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\.cxx\\Debug\\l5w1m141\\arm64-v8a\\android_gradle_build.json due to:",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "- no fingerprint file, will remove stale configuration folder",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\.cxx\\Debug\\l5w1m141\\arm64-v8a\u0027",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\.cxx\\Debug\\l5w1m141\\arm64-v8a\u0027",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake @echo off\n\"C:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\src\\\\main\\\\cpp\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d23\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-23\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++17 -frtti -fexceptions\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\l5w1m141\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\l5w1m141\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\.cxx\\\\Debug\\\\l5w1m141\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\"\n",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "@echo off\n\"C:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\src\\\\main\\\\cpp\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d23\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-23\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++17 -frtti -fexceptions\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\l5w1m141\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\l5w1m141\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\.cxx\\\\Debug\\\\l5w1m141\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\"\n",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "Received process result: 1",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed with problem. Exception: com.android.ide.common.process.ProcessException: -- The C compiler identification is Clang 18.0.1\n-- The CXX compiler identification is Clang 18.0.1\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working C compiler: C:/Users/evert/1_SDK_ANDROID_STUDIO/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe - skipped\n-- Detecting C compile features\n-- Detecting C compile features - done\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: C:/Users/evert/1_SDK_ANDROID_STUDIO/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done\n\nC++ build system [configure] failed while executing:\n    @echo off\n    \"C:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n      \"-HC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\src\\\\main\\\\cpp\" ^\n      \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n      \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n      \"-DCMAKE_SYSTEM_VERSION\u003d23\" ^\n      \"-DANDROID_PLATFORM\u003dandroid-23\" ^\n      \"-DANDROID_ABI\u003darm64-v8a\" ^\n      \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n      \"-DANDROID_NDK\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\" ^\n      \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\" ^\n      \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\ndk\\\\27.0.12077973\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n      \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\evert\\\\1_SDK_ANDROID_STUDIO\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n      \"-DCMAKE_CXX_FLAGS\u003d-std\u003dc++17 -frtti -fexceptions\" ^\n      \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\l5w1m141\\\\obj\\\\arm64-v8a\" ^\n      \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\l5w1m141\\\\obj\\\\arm64-v8a\" ^\n      \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n      \"-BC:\\\\Users\\\\evert\\\\Downloads\\\\Nova pasta\\\\virtues-dimens\\\\Android\\\\virtues_games\\\\.cxx\\\\Debug\\\\l5w1m141\\\\arm64-v8a\" ^\n      -GNinja ^\n      \"-DANDROID_STL\u003dc++_shared\"\n  from C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\nCMake Error at CMakeLists.txt:42 (add_library):\n  Cannot find source file:\n\n    include/VirtuesDimensGames.h\n\n\nCMake Error at CMakeLists.txt:42 (add_library):\n  No SOURCES given to target: appdimens_games\n\n\nCMake Generate step failed.  Build files cannot be regenerated correctly.",
+    "file_": "C:\\Users\\evert\\Downloads\\Nova pasta\\virtues-dimens\\Android\\virtues_games\\src\\main\\cpp\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  }
+]

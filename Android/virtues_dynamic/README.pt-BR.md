@@ -4,19 +4,19 @@
 
 O core do **Virtues** fornece a inteligência por trás do sistema de escalonamento, oferecendo três APIs principais:
 
-1.  **`VirtuesDynamic`**: Escalonamento adaptativo avançado (percentual, ignora multi-janela).
+1.  **`VirtuesDimensDynamic`**: Escalonamento adaptativo avançado (percentual, ignora multi-janela).
 2.  **`VirtuesFixed`**: Escalonamento responsivo com Aspect Ratio (logarítmico).
 3.  **`VirtuesPhysicalUnits`**: Conversão de unidades físicas (polegadas, mm, cm) para Dp, Sp e Px.
 
 -----
 
-## 1\. 🌐 VirtuesDynamic: Dimensionamento Percentual Adaptativo
+## 1\. 🌐 VirtuesDimensDynamic: Dimensionamento Percentual Adaptativo
 
-O `VirtuesDynamic` aplica um tipo de dimensionamento "percentual", onde o valor de DP base é adaptado proporcionalmente à dimensão da tela (Largura ou Altura), semelhante a uma porcentagem.
+O `VirtuesDimensDynamic` aplica um tipo de dimensionamento "percentual", onde o valor de DP base é adaptado proporcionalmente à dimensão da tela (Largura ou Altura), semelhante a uma porcentagem.
 
 ### 📌 Conceito Central
 
-Em vez de usar fatores de ajuste incrementais, o `VirtuesDynamic` calcula:
+Em vez de usar fatores de ajuste incrementais, o `VirtuesDimensDynamic` calcula:
 
 $$\text{Valor Final} = \text{Dimensão da Tela (W ou H)} \times \left( \frac{\text{DP Base}}{\text{Largura de Ref. (360dp)}} \right)$$
 

@@ -8,11 +8,11 @@
 
 # Keep JNI methods
 -keepclasseswithmembernames class * {
-    @com.appdimens.games.Keep <methods>;
+    @ag.virtues.dimens.games.Keep <methods>;
 }
 
 # Keep VirtuesDimens Games classes
--keep class com.appdimens.games.** { *; }
+-keep class ag.virtues.dimens.games.** { *; }
 
 # Keep enum classes
 -keepclassmembers enum * {
@@ -21,12 +21,12 @@
 }
 
 # Keep data classes
--keep class com.appdimens.games.GameScreenConfig { *; }
--keep class com.appdimens.games.GameVector2D { *; }
--keep class com.appdimens.games.GameRectangle { *; }
+-keep class ag.virtues.dimens.games.GameScreenConfig { *; }
+-keep class ag.virtues.dimens.games.GameVector2D { *; }
+-keep class ag.virtues.dimens.games.GameRectangle { *; }
 
 # Keep native library references
--keep class com.appdimens.games.VirtuesDimensGames {
+-keep class ag.virtues.dimens.games.VirtuesDimensGames {
     static {
         System.loadLibrary("appdimens_games");
     }

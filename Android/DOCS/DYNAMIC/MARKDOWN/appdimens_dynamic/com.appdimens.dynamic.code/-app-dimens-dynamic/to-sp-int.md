@@ -1,4 +1,4 @@
-//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDynamic](index.md)/[toSpInt](to-sp-int.md)
+//[virtues_dynamic](../../../index.md)/[com.virtues.dynamic.code](../index.md)/[VirtuesDimensDynamic](index.md)/[toSpInt](to-sp-int.md)
 
 # toSpInt
 
