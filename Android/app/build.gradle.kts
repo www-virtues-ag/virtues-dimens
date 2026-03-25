@@ -48,8 +48,8 @@ android {
 }
 
 dependencies {
-    api(project(":appdimens_all"))
-    api(project(":appdimens_games"))
+    api(project(":virtues_all"))
+    api(project(":virtues_games"))
     //implementation("ag.virtues.dimens:virtues-all:1.0.0")
     //implementation("com.github.bodenberg.appdimens:virtues-all:1.0.0")
     //implementation(libs.appdimens.all)
