@@ -9,6 +9,11 @@ plugins {
     alias(libs.plugins.dokka.jetbrains)
 }
 
+val isJitPack = System.getenv("JITPACK") == "true"
+        || System.getenv("jitpack") == "true"
+        || System.getenv("CI") == "true"
+        || System.getenv("ci") == "true"
+
 tasks.dokkaHtml.configure {
     outputDirectory.set(rootProject.layout.projectDirectory.dir("DOCS/SDPS/HTML"))
 }
@@ -59,8 +64,8 @@ mavenPublishing {
             url.set("https://github.com/www-virtues-ag/virtues-dimens-dimens")
         }
     }
-    val isJitPack = System.getenv("JITPACK") != null || System.getenv("CI") == "true"
-    if (!isJitPack && (project.findProperty("signing.keyId") != null || project.findProperty("signing.secretKey") != null)) {
+    
+if (!isJitPack) {
         signAllPublications()
         publishToMavenCentral()
     }
