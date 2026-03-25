@@ -94,8 +94,8 @@ kotlin {
 }
 
 dependencies {
-    api(project(":appdimens_library"))
-    api(project(":appdimens_dynamic"))
+    api(project(":virtues_library"))
+    api(project(":virtues_dynamic"))
     
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
