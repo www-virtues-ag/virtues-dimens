@@ -33,17 +33,15 @@
 ```kotlin
 dependencies {
     // Core library (Dynamic + Fixed scaling)
-    implementation("ag.virtues.dimens:virtues-dynamic:1.0.0")
+    implementation ("com.github.www-virtues-ag.virtues-dimens:virtues_dynamic:1.0.0")
     
     // Optional: SDP & SSP scaling
-    implementation("ag.virtues.dimens:virtues-sdps:1.0.0")
-    implementation("ag.virtues.dimens:virtues-ssps:1.0.0")
+    implementation ("com.github.www-virtues-ag.virtues-dimens:virtues_sdps:1.0.0")
+    implementation ("com.github.www-virtues-ag.virtues-dimens:virtues_ssps:1.0.0")
     
     // All-in-one package (does not include games module)
-    implementation("ag.virtues.dimens:virtues-all:1.0.0")
-    
-    // Game development with C++/NDK support (separate dependency)
-    implementation("ag.virtues.dimens:virtues-games:1.0.0")
+    implementation ("com.github.www-virtues-ag.virtues-dimens:virtues_all:1.0.0")
+
 }
 ```
 
